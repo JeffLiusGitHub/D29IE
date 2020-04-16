@@ -454,7 +454,7 @@ window.Modernizr = (function( window, document, undefined ) {
         if(('ontouchstart' in window) || window.DocumentTouch && document instanceof DocumentTouch) {
           bool = true;
         } else {
-          injectElementWithStyles(['@media (',prefixes.join('touch-enabled),('),mod,')','{#modernizr{top:9px;position:absolute}}'].join(''), function( node ) {
+          injectElementWithStyles(['@media (',prefixes.join('touch-enabled),('),mod,')','{#modernizr{top:9px;position:absolute>'].join(''), function( node ) {
             bool = node.offsetTop === 9;
           });
         }
@@ -662,7 +662,7 @@ window.Modernizr = (function( window, document, undefined ) {
 
           // Webkit allows this media query to succeed only if the feature is enabled.
           // `@media (transform-3d),(-webkit-transform-3d){ ... }`
-          injectElementWithStyles('@media (transform-3d),(-webkit-transform-3d){#modernizr{left:9px;position:absolute;height:3px;}}', function( node, rule ) {
+          injectElementWithStyles('@media (transform-3d),(-webkit-transform-3d){#modernizr{left:9px;position:absolute;height:3px;>', function( node, rule ) {
             ret = node.offsetLeft === 9 && node.offsetHeight === 3;
           });
         }

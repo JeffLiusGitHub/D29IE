@@ -1,0 +1,44 @@
+﻿html {
+    width: 100vw;
+    height: 100vh;
+}
+
+body {
+    padding-top: 0;
+    margin-top: 0;
+}
+
+.header {
+    width: 100vw;
+    height: 80vh;
+    background-image: url("../Views/image2/meet_our_crews.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+}
+
+.btn-white {
+    text-decoration: none;
+    color: white;
+    font-size: 36px;
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 10px 20px;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.2rs;
+}
+
+    .btn-white:hover {
+        background-color: white;
+        color: black;
+        /* transform:scale(1.1); */
+        font-size: 40px;
+    }
+
+p {
+    font-size: 36px;
+    padding-top: 80px;
+}

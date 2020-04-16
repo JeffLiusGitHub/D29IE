@@ -1,17 +1,344 @@
 ﻿@{
     ViewBag.Title = "Contact";
 }
-<h2>@ViewBag.Title.</h2>
-<h3>@ViewBag.Message</h3>
+    <section class='ftco-section bg-light question-sec' id='questionsection' style="display:block;">
+        <!-- progress bar -->
+        <div class="container">
+            <div class="progress">
+                <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="40"
+                     aria-valuemin="0" aria-valuemax="100" style="width:0%" id='pbar'>
+                    0 / 5
+                </div>
+            </div>
+        </div>
 
-<address>
-    One Microsoft Way<br />
-    Redmond, WA 98052-6399<br />
-    <abbr title="Phone">P:</abbr>
-    425.555.0100
-</address>
+        <div id="questions">
+            <!-- question 0 equipment -->
+            <div id="q0" class='ftco-section bg-light'>
+                <!-- question section -->
+                <div class="container">
+                    <div class="question">
+                        <h2 class="mb-4">
+                            1. What's the difference between a mountain bike and a road bike?
+                        </h2>
+                    </div>
+                    <div class='choices'>
+                        <div class="row">
+                            <div class="col">
+                                <label class="choice" style='text-align: justify;'>
+                                    A:A mountain bike has chunkier tyres
+                                    <input type="radio" name="q0" value='t'>
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <div class="col">
+                                <label class="choice" style='text-align: justify;'>
+                                    B:Road bikes have lights
+                                    <input type="radio" name="q0" value="f">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <label class="choice" style='text-align: justify;'>
+                                    C: Road bikes have comfier saddles
+                                    <input type="radio" name="q0" value='f'>
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <div class="col">
+                                <label class="choice" style='text-align: justify;'>
+                                    D:A mountain bike is bigger
+                                    <input type="radio" name="q0" value='f'>
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                        </div>
 
-<address>
-    <strong>Support:</strong>   <a href="mailto:Support@example.com">Support@example.com</a><br />
-    <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
-</address>
+                    </div>
+                </div>
+                <!-- answer -->
+                <div class="container">
+                    <h3 class="mb-3" id='q0checkC' style='display:none;font-size:18px;'>You are correct!</h3>
+                    <h3 class="mb-3" id='q0checkN' style='display:none;font-size:18px;'>
+                        You were almost there, but the
+                        right answer is A.
+                    </h3>
+                    <p id='q0explain' style='display:none; text-align: justify;font-size:16px;'>
+
+                        Reason: Road bikes have thinner, faster tyres and drop handlebars while mountain bikes have front suspension for riding rough, sketchy terrain, and a wide range of gears
+
+                    </p>
+                </div>
+                <!-- visualization -->
+                <div class="container visualization" style='margin:20px auto; display:none;'
+                     id='q0visualization'>
+                    <!-- no visualization in this question -->
+                    <a href="#questionsection" onclick="next()" class='next w3-right' style="font-size: 16px;">
+                        Next Question
+                        &raquo;
+                    </a>
+                </div>
+            </div>
+
+            <!-- question 1 bicycle type -->
+            <div id="q1" class='ftco-section bg-light' style='display:none;'>
+                <!-- question section -->
+                <div class="container">
+                    <div class="question">
+                        <h2 class="mb-4">
+                            2. What type of bike is in this picture?
+                            <h2>
+</div>
+                    <div class='choices'>
+                        <div class="row">
+                            <div class="col">
+                                <label class="choice">
+                                    A: BMX
+
+                                    <input type="radio" name="q1" value='f'>
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <div class="col">
+                                <label class="choice">
+                                    B: Mountain bike
+                                    <input type="radio" name="q1" value="t">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <label class="choice">
+                                    C: Road Bike
+                                    <input type="radio" name="q1" value='f'>
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <div class="col">
+                                <label class="choice">
+                                    D: Exercise bike
+
+
+                                    <input type="radio" name="q1" value='f'>
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- answer -->
+                <div class="container">
+                    <h3 class="mb-3" id='q1checkC' style='display:none;font-size:18px'>You are correct!</h3>
+                    <h3 class="mb-3" id='q1checkN' style='display:none; text-align: justify;font-size:18px'>
+                        sorry, you are wrong.
+                    </h3>
+                    <p id='q1explain' style='display:none; text-align: justify;font-size:16px'>
+                        Reason: Most modern mountain bikes have front suspension for riding rough, sketchy terrain, and a wide range of gears which makes them great for off-road adventures.
+
+                    </p>
+                </div>
+                <!-- visualization -->
+                <style>
+                    canvas {
+                        width: 100% !important;
+                        height: 500px !important;
+                    }
+                </style>
+                <div class="container visualization" style='margin:20px auto; display:none;'
+                     id='q1visualization'>
+                    <canvas id="greenhouse"></canvas>
+                    <a href="#questionsection" onclick="next()" class='next w3-right' style="font-size: 16px;">
+                        Next Question &raquo;
+                    </a>
+                </div>
+            </div>
+
+            <!-- question 2 helmet condition -->
+            <div id="q2" class='ftco-section bg-light' style='display:none;'>
+                <!-- question section -->
+                <div class="container">
+                    <div class="question">
+                        <h2 class="mb-4">
+                            3. To ensure a helmet is in good condition you should:
+                        </h2>
+                    </div>
+                    <div class='choices'>
+                        <div class="row">
+                            <div class="col">
+                                <label class="choice" style='text-align: justify;'>
+                                    A:Check to make sure it has not been dropped.
+
+                                    <input type="radio" name="q2" value='f'>
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <div class="col">
+                                <label class="choice" style='text-align: justify;'>
+                                    B:  Only purchase a new one. Never buy a second hand
+                                    <input type="radio" name="q2" value="t">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <label class="choice" style='text-align: justify;'>
+                                    C: Only buy a helmet that someone else has tried out first.
+
+
+                                    <input type="radio" name="q2" value='f'>
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <div class="col">
+                                <label class="choice">
+                                    D: All of the above.
+                                    <input type="radio" name="q2" value='f'>
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- answer -->
+                <div class="container">
+                    <h3 class="mb-3" id='q2checkC' style='display:none;font-size:18px;'>You are correct!</h3>
+                    <h3 class="mb-3" id='q2checkN' style='display:none; text-align: justify;font-size:18px;'>
+                        Sorry
+                    </h3>
+                    <p id='q2explain' style='display:none; text-align: justify;font-size:16px;'>
+                        Reason: If you see any damage - (cracks, pieces missing, compression of the foam, frayed straps) - then the helmet should be replaced. Manufacturers also advise that if your helmet has sustained an impact (eg. been in a crash), it should be replaced
+                    </p>
+                </div>
+                <!-- visualization -->
+                <div class="container visualization" style='margin:20px auto; display:none;'
+                     id='q2visualization'>
+                    <!-- no visualize -->
+                    <a href="#questionsection" onclick="next()" class='next w3-right' style="font-size: 16px;">
+                        Next Question
+                        &raquo;
+                    </a>
+                </div>
+            </div>
+
+            <!-- question 3 halmet reuse -->
+            <div id="q3" class='ftco-section bg-light' style='display:none;'>
+                <!-- question section -->
+                <div class="container">
+                    <div class="question">
+                        <h2 class="mb-4" style='text-align: justify;'>
+                            4. If you have a crash whilst wearing your helmet you should:
+                        </h2>
+                    </div>
+                    <div class='choices'>
+                        <div class="row">
+                            <div class="col">
+                                <label class="choice">
+                                    A:  If it is scratched or chipped get it repainted.
+                                    <input type="radio" name="q3" value='f'>
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <div class="col">
+                                <label class="choice">
+                                    B:Replace it.
+                                    <input type="radio" name="q3" value="t">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                        </div>
+                       
+                    </div>
+                </div>
+                <!-- answer -->
+                <div class="container">
+                    <h3 class="mb-3" id='q3checkC' style='display:none;font-size:18px;'>Yes</h3>
+                    <h3 class="mb-3" id='q3checkN' style='display:none;font-size:18px;'>Sorry</h3>
+                    <p id='q3explain' style='display:none; text-align: justify;font-size:16px;'>
+                        Reason: If you see any damage - (cracks, pieces missing, compression of the foam, frayed straps) - then the helmet should be replaced. Manufacturers also advise that if your helmet has sustained an impact (eg. been in a crash), it should be replaced.
+
+                    </p>
+                </div>
+                <!-- visualization -->
+                <div class="container visualization" style='margin:20px auto; display:none;'
+                     id='q3visualization'>
+                    <!-- no visualize -->
+                    <a href="#questionsection" onclick="next()" class='next w3-right' style="font-size: 16px;">
+                        Next Question
+                        &raquo;
+                    </a>
+                </div>
+            </div>
+
+            <!-- question 4 helmet display-->
+            <div id="q4" class='ftco-section bg-light' style='display:none;'>
+                <!-- question section -->
+                <div class="container question">
+                    <div class="question">
+                        <h2 class="mb-4" style='text-align: justify;'>
+                            5. What should be displayed upon an approved helmet?
+
+                        </h2>
+                    </div>
+                    <div class='choices'>
+                        <div class="row">
+                            <div class="col">
+                                <label class="choice">
+                                    A:  An Australian Standards AS1698 sticker.
+
+                                    <input type="radio" name="q4" value='t'>
+                                    <span class="checkmark"></span>
+                                </label>
+
+                            </div>
+                            <div class="col">
+                                <label class="choice">
+                                    B: Bright stickers to make the helmet more visible to vehicle drivers.
+
+                                    <input type="radio" name="q4" value="f">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- answer -->
+                <div class="container">
+                    <h3 class="mb-3" id='q4checkC' style='display:none;font-size:18px;'>You are correct!</h3>
+                    <h3 class="mb-3" id='q4checkN' style='display:none;font-size:18px;'>Your answer is wrong!</h3>
+                    <p id='q4explain' style='display:none; text-align: justify;font-size:16px;'>
+                        eason: When choosing a bike helmet, make sure:
+                        it fits firmly and comfortably on your head and cannot be tilted in any direction
+                        the straps can be adjusted so there is no slack when fastened
+                        it has a sticker showing it is safety approved and meets the Australian/New Zealand Standard AS/NZS 2063
+                        it is marked with the symbol of a body accredited by the Joint Accreditation System of Australia and New Zealand (JAS-ANZ), certifying compliance with AS/NZS2063 (for helmets manufactured or imported from 1 July 2012).
+
+                    </p>
+                </div>
+                <!-- visualization -->
+                <div class="container visualization" style='margin:20px auto; display:none;'
+                     id='q4visualization'>
+                    <!-- no visualization -->
+                    <div class="container px-md-5">
+                        <div class="row justify-content-center pb-5">
+                            <div class="col-md-12 heading-section text-center ftco-animate">
+                                <h3 class="mb-4" style='color:black; margin-top:35px;'>
+                                    You got <span id='result'></span> out of 5!
+                                </h3>
+                                <h3 class="mb-4" style='color:black; margin-top:35px;'
+                                    id='suggestion'>
+                                    Congratulation  You are one step closer to become professionals. What about to start your journey now using our bicycle map?
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="/learning" class='next w3-right' style="font-size: 16px;">Back to Learning Page</a>
+                </div>
+            </div>
+        </div>
+    </section>

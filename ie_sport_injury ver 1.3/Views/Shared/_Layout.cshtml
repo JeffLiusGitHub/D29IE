@@ -24,7 +24,7 @@
                     <li>@Html.ActionLink("Home", "Index", "Home")</li>
                     <li>@Html.ActionLink("About", "About", "Home")</li>
                     <li>@Html.ActionLink("Education", "Education", "Home")</li>
-                    <li>@Html.ActionLink("Quiz", "Quiz", "Home")</li>
+                    <li>@Html.ActionLink("Quiz", "Contact", "Home")</li>
                     <li>@Html.ActionLink("Warm-up", "Warmup", "Home")</li>
                     <li>@Html.ActionLink("Map", "Map", "Home")</li>
                 </ul>
@@ -32,7 +32,7 @@
             </div>
         </div>
     </div>
-    <div class="container body-content">
+    <div class="body-content">
         @RenderBody()
         <hr />
         <footer>
@@ -42,6 +42,8 @@
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/quiz")
+    @Scripts.Render("~/bundles/checkanswer")
     @RenderSection("scripts", required: false)
 </body>
 </html>

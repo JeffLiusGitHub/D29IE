@@ -1,0 +1,15 @@
+﻿CREATE TABLE [dbo].[Map]
+
+(
+	[Id] INT NOT NULL PRIMARY KEY,
+	[Name] VARCHAR(MAX) NOT NULL,
+	[Description]VARCHAR(MAX) NOT NULL,
+	[Latitude] NUMERIC(10,8)NOT NULL,
+	[Longitude] NUMERIC(11,8)NOT NULL,
+	[PostCode] NUMERIC (4)NOT NULL,
+	[NodeType] VARCHAR(MAX)NOT NULL,
+	[Week] VARCHAR(MAX)NOT NULL,
+	[AccidentType] VARCHAR(MAX)NOT NULL,
+	[Time] Timestamp NOT NULL,
+	[Month] NUMERIC NOT NULL
+)

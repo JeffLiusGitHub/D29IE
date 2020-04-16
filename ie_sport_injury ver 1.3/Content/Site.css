@@ -5,8 +5,8 @@
 
 /* Set padding to keep content from hitting the edges */
 .body-content {
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 0px;
+    padding-right: 0px;
 }
 
 /* Override the default bootstrap behavior where horizontal description lists 
@@ -22,3 +22,49 @@ select,
 textarea {
     max-width: 280px;
 }
+
+/*html {
+    width: 100vw;
+    height: 100vh;
+}
+
+body {
+    padding-top: 0;
+    margin-top: 0;
+}*/
+
+.header1 {
+    width: 100vw;
+    height: 80vh;
+    background-image: url("../Views/image2/meet_our_crews.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+}
+
+.btn-white {
+    text-decoration: none;
+    color: white;
+    font-size: 36px;
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 10px 20px;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.2rs;
+}
+
+    .btn-white:hover {
+        background-color: white;
+        color: black;
+        /* transform:scale(1.1); */
+        font-size: 40px;
+    }
+
+p {
+    font-size: 36px;
+    padding-top: 80px;
+}
+
