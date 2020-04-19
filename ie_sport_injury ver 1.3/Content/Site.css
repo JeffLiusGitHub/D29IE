@@ -5,8 +5,8 @@
 
 /* Set padding to keep content from hitting the edges */
 .body-content {
-    padding-left: 0px;
-    padding-right: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 /* Override the default bootstrap behavior where horizontal description lists 
@@ -68,3 +68,471 @@ p {
     padding-top: 80px;
 }
 
+
+
+
+
+.mediaViewInfo {
+    --web-view-name: Web 1920 – 6;
+    --web-view-id: Web_1920___6;
+    --web-scale-on-resize: true;
+    --web-enable-deep-linking: true;
+}
+
+:root {
+    --web-view-ids: Web_1920___6;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+}
+
+#Web_1920___6 {
+    position: absolute;
+    width: 1920px;
+    height: 3461px;
+    background-color: rgba(255,255,255,1);
+    overflow: hidden;
+    --web-view-name: Web 1920 – 6;
+    --web-view-id: Web_1920___6;
+    --web-scale-on-resize: true;
+    --web-enable-deep-linking: true;
+}
+
+#ID22 {
+    position: absolute;
+    width: 1920px;
+    height: 922.5px;
+    left: 0px;
+    top: 0px;
+    overflow: visible;
+}
+
+# {
+    position: absolute;
+    left: 495px;
+    top: 1002px;
+    overflow: visible;
+    width: 1px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Helvetica Neue;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 50px;
+    color: rgba(255,255,255,1);
+}
+
+#About_US {
+    position: absolute;
+    left: 839px;
+    top: 44px;
+    overflow: visible;
+    width: 196px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Oriya Sangam MN;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    color: rgba(255,255,255,1);
+}
+
+#Cycling_Info {
+    position: absolute;
+    left: 1151px;
+    top: 44px;
+    overflow: visible;
+    width: 238px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Oriya Sangam MN;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    color: rgba(255,255,255,1);
+}
+
+#Quiz {
+    position: absolute;
+    left: 1505px;
+    top: 44px;
+    overflow: visible;
+    width: 101px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Verdana;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    color: rgba(255,255,255,1);
+}
+
+#Map {
+    position: absolute;
+    left: 1712px;
+    top: 44px;
+    overflow: visible;
+    width: 88px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Oriya Sangam MN;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    color: rgba(255,255,255,1);
+}
+
+.Path_2 {
+    overflow: visible;
+    position: absolute;
+    width: 1286.004px;
+    height: 6px;
+    left: 572.5px;
+    top: 118.5px;
+    transform: matrix(1,0,0,1,0,0);
+}
+
+#Home {
+    position: absolute;
+    left: 573px;
+    top: 30px;
+    overflow: hidden;
+    width: 179px;
+    height: 76px;
+    text-align: left;
+    font-family: Oriya Sangam MN;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 55px;
+    color: rgba(255,255,255,1);
+    text-decoration: true;
+}
+
+#Safest_and_Healthiest_ {
+    filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
+    position: absolute;
+    left: 43px;
+    top: 340px;
+    overflow: visible;
+    width: 906px;
+    white-space: nowrap;
+    line-height: 227px;
+    margin-top: -75px;
+    text-align: left;
+    font-family: Bangla MN;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 77px;
+    color: rgba(255,255,255,1);
+}
+
+#way_to_cycle {
+    position: absolute;
+    left: 347px;
+    top: 446px;
+    overflow: visible;
+    width: 550px;
+    white-space: nowrap;
+    line-height: 253px;
+    margin-top: -86.5px;
+    text-align: left;
+    font-family: Bangla MN;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 80px;
+    color: rgba(255,255,255,1);
+}
+
+#Whenever_you_are_on_the_road_t {
+    filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
+    position: absolute;
+    left: 50px;
+    top: 592px;
+    overflow: visible;
+    width: 891px;
+    height: 175px;
+    text-align: left;
+    font-family: Telugu Sangam MN;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    color: rgba(167,201,219,1);
+}
+
+#Group_5 {
+    position: absolute;
+    width: 599px;
+    height: 336px;
+    left: 140px;
+    top: 1731px;
+    overflow: visible;
+}
+
+#Know_the_necessary_and_essenti {
+    position: absolute;
+    left: 1px;
+    top: 75px;
+    overflow: visible;
+    width: 533px;
+    height: 261px;
+    text-align: left;
+    font-family: Helvetica Neue;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    color: rgba(53,74,84,0.973);
+}
+
+#Cycling_Information {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    overflow: visible;
+    width: 600px;
+    height: 126px;
+    text-align: left;
+    font-family: Oriya Sangam MN;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 52px;
+    color: rgba(53,74,84,1);
+}
+
+.Line_4 {
+    overflow: visible;
+    position: absolute;
+    width: 189px;
+    height: 3px;
+    left: 1.5px;
+    top: 75.5px;
+    transform: matrix(1,0,0,1,0,0);
+}
+
+#Group_6 {
+    position: absolute;
+    width: 599px;
+    height: 336px;
+    left: 719px;
+    top: 1731px;
+    overflow: visible;
+}
+
+#Validate_your_knowledge_of_cyc {
+    position: absolute;
+    left: 1px;
+    top: 75px;
+    overflow: visible;
+    width: 533px;
+    height: 261px;
+    text-align: left;
+    font-family: Helvetica Neue;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    color: rgba(53,74,84,0.973);
+}
+
+#Cycling_Testing {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    overflow: visible;
+    width: 600px;
+    height: 126px;
+    text-align: left;
+    font-family: Oriya Sangam MN;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 52px;
+    color: rgba(53,74,84,1);
+}
+
+.Line_4_ {
+    overflow: visible;
+    position: absolute;
+    width: 189px;
+    height: 3px;
+    left: 1.5px;
+    top: 75.5px;
+    transform: matrix(1,0,0,1,0,0);
+}
+
+#Group_7 {
+    position: absolute;
+    width: 599px;
+    height: 336px;
+    left: 1298px;
+    top: 1731px;
+    overflow: visible;
+}
+
+#Be_careful_whenever_you_are_cy {
+    position: absolute;
+    left: 1px;
+    top: 75px;
+    overflow: visible;
+    width: 533px;
+    height: 261px;
+    text-align: left;
+    font-family: Helvetica Neue;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    color: rgba(53,74,84,0.973);
+}
+
+#Cycling_Map {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    overflow: visible;
+    width: 600px;
+    height: 126px;
+    text-align: left;
+    font-family: Oriya Sangam MN;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 52px;
+    color: rgba(53,74,84,1);
+}
+
+.Line_4_ba {
+    overflow: visible;
+    position: absolute;
+    width: 189px;
+    height: 3px;
+    left: 1.5px;
+    top: 75.5px;
+    transform: matrix(1,0,0,1,0,0);
+}
+
+#yellow_and_black_slippery_when {
+    position: absolute;
+    width: 482px;
+    height: 699px;
+    left: 140px;
+    top: 1002px;
+    overflow: visible;
+}
+
+#macbook_pro_2764678 {
+    position: absolute;
+    width: 482px;
+    height: 699px;
+    left: 719px;
+    top: 1002px;
+    overflow: visible;
+}
+
+#macbook_pro_2764678_bb {
+    position: absolute;
+    width: 482px;
+    height: 699px;
+    left: 739px;
+    top: 2517px;
+    overflow: visible;
+}
+
+#person_holding_map_inside_vehi {
+    position: absolute;
+    width: 482px;
+    height: 699px;
+    left: 1298px;
+    top: 1002px;
+    overflow: visible;
+}
+
+#person_holding_map_inside_vehi_bd {
+    position: absolute;
+    width: 482px;
+    height: 699px;
+    left: 1338px;
+    top: 2517px;
+    overflow: visible;
+}
+
+.Rectangle_15 {
+    position: absolute;
+    overflow: visible;
+    width: 482px;
+    height: 699px;
+    left: 1298px;
+    top: 1002px;
+}
+
+.Rectangle_17 {
+    position: absolute;
+    overflow: visible;
+    width: 482px;
+    height: 699px;
+    left: 719px;
+    top: 1002px;
+}
+
+.Rectangle_18 {
+    position: absolute;
+    overflow: visible;
+    width: 482px;
+    height: 699px;
+    left: 140px;
+    top: 1002px;
+}
+
+#yellow_and_black_slippery_when_bh {
+    position: absolute;
+    width: 482px;
+    height: 699px;
+    left: 140px;
+    top: 2517px;
+    overflow: visible;
+}
+
+.img-section {
+
+    background-size: cover;
+    transform: scale(1.1);
+    transition: all 0.2s;
+    height:500px;
+    position:absolute;
+}
+
+    .img-section:hover {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+#education-img {
+    background-image: url("https://www.rei.com/dam/content_team_083017_36416_bikes_how_choose_lg.jpg");
+}
+
+#quiz-img {
+    background-image: url("https://www.rei.com/dam/content_team_083017_36416_bikes_how_choose_lg.jpg");
+}
+
+#map-img {
+    background-image: url("https://www.rei.com/dam/content_team_083017_36416_bikes_how_choose_lg.jpg");
+}
+
+
+
+.btn-in-img:link,
+.btn-in-img:visited {
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.2s;
+    font-size: 36px;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position:relative;
+}
+
+.btn-in-img:hover,
+.btn-in-img:active {
+    transform: rotate(5deg) scale(1.2);
+}

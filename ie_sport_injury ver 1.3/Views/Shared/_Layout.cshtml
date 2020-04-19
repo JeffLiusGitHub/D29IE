@@ -9,29 +9,35 @@
 
 </head>
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                @Html.ActionLink("SportsAcholics", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
-            </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li>@Html.ActionLink("About", "About", "Home")</li>
-                    <li>@Html.ActionLink("Education", "Education", "Home")</li>
-                    <li>@Html.ActionLink("Quiz", "Contact", "Home")</li>
-                    <li>@Html.ActionLink("Warm-up", "Warmup", "Home")</li>
-                    <li>@Html.ActionLink("Map", "Map", "Home")</li>
-                </ul>
-                @Html.Partial("_LoginPartial")
-            </div>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        @*<div class="container">
+            <div class="navbar-header">*@
+        @*<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar">abcd</span>
+                <span class="icon-bar">sdfsdfs</span>
+                <span class="icon-bar"></span>
+            </button>*@
+        @*<%= Html.ActionLink("SportsAcholics", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })%>*@
+
+        <a href='@Url.Action("", "Home")' class="navebar-brand">
+            <img src='@Url.Content("https://my-profile-bucket.s3-ap-southeast-2.amazonaws.com/logo.jpeg")' width="100" height="60" />
+        </a>
+
+        @*@Html.ActionLink("SportsAcholics", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })*@
+        @*</div>*@
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav pull-right">
+                <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                <li>@Html.ActionLink("About", "About", "Home")</li>
+                <li>@Html.ActionLink("Education", "Education", "Home")</li>
+                <li>@Html.ActionLink("Quiz", "Contact", "Home")</li>
+                <li>@Html.ActionLink("Warm-up", "Warmup", "Home")</li>
+                <li>@Html.ActionLink("Map", "Map", "Home")</li>
+            </ul>
+            @*@Html.Partial("_LoginPartial")*@
         </div>
-    </div>
+        @*</div>*@
+    </nav>
     <div class="body-content">
         @RenderBody()
         <hr />

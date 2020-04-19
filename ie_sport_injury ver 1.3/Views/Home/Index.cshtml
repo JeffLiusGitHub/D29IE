@@ -1,72 +1,77 @@
 ﻿@{
     ViewBag.Title = "Home Page";
 }
-    <head>
-        <style>
-            .bg {
-                background-image: url("https://content.active.com/Assets/Active.com+Content+Site+Digital+Assets/Article+Image+Update/Cycling/Century+Ride+Rookies/carousel.jpg");
-                min-height: 400px;
-                background-attachment: fixed;
-                background-position: center;
-                background-repeat: no-repeat;
-                background-size: contain;
-            }
-        </style>
+<head>
+    <style>
+        .bg {
+            background-image: url('file:///~/Views/image2/ID22@2x.png ');
+            min-height: 400px;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+    </style>
 
-        <style>
-            .bg2 {
-                background-image: url("https://www.rei.com/dam/content_team_083017_36416_bikes_how_choose_lg.jpg");
-                min-height: 400px;
-                background-attachment: fixed;
-                background-position: center;
-                background-repeat: no-repeat;
-                background-size: contain;
-            }
-        </style>
+    <style>
+        .bg2 {
+            background-image: url("https://www.rei.com/dam/content_team_083017_36416_bikes_how_choose_lg.jpg");
+            min-height: 400px;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+    </style>
 
-        <style>
-            .button {
-                display: inline-block;
-                border-radius: 4px;
-                background-color: #4CAF50;
-                border: none;
-                color: #FFFFFF;
-                text-align: center;
-                font-size: 30px;
-                padding: 200px 180px;
-                width: 200px;
-                transition: all 0.5s;
+    <style>
+        .button {
+            display: inline-block;
+            border-radius: 4px;
+            background-color: #4CAF50;
+            border: none;
+            color: #FFFFFF;
+            text-align: center;
+            font-size: 30px;
+            padding: 200px 180px;
+            width: 200px;
+            transition: all 0.5s;
+            cursor: pointer;
+            margin: 5px;
+        }
+
+            .button span {
                 cursor: pointer;
-                margin: 5px;
+                display: inline-block;
+                position: relative;
+                transition: 0.5s;
             }
 
-.button span {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
-}
+                .button span:after {
+                    content: '\00bb';
+                    position: absolute;
+                    opacity: 0;
+                    top: 0;
+                    right: -20px;
+                    transition: 0.5s;
+                }
 
-.button span:after {
-  content: '\00bb';
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -20px;
-  transition: 0.5s;
-}
-
-.button:hover span {
-  padding-right: 25px;
-}
-
-            .button:hover span:after {
-                opacity: 1;
-                right: 0;
+            .button:hover span {
+                padding-right: 25px;
             }
 
-        </style>
-    </head>
+                .button:hover span:after {
+                    opacity: 1;
+                    right: 0;
+                }
+
+        div img {
+            width: 90%;
+            height: 90%;
+            object-fit: cover;
+        }
+    </style>
+</head>
 
 
 
@@ -75,6 +80,12 @@
 
     <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
 </div>
+@*<img src="~/Views/image2/ID22@2x.png" />
+<img src="~/Views/image2/macbook_pro_2764678_bb@2x.png" />*@
+
+
+
+
 
 
 <div class="bg"></div>
@@ -83,9 +94,25 @@
     <h1>Cycling is fun right? So what is stoping your cycling journey</h1>
     <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
     <p>
-        <button class="button" style="vertical-align:middle"><span>Education </span></button>
-        <button class="button" style="vertical-align:middle" ><span>Quiz </span></button>
-        <button class="button" style="vertical-align:middle"><span>Map </span></button>
+        <div class="col-md-4">
+            <div class="img-section" id="education-img">
+                <a href="" class="btn-in-img">Education</a>
+            </div>
+            @*<img src="~/Views/image2/education.png" />*@
+
+        </div>
+        <div class="col-md-4">
+            <div class="img-section" id="quiz-img">
+                <a href="" class="btn-in-img">quiz</a>
+            </div>
+            @*<img src="~/Views/image2/quiz.png" />*@
+        </div>
+        <div class="col-md-4">
+            <div class="img-section" id="map-img">
+                <a href="" class="btn-in-img">map</a>
+            </div>
+            @*<img src="~/Views/image2/map.png" />*@
+        </div>
         @*<input type="button" onclick="location.href='https://google.com';" value="Go to Google" />*@
     </p>
 </div>
@@ -93,20 +120,18 @@
     <div class="col-md-4">
         <h2>Education</h2>
         <p>
-            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
+            Know the necessary and essential cycling information for road rules, bicycle components and  traffic components
         </p>
         <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
     </div>
     <div class="col-md-4">
         <h2>Quiz</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
+        <p>Validate your knowledge of cycling now? A small quiz question we provide to help you improve your skills.</p>
         <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
     </div>
     <div class="col-md-4">
         <h2>Map</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
+        <p>Be careful whenever you are cycling, check our map to see where the most dangerous place for cycling is.</p>
         <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
     </div>
 </div>
@@ -144,7 +169,7 @@
         • There have been 16,651 deaths due to the injuries suffered, i.e. 38 deaths/year.
         • 4 out of 10 injured pedal cyclists that were hospitalized were injured off-road
     </div>
-  </div>
+</div>
 
 
 <div class="bg"></div>

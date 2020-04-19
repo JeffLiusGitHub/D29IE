@@ -200,6 +200,7 @@
     <Content Include="App_Data\map_log.ldf">
       <DependentUpon>map.mdf</DependentUpon>
     </Content>
+    <Content Include="Content\bootstrap-lux.css" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
@@ -222,10 +223,20 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="Views\image2\education.png" />
+    <Content Include="Views\image2\ID22%402x.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Views\image2\logo.jpg" />
+    <Content Include="Views\image2\macbook_pro_2764678_bb%402x.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Views\image2\map.png" />
     <Content Include="Views\image2\meetourcrew.jpg" />
     <Content Include="Views\image2\meet_our_crews.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Views\image2\quiz.png" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
