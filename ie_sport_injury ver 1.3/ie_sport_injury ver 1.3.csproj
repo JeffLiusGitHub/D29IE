@@ -188,10 +188,12 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\Education.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\Map.cs" />
     <Compile Include="Models\map_model.cs" />
+    <Compile Include="Models\Quiz.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -278,6 +280,10 @@
     <Content Include="Views\Maps1\Index.cshtml" />
     <Content Include="Scripts\quiz.js" />
     <Content Include="Scripts\checkanswer.js" />
+    <Content Include="Views\Home\Education.cshtml" />
+    <Content Include="Views\Home\Quiz.cshtml" />
+    <Content Include="Views\Home\Map.cshtml" />
+    <Content Include="Views\Home\WarmUp.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

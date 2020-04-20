@@ -26,5 +26,34 @@ namespace ie_sport_injury_ver_1._3.Controllers
 
             return View();
         }
+
+        public ActionResult Education()
+        {
+            ViewBag.Message = "Your education page.";
+
+            return View();
+        }
+
+        public ActionResult Quiz()
+        {
+            ViewBag.Message = "Your quiz page.";
+
+            return View();
+        }
+
+        public ActionResult WarmUp()
+        {
+            ViewBag.Message = "Your WarmUp page.";
+
+            return View();
+        }
+
+        public ActionResult Map()
+        {
+            ViewBag.Message = "Your Map page.";
+
+            return View();
+        }
+
     }
 }

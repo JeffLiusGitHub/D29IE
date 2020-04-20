@@ -1,0 +1,338 @@
+﻿@{
+    ViewBag.Title = "Quiz";
+}
+<section class='ftco-section bg-light question-sec' id='questionsection' style="display:block;">
+    <!-- progress bar -->
+    <div class="container">
+        <div class="progress">
+            <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="40"
+                 aria-valuemin="0" aria-valuemax="100" style="width:0%" id='pbar'>
+                0 / 5
+            </div>
+        </div>
+    </div>
+
+    <div id="questions">
+        <!-- question 0 road rule -->
+        <div id="q0" class='ftco-section bg-light'>
+            <!-- question section -->
+            <div class="container">
+                <div class="question">
+                    <h2 class="mb-4">
+                        1.  Do I have to give way at roundabouts?
+                    </h2>
+                </div>
+                <div class='choices'>
+                    <div class="row">
+                        <div class="col">
+                            <label class="choice" style='text-align: justify;'>
+                                A:Yes
+                                <input type="radio" name="q0" value='t'>
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                        <div class="col">
+                            <label class="choice" style='text-align: justify;'>
+                                B:No
+                                <input type="radio" name="q0" value="f">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                    </div>
+                    
+
+                </div>
+            </div>
+            <!-- answer -->
+            <div class="container">
+                <h3 class="mb-3" id='q0checkC' style='display:none;font-size:18px;'>You are correct!</h3>
+                <h3 class="mb-3" id='q0checkN' style='display:none;font-size:18px;'>
+                    You were almost there, but the
+                    right answer is A.
+                </h3>
+                <p id='q0explain' style='display:none; text-align: justify;font-size:16px;'>
+
+                    Reason: Before entering a roundabout, you must give way to other vehicles already on it. When on a roundabout, you must give way to other vehicles leaving it.
+
+                </p>
+            </div>
+            <!-- visualization -->
+            <div class="container visualization" style='margin:20px auto; display:none;'
+                 id='q0visualization'>
+                <!-- no visualization in this question -->
+                <a href="#questionsection" onclick="next()" class='next w3-right' style="font-size: 16px;">
+                    Next Question
+                    &raquo;
+                </a>
+            </div>
+        </div>
+
+        <!-- question 1 bicycle type -->
+        <div id="q1" class='ftco-section bg-light' style='display:none;'>
+            <!-- question section -->
+            <div class="container">
+                <div class="question">
+                    <h2 class="mb-4">
+                        2.Which one is the wrong reason for cars to enter bike lanes?
+
+                        <h2>
+</div>
+                <div class='choices'>
+                    <div class="row">
+                        <div class="col">
+                            <label class="choice">
+                                A:  to enter or leave a road
+
+
+                                <input type="radio" name="q1" value='f'>
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                        <div class="col">
+                            <label class="choice">
+                                B: to turn at an intersection
+
+                                <input type="radio" name="q1" value="f">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <label class="choice">
+                                C: To watch sunset
+
+                                <input type="radio" name="q1" value='t'>
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                        <div class="col">
+                            <label class="choice">
+                                D: To park
+
+
+
+                                <input type="radio" name="q1" value='f'>
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- answer -->
+            <div class="container">
+                <h3 class="mb-3" id='q1checkC' style='display:none;font-size:18px'>You are correct!</h3>
+                <h3 class="mb-3" id='q1checkN' style='display:none; text-align: justify;font-size:18px'>
+                    sorry, you are wrong.
+                </h3>
+                <p id='q1explain' style='display:none; text-align: justify;font-size:16px'>
+                    Reason:
+                    Bike lanes are reserved for bike riders. But car drivers can enter and drive in a bike lane for up to 50 metres: to enter or leave a road, to turn at an intersection or to park
+                </p>
+            </div>
+            <!-- visualization -->
+            <style>
+                canvas {
+                    width: 100% !important;
+                    height: 500px !important;
+                }
+            </style>
+            <div class="container visualization" style='margin:20px auto; display:none;'
+                 id='q1visualization'>
+                <canvas id="greenhouse"></canvas>
+                <a href="#questionsection" onclick="next()" class='next w3-right' style="font-size: 16px;">
+                    Next Question &raquo;
+                </a>
+            </div>
+        </div>
+
+        <!-- question 2 helmet condition -->
+        <div id="q2" class='ftco-section bg-light' style='display:none;'>
+            <!-- question section -->
+            <div class="container">
+                <div class="question">
+                    <h2 class="mb-4">
+                        3.Which one is not correct when overtaking pedestrians:
+
+                    </h2>
+                </div>
+                <div class='choices'>
+                    <div class="row">
+                        <div class="col">
+                            <label class="choice" style='text-align: justify;'>
+                                A:slow down
+
+
+                                <input type="radio" name="q2" value='f'>
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                        <div class="col">
+                            <label class="choice" style='text-align: justify;'>
+                                B: ring your bell in advance
+
+                                <input type="radio" name="q2" value="f">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <label class="choice" style='text-align: justify;'>
+                                C: leave enough space between you and them.
+
+
+
+                                <input type="radio" name="q2" value='f'>
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                        <div class="col">
+                            <label class="choice">
+                                D:ask them to leave the road
+
+                                <input type="radio" name="q2" value='t'>
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- answer -->
+            <div class="container">
+                <h3 class="mb-3" id='q2checkC' style='display:none;font-size:18px;'>You are correct!</h3>
+                <h3 class="mb-3" id='q2checkN' style='display:none; text-align: justify;font-size:18px;'>
+                    Sorry
+                </h3>
+                <p id='q2explain' style='display:none; text-align: justify;font-size:16px;'>
+                    Reason: Obviously, you cannot ask passengers to leave the road
+                </p>
+            </div>
+            <!-- visualization -->
+            <div class="container visualization" style='margin:20px auto; display:none;'
+                 id='q2visualization'>
+                <!-- no visualize -->
+                <a href="#questionsection" onclick="next()" class='next w3-right' style="font-size: 16px;">
+                    Next Question
+                    &raquo;
+                </a>
+            </div>
+        </div>
+
+        <!-- question 3 halmet reuse -->
+        <div id="q3" class='ftco-section bg-light' style='display:none;'>
+            <!-- question section -->
+            <div class="container">
+                <div class="question">
+                    <h2 class="mb-4" style='text-align: justify;'>
+                        4.  Is drinking or using drugs while riding against the law?
+
+                    </h2>
+                </div>
+                <div class='choices'>
+                    <div class="row">
+                        <div class="col">
+                            <label class="choice">
+                                A: Yes
+                                <input type="radio" name="q3" value='t'>
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                        <div class="col">
+                            <label class="choice">
+                                B: No
+                                <input type="radio" name="q3" value="f">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- answer -->
+            <div class="container">
+                <h3 class="mb-3" id='q3checkC' style='display:none;font-size:18px;'>Yes</h3>
+                <h3 class="mb-3" id='q3checkN' style='display:none;font-size:18px;'>Sorry</h3>
+                <p id='q3explain' style='display:none; text-align: justify;font-size:16px;'>
+
+                    Reason: Don’t drink or use drugs and ride
+                    It’s not only dangerous to ride your bike if you’re drunk or drug-affected – it’s also against the law.
+
+                </p>
+            </div>
+            <!-- visualization -->
+            <div class="container visualization" style='margin:20px auto; display:none;'
+                 id='q3visualization'>
+                <!-- no visualize -->
+                <a href="#questionsection" onclick="next()" class='next w3-right' style="font-size: 16px;">
+                    Next Question
+                    &raquo;
+                </a>
+            </div>
+        </div>
+
+        <!-- question 4 helmet display-->
+        <div id="q4" class='ftco-section bg-light' style='display:none;'>
+            <!-- question section -->
+            <div class="container question">
+                <div class="question">
+                    <h2 class="mb-4" style='text-align: justify;'>
+                        5.  Can I take my bike on a train??
+
+                    </h2>
+                </div>
+                <div class='choices'>
+                    <div class="row">
+                        <div class="col">
+                            <label class="choice">
+                                A:  Yes.
+
+                                <input type="radio" name="q4" value='t'>
+                                <span class="checkmark"></span>
+                            </label>
+
+                        </div>
+                        <div class="col">
+                            <label class="choice">
+                                B:No.
+
+                                <input type="radio" name="q4" value="f">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- answer -->
+            <div class="container">
+                <h3 class="mb-3" id='q4checkC' style='display:none;font-size:18px;'>You are correct!</h3>
+                <h3 class="mb-3" id='q4checkN' style='display:none;font-size:18px;'>Your answer is wrong!</h3>
+                <p id='q4explain' style='display:none; text-align: justify;font-size:16px;'>
+                    Reason: You can take a regular bike on the train, but you can’t board at the first door of the front carriage. The first door is for people using wheelchairs and mobility scooters. If you have a folding bike, you can board at any door.
+
+                </p>
+            </div>
+            <!-- visualization -->
+            <div class="container visualization" style='margin:20px auto; display:none;'
+                 id='q4visualization'>
+                <!-- no visualization -->
+                <div class="container px-md-5">
+                    <div class="row justify-content-center pb-5">
+                        <div class="col-md-12 heading-section text-center ftco-animate">
+                            <h3 class="mb-4" style='color:black; margin-top:35px;'>
+                                @*You got <span id='result'></span> out of 5!*@
+                            </h3>
+                            <h3 class="mb-4" style='color:black; margin-top:35px;'
+                                id='suggestion'>
+                                Congratulation  You are one step closer to become professionals. What about to start your journey now using our bicycle map?
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+                <a href="/Home/Education" class='next w3-right' style="font-size: 16px;">Back to Learning Page</a>
+            </div>
+        </div>
+    </div>
+</section>

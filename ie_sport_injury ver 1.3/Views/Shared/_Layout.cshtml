@@ -20,7 +20,7 @@
         @*<%= Html.ActionLink("SportsAcholics", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })%>*@
 
         <a href='@Url.Action("", "Home")' class="navebar-brand">
-            <img src='@Url.Content("https://ieimage.s3.ap-southeast-2.amazonaws.com/logo.png?response-content-disposition=inline&X-Amz-Security-Token=IQoJb3JpZ2luX2VjENX%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSJHMEUCIGLRjbhhDYKR59dtqh35s7gHGG3UjZhRai27Ii1zDkyBAiEA8yrRLAxBYNCjCfcak8onRV37%2F0NjZQCfaoQecmGyHyoq7wEI7v%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAAGgw2MTg3NDQxNjQxNjQiDGDVpU63jzCSD1PrwSrDAXii8JlLErS7loteNuKz02OCqNj8oKgo7%2FfBQGbLlhyCWsssLAwRUoYpMhTot7h1QcfYfjpQme%2B7lz3oP257QAUOtEbhn8kCnZuBT%2FZ5Uv2vl1WTzyuOfOTXZknE%2BUB%2BsXQAbZHrc1mLCzyGo0raTUsc4JyLcxbLLxvAgDIumcDZzT13AIEul8dEgi4OooU0vNLjD%2FTFOkfbswr6vWAGsACXwTosKu%2F%2Fgc8RYOvYYmrYNhqaFMbe3L40Tf990hRZepz5gjCqj%2FH0BTrwAlp0W73urDM%2F%2BTU17hdPiMgv%2Ft4g%2FgqtjwNKw7y9Tjzp4t5x9aqOSFh2jM8wXxyX8kHEeARcuC1DQueDEU1HUa5GCooK%2Bi6Gs5gFcB%2FWE3Me%2Bjukuxm%2Bt%2F0wPs6uD49EEaiiwA9WVM4Nt28VqldGkvLXIjxgYGDEz%2FvBqCrZr7zOuPon4OnWkMCF1qv4wBz55T88agIeI9ovAdyNE43HSaAs%2FDMCjhbkzKFp18HPKOP58%2F2fXZxVVyeWZ7H3sTrvNmIkVB6E2uy9w9xv7KVF18L5ir7hcdfjmuNrtnBxFOSxpZRyqR8CD%2B0xkWICFIn5xjxYwu1SAjvSwE8kHeJtSl6RzXaFU%2BYgnzlUsem2Zou1tVLODyR%2BAX58cGrnHU%2Bp3kpJq%2Bsh6lH6Azdo68S3cuppR2hbEaac4dcyqk5FR7YdN%2FuT1x5RszbckHSI4z9ANFOGrcJccngf9mVXDmpM98l1Cidt74%2BhIE9d%2BWS19fNL&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20200419T133910Z&X-Amz-SignedHeaders=host&X-Amz-Expires=300&X-Amz-Credential=ASIAZAEAGV5CBUKTPGNG%2F20200419%2Fap-southeast-2%2Fs3%2Faws4_request&X-Amz-Signature=ed1d01f13e3b4a95b22166ed3c73c416b9425d9ccef2c203bb18a2428e7df4e9")' style ="float:left" width="100" height="70" />
+            <img src='@Url.Content("https://ieimage.s3-ap-southeast-2.amazonaws.com/logo.png")' style ="float:left" width="100" height="70" />
         </a>
 
         @*@Html.ActionLink("SportsAcholics", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })*@
@@ -30,9 +30,10 @@
                 <li>@Html.ActionLink("Home", "Index", "Home")</li>
                 <li>@Html.ActionLink("About", "About", "Home")</li>
                 <li>@Html.ActionLink("Education", "Education", "Home")</li>
-                <li>@Html.ActionLink("Quiz", "Contact", "Home")</li>
+                <li>@Html.ActionLink("EquipmentQuiz", "Contact", "Home")</li>
                 <li>@Html.ActionLink("Warm-up", "Warmup", "Home")</li>
                 <li>@Html.ActionLink("Map", "Map", "Home")</li>
+                <li>@Html.ActionLink("RoadRuleQuiz", "Quiz", "Home")</li>
             </ul>
             @*@Html.Partial("_LoginPartial")*@
         </div>
