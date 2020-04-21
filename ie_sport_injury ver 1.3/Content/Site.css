@@ -492,12 +492,11 @@ p {
 }
 
 .img-section {
-
-    background-size: cover;
-    transform: scale(1.1);
+    background-size: 300px 100px;
+    transform: scale(2,2);
     transition: all 0.2s;
-    height:500px;
-    /*position:absolute;*/
+    height: 500px;
+    position:absolute;
 }
 
     .img-section:hover {
@@ -507,6 +506,7 @@ p {
 
 #education-img {
     background-image: url("https://ieimage.s3-ap-southeast-2.amazonaws.com/education.png");
+ 
 }
 
 #quiz-img {
@@ -526,8 +526,8 @@ p {
     display: inline-block;
     transition: all 0.2s;
     font-size: 36px;
-    top: 60%;
-    left: 50%;
+    top: 60px;
+    left: 50px;
     transform: translate(-50%, -50%);
     /*position:relative;*/
 }
