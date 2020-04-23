@@ -72,7 +72,7 @@ p {
 
 
 
-.mediaViewInfo {
+/*.mediaViewInfo {
     --web-view-name: Web 1920 – 6;
     --web-view-id: Web_1920___6;
     --web-scale-on-resize: true;
@@ -489,13 +489,22 @@ p {
     left: 140px;
     top: 2517px;
     overflow: visible;
+}*/
+.img-container{
+    height:500px;
+    position:relative;
+
 }
 
 .img-section {
-    background-size: 300px 100px;
+    background-repeat:no-repeat;
+    height:300px;
+    top:0;
+    left:0;
+    background-size: cover;
     transform: scale(2,2);
     transition: all 0.2s;
-    height: 500px;
+    /*height: 500px;*/
     position:absolute;
 }
 
@@ -518,6 +527,18 @@ p {
 }
 
 
+#roadrule-img {
+    background-image: url("https://ieimage.s3-ap-southeast-2.amazonaws.com/roadrules.png");
+}
+
+#bicycleequipment-img {
+    background-image: url("https://ieimage.s3-ap-southeast-2.amazonaws.com/bicycleequipment.png");
+}
+
+#trafficsign-img {
+    background-image: url("https://ieimage.s3-ap-southeast-2.amazonaws.com/trafficsign.png");
+}
+
 
 .btn-in-img:link,
 .btn-in-img:visited {
@@ -535,4 +556,489 @@ p {
 .btn-in-img:hover,
 .btn-in-img:active {
     transform: rotate(5deg) scale(1.2);
+}
+
+
+
+.btn, .btn:link, .btn:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 1.6rem;
+    padding: 1.5rem 4rem;
+    display: inline-block;
+    border-radius: 10rem;
+    -webkit-transition: all 0.15s;
+    transition: all 0.15s;
+    position: relative;
+    border: none;
+    cursor: pointer;
+}
+
+    .btn:hover {
+        -webkit-transform: translateY(-3px);
+        transform: translateY(-3px);
+        box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+    }
+
+        .btn:hover::after {
+            -webkit-transform: scaleX(1.4) scaleY(1.6);
+            transform: scaleX(1.4) scaleY(1.6);
+            opacity: 0;
+        }
+
+    .btn:active, .btn:focus {
+        outline: none;
+        -webkit-transform: translateY(-1px);
+        transform: translateY(-1px);
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+    }
+
+    .btn:after {
+        content: "";
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+        border-radius: 100px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        -webkit-transition: all 0.5s;
+        transition: all 0.5s;
+    }
+
+.btn-animated {
+    -webkit-animation-name: moveInBottom;
+    animation-name: moveInBottom;
+    -webkit-animation-duration: 1.7s;
+    animation-duration: 1.7s;
+    -webkit-animation-delay: 0.3s;
+    animation-delay: 0.3s;
+    -webkit-animation-fill-mode: backwards;
+    animation-fill-mode: backwards;
+}
+
+
+
+
+/*.col-md-3 {
+}
+
+.thumbnail {
+    float: left;
+    display: block;
+    height: auto;
+    width: 200px;
+    padding: 4px;
+    margin: 10px;
+    line-height: 1.42857;
+    background-color: #FFF;
+    border: 1px solid #DDD;
+    border-radius: 4px;
+    transition: all 0.2s ease-in-out 0s;
+}
+
+    .thumbnail > img {
+        display: block;
+        height: 75px;
+        max-width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .thumbnail .caption {
+        padding: 9px;
+        color: #333;
+    }
+
+        .thumbnail .caption p {
+            margin: 0px 0px 10px;
+        }
+
+        .thumbnail .caption hr {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            border-right: 0px none;
+            border-width: 1px 0px 0px;
+            border-style: solid none none;
+            border-color: #EEE -moz-use-text-color -moz-use-text-color;
+            -moz-border-top-colors: none;
+            -moz-border-right-colors: none;
+            -moz-border-bottom-colors: none;
+            -moz-border-left-colors: none;
+            border-image: none;
+        }*/
+
+
+.euducation__Class {
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+    width: 1280px;
+    height: 946px;
+    background-color: rgba(255,255,255,1);
+    overflow: hidden;
+    --web-view-name: euducation;
+    --web-view-id: euducation_;
+    --web-scale-to-fit: true;
+    --web-scale-to-fit-type: fit;
+    --web-scale-on-resize: true;
+    --web-center-horizontally: true;
+    --web-add-image-compare: true;
+    --web-enable-deep-linking: true;
+}
+
+.Rectangle_19 {
+    position: absolute;
+    overflow: visible;
+    width: 1280px;
+    height: 74px;
+    left: 0px;
+    top: 0px;
+}
+
+.Path_2 {
+    overflow: visible;
+    position: absolute;
+    width: 1286.004px;
+    height: 6px;
+    left: 89.5px;
+    top: 88.5px;
+    transform: matrix(1,0,0,1,0,0);
+}
+
+.Home_Class {
+    position: absolute;
+    left: 677px;
+    top: 24px;
+    overflow: visible;
+    width: 78px;
+    height: 76px;
+    text-align: left;
+    font-family: Gill Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    color: rgba(255,255,255,1);
+}
+
+.Cycling_INfo_Class {
+    position: absolute;
+    left: 789px;
+    top: 24px;
+    overflow: visible;
+    width: 103px;
+    height: 76px;
+    text-align: left;
+    font-family: Gill Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    color: rgba(255,255,255,1);
+    text-decoration: true;
+}
+
+.Trivia_Class {
+    position: absolute;
+    left: 926px;
+    top: 24px;
+    overflow: visible;
+    width: 74px;
+    height: 76px;
+    text-align: left;
+    font-family: Gill Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    color: rgba(255,255,255,1);
+}
+
+.Map_Class {
+    position: absolute;
+    left: 1034px;
+    top: 24px;
+    overflow: visible;
+    width: 86px;
+    height: 76px;
+    text-align: left;
+    font-family: Gill Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    color: rgba(255,255,255,1);
+}
+
+.WechatIMG51_Class {
+    position: absolute;
+    width: 115px;
+    height: 74px;
+    left: 0px;
+    top: 0px;
+    overflow: visible;
+}
+
+.Group_12_Class {
+    position: absolute;
+    width: 306px;
+    height: 391px;
+    left: 836px;
+    top: 470px;
+    overflow: visible;
+}
+
+.Rectangle_26 {
+    filter: drop-shadow(4px 1px 20px rgba(0, 0, 0, 0.161));
+    position: absolute;
+    overflow: visible;
+    width: 366px;
+    height: 448px;
+    left: 0px;
+    top: 3px;
+}
+
+.WhatsApp_Image_2020_04_22_at_1_Class {
+    position: absolute;
+    width: 306px;
+    height: 249px;
+    left: 0px;
+    top: 0px;
+    overflow: visible;
+}
+
+.Group_11_Class {
+    position: absolute;
+    width: 306px;
+    height: 391px;
+    left: 487px;
+    top: 470px;
+    overflow: visible;
+}
+
+.Rectangle_25 {
+    filter: drop-shadow(4px 1px 20px rgba(0, 0, 0, 0.161));
+    position: absolute;
+    overflow: visible;
+    width: 366px;
+    height: 448px;
+    left: 0px;
+    top: 3px;
+}
+
+.WhatsApp_Image_2020_04_22_at_5_Class {
+    position: absolute;
+    width: 306px;
+    height: 249px;
+    left: 0px;
+    top: 0px;
+    overflow: visible;
+}
+
+.Group_10_Class {
+    position: absolute;
+    width: 306px;
+    height: 391px;
+    left: 138px;
+    top: 470px;
+    overflow: visible;
+}
+
+.Rectangle_24 {
+    filter: drop-shadow(4px 1px 20px rgba(0, 0, 0, 0.161));
+    position: absolute;
+    overflow: visible;
+    width: 366px;
+    height: 448px;
+    left: 0px;
+    top: 3px;
+}
+
+.WhatsApp_Image_2020_04_22_at_1__Class {
+    position: absolute;
+    width: 306px;
+    height: 249px;
+    left: 0px;
+    top: 0px;
+    overflow: visible;
+}
+
+.Group_13_Class {
+    position: absolute;
+    width: 1280px;
+    height: 408.434px;
+    left: 0px;
+    top: 62px;
+    overflow: visible;
+}
+
+.sharon_mccutcheon_O2u6gA2esAI__Class {
+    position: absolute;
+    width: 1280px;
+    height: 321px;
+    left: 0px;
+    top: 0px;
+    overflow: visible;
+}
+
+.All_you_need_to_know__about_cy_Class {
+    filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
+    transform: translate(0px, -62px) matrix(1,0,0,1,43,241.0002) rotate(10deg);
+    transform-origin: center;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    overflow: visible;
+    width: 849px;
+    height: 157px;
+    line-height: 65px;
+    margin-top: -12.5px;
+    text-align: left;
+    font-family: Chalkduster;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    color: rgba(255,255,255,1);
+}
+
+.Road_Rules_Class {
+    position: absolute;
+    left: 219px;
+    top: 723px;
+    overflow: visible;
+    width: 146px;
+    height: 52px;
+    text-align: left;
+    font-family: Monaco;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 23px;
+    color: rgba(101,101,101,1);
+}
+
+.Bicycle_Equipments_Class {
+    position: absolute;
+    left: 513px;
+    top: 723px;
+    overflow: visible;
+    width: 255px;
+    height: 94px;
+    text-align: left;
+    font-family: Monaco;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 23px;
+    color: rgba(101,101,101,1);
+}
+
+.Traffic_Signs_Class {
+    position: absolute;
+    left: 879px;
+    top: 723px;
+    overflow: visible;
+    width: 204px;
+    height: 94px;
+    text-align: left;
+    font-family: Monaco;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 23px;
+    color: rgba(101,101,101,1);
+}
+
+.Road_Rules_bb_Class {
+    position: absolute;
+    left: -128px;
+    top: 532px;
+    overflow: visible;
+    width: 165px;
+    height: 103px;
+    text-align: left;
+    font-family: Chalkduster;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    color: rgba(53,74,84,1);
+}
+
+.As_a_bike_rider_you_have_to_fo_Class {
+    position: absolute;
+    left: 155px;
+    top: 761px;
+    overflow: hidden;
+    width: 275px;
+    height: 100px;
+    line-height: 20px;
+    margin-top: -1.5px;
+    text-align: left;
+    font-family: Avenir Next;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    color: rgba(69,72,74,0.973);
+}
+
+.Before_you_ride__the_law_requi_Class {
+    position: absolute;
+    left: 503px;
+    top: 761px;
+    overflow: visible;
+    width: 275px;
+    height: 82px;
+    line-height: 20px;
+    margin-top: -1.5px;
+    text-align: left;
+    font-family: Avenir Next;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    color: rgba(69,72,74,0.973);
+}
+
+.Some_traffic_signs_are_only_us_Class {
+    position: absolute;
+    left: 852px;
+    top: 761px;
+    overflow: visible;
+    width: 275px;
+    height: 81px;
+    line-height: 20px;
+    margin-top: -1.5px;
+    text-align: left;
+    font-family: Avenir Next;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    color: rgba(69,72,74,0.973);
+}
+
+.euducation__snapshot_Class {
+    animation: fadein 5s linear 0s infinite;
+    pointer-events: none;
+    position: absolute;
+    width: 1280px;
+    height: 946px;
+    left: 0;
+    top: 0;
+}
+
+@keyframes fadein {
+
+    0% {
+        opacity: 1;
+    }
+
+    37.5% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    87.5% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
