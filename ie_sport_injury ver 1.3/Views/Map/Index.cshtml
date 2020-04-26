@@ -11,6 +11,11 @@
             <p>Quisque eget nisl id nulla sagittis auctor quis id. Aliquam quis vehicula enim, non aliquam risus.</p>
         </div><!-- end title -->
 
+        <div>
+            @Html.Raw(File.ReadAllText(Server.MapPath("~/Views/Map/crash_choropleth.html")))
+        </div>
+
+
         <div class="row">
             <div class="col-md-12">
                 <img style="max-width: 100%;" src="https://ieimage.s3-ap-southeast-2.amazonaws.com/maptab.png " />

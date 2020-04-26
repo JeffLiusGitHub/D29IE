@@ -183,6 +183,8 @@
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\Maps1Controller.cs" />
     <Compile Include="Controllers\MapsController.cs" />
+    <Compile Include="Controllers\Quiz2Controller.cs" />
+    <Compile Include="Controllers\QuizIndexController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -218,6 +220,9 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="Views\Map\crash_choropleth.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -420,6 +425,8 @@
     <Content Include="Views\Education\EssentialRoadRules.cshtml" />
     <Content Include="Views\WarmUp\Index.cshtml" />
     <Content Include="Views\Map\Index.cshtml" />
+    <Content Include="Views\QuizIndex\Index.cshtml" />
+    <Content Include="Views\Quiz2\Index.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
@@ -427,19 +434,7 @@
     <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.4.1.min.map" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Content\" />
-    <Folder Include="fonts\" />
-    <Folder Include="Views\image2\" />
-    <Folder Include="Views\images\" />
-    <Folder Include="images\" />
-    <Folder Include="Views\images\article_photo\" />
-    <Folder Include="Content\images\" />
-    <Folder Include="Content\images\article_photo\" />
-    <Folder Include="Views\Education\" />
-    <Folder Include="Views\WarmUp\" />
-    <Folder Include="Views\Map\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

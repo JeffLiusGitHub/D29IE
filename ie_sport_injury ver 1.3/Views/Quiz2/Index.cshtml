@@ -1,0 +1,251 @@
+﻿@{
+    ViewBag.Title = "Quiz2";
+    ViewBag.BodyStyle = "body-no-banner";
+}
+
+<div id="portfolio" class="section lb">
+    <div class="container">
+        <div class="section-title text-center">
+            <h3>Traffic Sign Quiz</h3>
+            <p>Test your knowledge about cycling.</p>
+        </div><!-- end title -->
+
+        <section class='ftco-section bg-light question-sec' id='questionsection' style="display:block;">
+            <!-- progress bar -->
+            <div class="container">
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="40"
+                         aria-valuemin="0" aria-valuemax="100" style="width:0%" id='pbar'>
+                        0 / 5
+                    </div>
+                </div>
+            </div>
+
+            <div id="questions">
+                <!-- question 0 equipment -->
+                <div id="q0" class='ftco-section bg-light'>
+                    <!-- question section -->
+                    <div class="container">
+                        <div class="question">
+                            <h2 class="mb-4">
+                                1.Which one is a warning sign?
+                            </h2>
+                        </div>
+                        <div class='choices'>
+                            <div class="row">
+                                <div class="col">
+                                    <label class="choice" style='text-align: justify;'>
+                                        A:LANE
+                                        <input type="radio" name="q0" value='f'>
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+                                <div class="col">
+                                    <label class="choice" style='text-align: justify;'>
+                                        B:ONLY
+                                        <input type="radio" name="q0" value="f">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <label class="choice" style='text-align: justify;'>
+                                        C: NO BIKE
+                                        <input type="radio" name="q0" value='f'>
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+                                <div class="col">
+                                    <label class="choice" style='text-align: justify;'>
+                                        D:PASSENGER
+                                        <input type="radio" name="q0" value='t'>
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- answer -->
+                    <div class="container">
+                        <h3 class="mb-3" id='q0checkC' style='display:none;font-size:18px;'>You are correct!</h3>
+                        <h3 class="mb-3" id='q0checkN' style='display:none;font-size:18px;'>
+                            You were almost there, but the
+                            right answer is D.
+                        </h3>
+                        <p id='q0explain' style='display:none; text-align: justify;font-size:16px;'>
+
+                            Reason: A and B and C are regulatory sign
+                        </p>
+                    </div>
+                    <!-- visualization -->
+                    <div class="container visualization" style='margin:20px auto; display:none;'
+                         id='q0visualization'>
+                        <!-- no visualization in this question -->
+                        <a href="#questionsection" onclick="next()" class='next w3-right' style="font-size: 16px;">
+                            Next Question
+                            &raquo;
+                        </a>
+                    </div>
+                </div>
+
+                <!-- question 1 bicycle type -->
+                <div id="q1" class='ftco-section bg-light' style='display:none;'>
+                    <!-- question section -->
+                    <div class="container">
+                        <div class="question">
+                            <h2 class="mb-4">
+                                2. What type of bike is in this picture?
+                                <h2>
+                        </div>
+                        <div class='choices'>
+                            <div class="row">
+                                <div class="col">
+                                    <label class="choice">
+                                        A:  Both bicycle riders and pedestrians can use the road and should look out for each other and give way when needed
+
+
+                                        <input type="radio" name="q1" value='t'>
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+                                <div class="col">
+                                    <label class="choice">
+                                        B: Pedestrians should ride a bike in this road
+
+                                        <input type="radio" name="q1" value="f">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <label class="choice">
+                                        C: Pedestrians should not ride in this road but walking
+
+                                        <input type="radio" name="q1" value='f'>
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+                                <div class="col">
+                                    <label class="choice">
+                                        D: This road is only for bike rider
+
+
+
+                                        <input type="radio" name="q1" value='f'>
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- answer -->
+                    <div class="container">
+                        <h3 class="mb-3" id='q1checkC' style='display:none;font-size:18px'>You are correct!</h3>
+                        <h3 class="mb-3" id='q1checkN' style='display:none; text-align: justify;font-size:18px'>
+                            sorry, you are wrong.
+                        </h3>
+                        <p id='q1explain' style='display:none; text-align: justify;font-size:16px'>
+                            Reason: This is a shared path warning Symbol that means a shared path is an area open to the public that is designated for the use of both bicycle riders and pedestrians.
+
+
+                        </p>
+                    </div>
+                    <!-- visualization -->
+                    <style>
+                        canvas {
+                            width: 100% !important;
+                            height: 500px !important;
+                        }
+                    </style>
+                    <div class="container visualization" style='margin:20px auto; display:none;'
+                         id='q1visualization'>
+                        <canvas id="greenhouse"></canvas>
+                        <a href="#questionsection" onclick="next()" class='next w3-right' style="font-size: 16px;">
+                            Next Question &raquo;
+                        </a>
+                    </div>
+                </div>
+
+                <!-- question 2 helmet condition -->
+                <div id="q2" class='ftco-section bg-light' style='display:none;'>
+                    <!-- question section -->
+                    <div class="container">
+                        <div class="question">
+                            <h2 class="mb-4">
+                                3.  Which one is a slippery sign?
+
+                            </h2>
+                        </div>
+                        <div class='choices'>
+                            <div class="row">
+                                <div class="col">
+                                    <label class="choice" style='text-align: justify;'>
+                                        A:
+
+                                        <input type="radio" name="q2" value='f'>
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+                                <div class="col">
+                                    <label class="choice" style='text-align: justify;'>
+                                        B:  
+                                        <input type="radio" name="q2" value="t">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <label class="choice" style='text-align: justify;'>
+                                        C: 
+
+
+                                        <input type="radio" name="q2" value='f'>
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+                                <div class="col">
+                                    <label class="choice">
+                                        D: 
+                                        <input type="radio" name="q2" value='f'>
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- answer -->
+                    <div class="container">
+                        <h3 class="mb-3" id='q2checkC' style='display:none;font-size:18px;'>You are correct!</h3>
+                        <h3 class="mb-3" id='q2checkN' style='display:none; text-align: justify;font-size:18px;'>
+                            Sorry
+                        </h3>
+                        <p id='q2explain' style='display:none; text-align: justify;font-size:16px;'>
+                            Reason: B is a Steep Climb sign, C is a Hazard Symbol and D indicates the pedestrians should watch for bicycles
+                        </p>
+                    </div>
+                    <!-- visualization -->
+                    <div class="container visualization" style='margin:20px auto; display:none;'
+                         id='q2visualization'>
+                        <!-- no visualize -->
+                        <a href="#questionsection" onclick="next()" class='next w3-right' style="font-size: 16px;">
+                            Next Question
+                            &raquo;
+                        </a>
+                    </div>
+                </div>
+
+           
+                     
+                        <a href="/Home/Education" class='next w3-right' style="font-size: 16px;">Back to Learning Page</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>

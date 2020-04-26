@@ -65,6 +65,10 @@
                     <li class="nav-item">
                         @Html.ActionLink("Map", "Index", "Map", null, new { @class = IsSelected("Map") })
                     </li>
+
+                    <li class="nav-item">
+                        @Html.ActionLink("QuizIndex", "Index", "QuizIndex", null, new { @class = IsSelected("QuizIndex") })
+                    </li>
                 </ul>
             </div>
         </div>
@@ -92,6 +96,9 @@
     <a href="#" id="scroll-to-top" class="dmtop global-radius"><i class="fa fa-angle-up"></i></a>
 
     @Scripts.Render("~/bundles/all")
+    @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/quiz")
+    @Scripts.Render("~/bundles/checkanswer")
     @RenderSection("scripts", required: false)
 </body>
 </html>
