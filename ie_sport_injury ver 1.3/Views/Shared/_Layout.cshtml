@@ -1,56 +1,97 @@
-﻿<!DOCTYPE html>
+﻿@{
+    string controllerAction = ViewContext.RouteData.Values["Controller"].ToString();
+    Func<string, string> IsSelected = x => x == controllerAction ? "nav-link js-scroll-trigger active" : "nav-link js-scroll-trigger";
+}
+<!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <!-- Basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <!-- Site Metas -->
+    <title>@ViewBag.Title - Sportsaholics</title>
+    <meta name="keywords" content="sport">
+    <meta name="description" content="Sportsaholics">
+    <meta name="author" content="Sportsaholics">
+
+    <!-- Site Icons -->
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="../images/apple-touch-icon.png">
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
-
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
 </head>
-<body>
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-        @*<div class="container">
-            <div class="navbar-header">*@
-        @*<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="icon-bar">abcd</span>
-                <span class="icon-bar">sdfsdfs</span>
-                <span class="icon-bar"></span>
-            </button>*@
-        @*<%= Html.ActionLink("SportsAcholics", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })%>*@
 
-        <a href='@Url.Action("", "Home")' class="navebar-brand">
-            <img src='@Url.Content("https://ieimage.s3-ap-southeast-2.amazonaws.com/logo+color.png")' style ="float:left" width="100" height="70" />
-        </a>
 
-        @*@Html.ActionLink("SportsAcholics", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })*@
-        @*</div>*@
-        <div class="navbar-collapse collapse">
-            <ul class="nav navbar-nav pull-right">
-                <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                @*<li>@Html.ActionLink("About", "About", "Home")</li>*@
-                <li>@Html.ActionLink("Education", "Education", "Home")</li>
-                @*<li>@Html.ActionLink("EquipmentQuiz", "Contact", "Home")</li>*@
-                <li>@Html.ActionLink("Warm-up", "Warmup", "Home")</li>
-                <li>@Html.ActionLink("Map", "Map", "Home")</li>
-                @*<li>@Html.ActionLink("RoadRuleQuiz", "Quiz", "Home")</li>*@
-            </ul>
-            @*@Html.Partial("_LoginPartial")*@
+
+<body id="page-top" class="politics_version @ViewBag.BodyStyle">
+
+    <!-- LOADER -->
+    <div id="preloader">
+        <div id="main-ld">
+            <div id="loader"></div>
         </div>
-        @*</div>*@
-    </nav>
-    <div class="body-content">
-        @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
-        </footer>
     </div>
+    <!-- end loader -->
+    <!-- END LOADER -->
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand js-scroll-trigger" href="#page-top">
+                <img class="img-fluid logo" src="~/Content/images/logo.png" alt="Logo" />
+            </a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                Menu
+                <i class="fa fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav text-uppercase ml-auto">
+                    <li class="nav-item">
+                        @Html.ActionLink("Home", "Index", "Home", null, new { @class = IsSelected("Home") })
+                    </li>
+                    <li class="nav-item">
+                        @Html.ActionLink("Education", "Index", "Education", null, new { @class = IsSelected("Education") })
+                    </li>
+                    <li class="nav-item">
+                        @Html.ActionLink("Warm-Up", "Index", "WarmUp", null, new { @class = IsSelected("WarmUp") })
+                    </li>
+                    <li class="nav-item">
+                        @Html.ActionLink("Map", "Index", "Map", null, new { @class = IsSelected("Map") })
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-    @Scripts.Render("~/bundles/jquery")
-    @Scripts.Render("~/bundles/bootstrap")
-    @Scripts.Render("~/bundles/quiz")
-    @Scripts.Render("~/bundles/checkanswer")
+    @RenderBody()
+
+    <div class="copyrights">
+        <div class="container">
+            <div class="footer-distributed">
+                <a href="#"><img class="logo" src="~/Content/images/logo.png" alt="" /></a>
+                <div class="footer-center">
+                    <p class="footer-links">
+                        @Html.ActionLink("Home", "Index", "Home")
+                        @Html.ActionLink("Education", "Index", "Education")
+                        @Html.ActionLink("Warm-Up", "Index", "WarmUp")
+                        @Html.ActionLink("Map", "Index", "Map")
+                    </p>
+                    <p class="footer-company-name">All Rights Reserved. &copy; 2020 <a href="#">Sportsaholics</a></p>
+                </div>
+            </div>
+        </div><!-- end container -->
+    </div><!-- end copyrights -->
+
+    <a href="#" id="scroll-to-top" class="dmtop global-radius"><i class="fa fa-angle-up"></i></a>
+
+    @Scripts.Render("~/bundles/all")
     @RenderSection("scripts", required: false)
 </body>
 </html>

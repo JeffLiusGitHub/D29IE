@@ -1,0 +1,31 @@
+.body-no-banner .navbar-dark {
+    background-color: #000;
+}
+
+.body-no-banner nav + .section {
+    margin-top: 100px;
+}
+
+.logo {
+    max-width: 120px;
+}
+
+.navbar-dark .navbar-nav .nav-link.active {
+    color: #fff;
+}
+
+.navbar-dark .navbar-nav .nav-link::after,
+.hvr-bounce-to-top::before,
+.services-inner-box::after,
+.filter-button-group button.active,
+#mainNav.navbar-shrink .navbar-nav .nav-link::after {
+    background: #52c596;
+}
+
+#mainNav.navbar-shrink {
+    background-color: #000;
+}
+
+#mainNav.navbar-shrink .navbar-nav .nav-link {
+    color: #fff;
+}

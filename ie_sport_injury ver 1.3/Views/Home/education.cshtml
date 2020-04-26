@@ -1,31 +1,120 @@
 ﻿
 @{
-    ViewBag.Title = "education";
-    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Education";
+    ViewBag.BodyStyle = "body-no-banner";
+
 }
 
-<div class="container">
-    @*<div >*@
-        <div class="col-md-4">
-            <a href="/Home/Quiz">
-                <img src="https://ieimage.s3-ap-southeast-2.amazonaws.com/roadrules.png" width="300" height="400" />
-            </a>
-            @*<p><a class="btn btn-default" href="/Home/Education">Road Rules &raquo;</a></p>*@
+<div id="portfolio" class="section lb">
+    <div class="container">
+        <div class="section-title text-center">
+            <h3>Education</h3>
+            <p>Something you need to know before your riding.</p>
+        </div><!-- end title -->
+
+        <div class="gallery-menu row">
+            <div class="col-md-12">
+                <div class="button-group filter-button-group text-center">
+                    <button class="active" data-filter="*">All</button>
+                    <button data-filter=".gal_a">Road Rules</button>
+                    <button data-filter=".gal_b">Bicycle Equipments</button>
+                    <button data-filter=".gal_c">Traffic Signs</button>
+                </div>
+            </div>
         </div>
-        <div class="col-md-4">
-            <a href="/Home/Contact">
-                <img src="https://ieimage.s3-ap-southeast-2.amazonaws.com/bicycleequipment.png" width="300" height="400" />
-            </a>
-            @*<p><a class="btn btn-default" href="/Home/Quiz">Bicycle Equipment &raquo;</a></p>*@
-        </div>
-        <div class="col-md-4">
-            <a href="/Home/Contact">
-                <img src="https://ieimage.s3-ap-southeast-2.amazonaws.com/trafficsign.png" width="300" height="400">
+
+        <div class="gallery-list row">
+            <div class="col-md-4 col-sm-6 gallery-grid gal_a gal_b">
+                <a href="@Url.Action("RoadRules", "Home")">
+                    <div class="gallery-single fix">
+                        <div class="post-box">
+                            <div class="post-thumb">
+                                <img src="~/Content/images/article_photo/photo_01.jpg" class="img-fluid" alt="post-img" />
+                            </div>
+                            <div class="post-info">
+                                <h4>Essential Road Rules</h4>
+                                <ul>
+                                    <li>by VicRoads</li>
+                                </ul>
+                                <p>As a bike rider you have to follow many of the same rules as Motorists. This section covers what they are so you can ride responsibly and safely.</p>
+                            </div>
+                        </div>
+                    </div>
                 </a>
-                @*<p><a class="btn btn-default" href="/Home/Map">Traffic Sign &raquo;</a></p>*@
+            </div>
+
+
+            <div class="col-md-4 col-sm-6 gallery-grid gal_c gal_b">
+                <div class="gallery-single fix">
+                    <div class="post-box">
+                        <div class="post-thumb">
+                            <img src="~/Content/images/article_photo/photo_02.jpg" class="img-fluid" alt="post-img" />
+                        </div>
+                        <div class="post-info">
+                            <h4>Riding in Traffic</h4>
+                            <p>Here you can find out about the rules on riding on roads, overtaking, turning, crossings and trams.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-sm-6 gallery-grid gal_a gal_c">
+                <div class="gallery-single fix">
+                    <div class="post-box">
+                        <div class="post-thumb">
+                            <img src="~/Content/images/article_photo/photo_03.jpg" class="img-fluid" alt="post-img" />
+                        </div>
+                        <div class="post-info">
+                            <h4>Riding on bike lanes and paths</h4>
+                            <p>It is important to know what bike lanes and paths look like and the different rules that apply to them.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--
+                <div class="col-md-4 col-sm-6 gallery-grid gal_b">
+                    <div class="gallery-single fix">
+                        <div class="post-box">
+                            <div class="post-thumb">
+                                <img src="~/Content/images/article_photo/photo_04.png" class="img-fluid" alt="post-img" />
+                            </div>
+                            <div class="post-info">
+                                <h4>Bikes and children</h4>
+                                <p>Some different rules apply when you are riding with children.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    -->
+
+            <div class="col-md-4 col-sm-6 gallery-grid gal_b gal_c">
+                <div class="gallery-single fix">
+                    <div class="post-box">
+                        <div class="post-thumb">
+                            <img src="~/Content/images/article_photo/photo_05.png" class="img-fluid" alt="post-img" />
+                        </div>
+                        <div class="post-info">
+                            <h4>Fines and crashes</h4>
+                            <p>This section covers your responsibilities and rights if you break a road rule, are stopped by police or are involved in a crash.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-sm-6 gallery-grid gal_a">
+                <div class="gallery-single fix">
+                    <div class="post-box">
+                        <div class="post-thumb">
+                            <img src="~/Content/images/article_photo/photo_04.png" class="img-fluid" alt="post-img" />
+                        </div>
+                        <div class="post-info">
+                            <h4>Bikes and children</h4>
+                            <p>Some different rules apply when you are riding with children.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
-    @*</div>*@
+    </div>
 </div>
-
-
-
