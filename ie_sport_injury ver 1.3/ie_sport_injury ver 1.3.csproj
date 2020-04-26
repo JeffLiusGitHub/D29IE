@@ -225,6 +225,8 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="Views\Home\Crash.html" />
+    <Content Include="Views\Home\data.html" />
     <Content Include="Views\image2\education.png" />
     <Content Include="Views\image2\ID22%402x.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -282,8 +284,9 @@
     <Content Include="Scripts\checkanswer.js" />
     <Content Include="Views\Home\Education.cshtml" />
     <Content Include="Views\Home\Quiz.cshtml" />
-    <Content Include="Views\Home\Map.cshtml" />
+    <Content Include="Views\Home\Map2.cshtml" />
     <Content Include="Views\Home\WarmUp.cshtml" />
+    <Content Include="Views\Home\CrashMap.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
