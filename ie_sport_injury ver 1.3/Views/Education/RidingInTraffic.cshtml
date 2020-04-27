@@ -1,13 +1,138 @@
 ﻿@{
-    Layout = null;
+    ViewBag.Title = "RoadRules";
+    ViewBag.BodyStyle = "body-no-banner";
+
 }
 
-<!DOCTYPE html>
-<html>
-<head>
-    <title>RidingInTraffic</title>
-</head>
-<body>
-</body>
-</html>
+<div id="article" class="section lb">
+    <div class="container">
+        <div class="section-title text-center">
+            <h3>Education</h3>
+            <p>Something you need to know before start your riding.</p>
+        </div><!-- end title -->
 
+        <div id="content" class="section wb">
+            <div class="container">
+                <div class="row mb-4">
+                    <div class="col-md-1"></div>
+                    <div class="col-md-7">
+                        <div class="message-box">
+                            <h2>Riding in Traffic</h2>
+                            <p> by VicRoads </p>
+                            <hr>
+                            <h3>| Where you can ride</h3>
+                            <p>
+                                You can ride on the road unless there are signs saying otherwise, for example a ‘No
+                                Bicycles’ sign or similar.
+                            </p>
+                            <h5>One lane of traffic</h5>
+                            <p>
+                                If there is only one lane heading where you want to go, you must ride as near as you can
+                                to the far left side of the road where this is safe and practical.
+                            </p>
+                            <h5>Two or more lanes of traffic</h5>
+                            <p>
+                                When there are two or more lanes heading where you want to go (a multilane road), you
+                                can ride on the left or down the centre of a lane and use the right-hand lane to do a right
+                                turn.
+                            </p>
+                            <h5>Freeways</h5>
+                            <p>
+                                You can’t ride on urban freeways, but you can ride on the shoulders of some rural
+                                freeways, including the Western Freeway, the Calder Freeway, the Hume Freeway and
+                                parts of the Princes Freeway to Traralgon. The shoulder is an area to the left side of the
+                                road, which can be sealed or unsealed.
+                            </p>
+
+                        </div><!-- end messagebox -->
+                    </div><!-- end col -->
+
+                    <div class="col-md-3">
+                        <div class="wow fadeIn">
+                            <img src="~/Content/images/article_photo/photo_11.png" alt="" class="img-fluid">
+                        </div><!-- end media -->
+                    </div><!-- end col -->
+                </div><!-- end row -->
+
+
+                <div class="row mb-4">
+                    <div class="col-md-1"></div>
+                    <div class="col-md-10">
+                        <div class="tip">
+                            <div class="tip-icon">
+                                <i class="flaticon-innovation"></i>
+                            </div>
+                            <div class="tip-content">
+                                <h3>Riding on the road</h3>
+                                <p>
+                                    When riding on the far left side of the road, leave enough space to deal with
+                                    debris and the effects of wind, and to avoid car doors.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- end row -->
+
+
+                <div class="row mb-4">
+                    <div class="col-md-1"></div>
+                    <div class="col-md-10">
+                        <div class="message-box">
+                            <h3>| Riding in groups</h3>
+                            <p>
+                                You cannot have more than two riders next to each other except when overtaking. When you are riding next to someone you must not ride more than 1.5 metres apart from them.
+                            </p>
+                            <h3>| Overtaking</h3>
+                            <p>
+                                When you are riding on the road, you can overtake a vehicle on the left or right as long
+                                as:
+                                <br> you can clearly see any approaching traffic and
+                                <br>• can overtake the vehicle safely.
+                                <br>
+                                <br>You must not overtake a vehicle:
+                                <br>• on the left if it is turning left and indicating left
+                                <br>• on the right if it is turning right and indicating right
+                                <br>• on the right if it is doing a U-turn from the centre of the road and indicating right.
+                            </p>
+                        </div><!-- end messagebox -->
+                    </div><!-- end col -->
+                </div><!-- end row -->
+
+                <div class="row mb-4">
+                    <div class="col-md-1"></div>
+                    <div class="col-md-7">
+                        <h3>Bike boxes</h3>
+                        <p>
+                            A bike box is a box marked at an intersection with a bike symbol inside it. Only bikes, not cars, can stop in a bike box, when the light is red (see image next page).
+                            If there is a bike box, and you need to stop, you must stop inside it.
+                            Bike boxes are a safer place to stop and give you a head start over other traffic when the traffic lights turn green.
+                            If there is a bike lane leading into the bike box, you must use the bike lane to enter the bike box unless that is not a practical option.
+                            If the bike box goes across all traffic lanes you must:
+                            <br>• turn left from the left-lane side of the bike box
+                            <br>• turn right from the right-lane side of the bike box.
+                        </p>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="wow fadeIn">
+                            <img src="~/Content/images/article_photo/photo_12.png" alt="" class="img-fluid">
+                        </div><!-- end media -->
+                    </div><!-- end col -->
+                </div>
+
+
+                <div class="row mt-5 pt-5">
+                    <div class="col-md-12">
+                        <div class="text-center">
+                            <a class="sim-btn hvr-bounce-to-top" href="@Url.Action("Index", "Education")">
+                                <i class="fa fa-long-arrow-left pr-2"></i>
+                                <span>Back</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div><!-- end container -->
+        </div><!-- end section -->
+
+    </div><!-- end container -->
+</div><!-- end section -->
