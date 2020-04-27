@@ -453,6 +453,7 @@
     <Content Include="Content\images\article_photo\photo_13.png" />
     <Content Include="Content\images\article_photo\photo_14.png" />
     <Content Include="fonts\license\license.html" />
+    <Content Include="Views\Password\index.cshtml" />
     <Content Include="Content\images\article_photo\photo_15.png" />
     <Content Include="Content\images\article_photo\photo_16.png" />
     <Content Include="Content\images\article_photo\photo_16.jpg" />
