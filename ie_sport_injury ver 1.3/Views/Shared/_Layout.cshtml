@@ -60,14 +60,13 @@
                         @Html.ActionLink("Education", "Index", "Education", null, new { @class = IsSelected("Education") })
                     </li>
                     <li class="nav-item">
-                        @Html.ActionLink("Warm-Up", "Index", "WarmUp", null, new { @class = IsSelected("WarmUp") })
+                        @Html.ActionLink("Trivia", "Index", "QuizIndex", null, new { @class = IsSelected("QuizIndex") })
                     </li>
                     <li class="nav-item">
-                        @Html.ActionLink("Map", "Index", "Map", null, new { @class = IsSelected("Map") })
+                        @Html.ActionLink("Crash Analysis", "Index", "Analysis", null, new { @class = IsSelected("Analysis") })
                     </li>
-
                     <li class="nav-item">
-                        @Html.ActionLink("QuizIndex", "Index", "QuizIndex", null, new { @class = IsSelected("QuizIndex") })
+                        @Html.ActionLink("Crash Map", "Index", "Map", null, new { @class = IsSelected("Map") })
                     </li>
                 </ul>
             </div>
@@ -84,8 +83,9 @@
                     <p class="footer-links">
                         @Html.ActionLink("Home", "Index", "Home")
                         @Html.ActionLink("Education", "Index", "Education")
-                        @Html.ActionLink("Warm-Up", "Index", "WarmUp")
-                        @Html.ActionLink("Map", "Index", "Map")
+                        @Html.ActionLink("Trivia", "Index", "QuizIndex")
+                        @Html.ActionLink("Crash Analysis", "Index", "Analysis")
+                        @Html.ActionLink("Crash Map", "Index", "Map")
                     </p>
                     <p class="footer-company-name">All Rights Reserved. &copy; 2020 <a href="#">Sportsaholics</a></p>
                 </div>
