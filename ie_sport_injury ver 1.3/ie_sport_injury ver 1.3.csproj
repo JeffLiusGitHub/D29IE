@@ -206,6 +206,15 @@
     <Content Include="App_Data\map_log.ldf">
       <DependentUpon>map.mdf</DependentUpon>
     </Content>
+    <Content Include="Content\images\article_photo\photo_20.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\images\article_photo\photo_21.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\images\article_photo\photo_22.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Scripts\bootstrap.js" />
@@ -316,6 +325,7 @@
     <Content Include="Views\image2\apple-touch-icon.png" />
     <Content Include="Views\image2\bg.png" />
     <Content Include="Views\image2\country-quilt-dark.png" />
+    <Content Include="Views\Education\RidingLanesAndPaths.cshtml" />
     <None Include="Views\image2\favicon.ico" />
     <Content Include="Views\image2\logo.png" />
     <None Include="Views\images\prettyPhoto\.DS_Store" />

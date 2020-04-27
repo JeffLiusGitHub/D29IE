@@ -26,7 +26,7 @@
                     <div class="container">
                         <div class="question">
                             <h2 class="mb-4">
-                                1.  Do I have to give way at roundabouts?
+                                1. Do vehicles always have to give way to pedestrians at the roundabouts?
                             </h2>
                         </div>
                         <div class='choices'>
@@ -34,14 +34,14 @@
                                 <div class="col">
                                     <label class="choice" style='text-align: justify;'>
                                         A:Yes
-                                        <input type="radio" name="q0" value='t'>
+                                        <input type="radio" name="q0" value='f'>
                                         <span class="checkmark"></span>
                                     </label>
                                 </div>
                                 <div class="col">
                                     <label class="choice" style='text-align: justify;'>
                                         B:No
-                                        <input type="radio" name="q0" value="f">
+                                        <input type="radio" name="q0" value="t">
                                         <span class="checkmark"></span>
                                     </label>
                                 </div>
@@ -54,20 +54,22 @@
                     <div class="container">
                         <h3 class="mb-3" id='q0checkC' style='display:none;font-size:18px;'>You are correct!</h3>
                         <h3 class="mb-3" id='q0checkN' style='display:none;font-size:18px;'>
-                            You were almost there, but the
-                            right answer is A.
+                            You were almost there, but the right answer is No.
                         </h3>
                         <p id='q0explain' style='display:none; text-align: justify;font-size:16px;'>
 
-                            Reason: Before entering a roundabout, you must give way to other vehicles already on it. When on a roundabout, you must give way to other vehicles leaving it.
+                            Before entering a roundabout, you must give way to any:
 
+                            vehicle already in the roundabout
+                            tram entering or approaching the roundabout.
+                            Vehicles do not need to give way to pedestrians at roundabouts unless there is a pedestrian crossing there.
                         </p>
                     </div>
                     <!-- visualization -->
                     <div class="container visualization" style='margin:20px auto; display:none;'
                          id='q0visualization'>
                         <!-- no visualization in this question -->
-                        <a href="#questionsection" onclick="next()" class='next w3-right' style="font-size: 16px;">
+                        <a href="#questionsection" onclick="next()" class='next w3-right' style="font-size: 20px;">
                             Next Question
                             &raquo;
                         </a>
@@ -139,20 +141,22 @@
                         </p>
                     </div>
                     <!-- visualization -->
-                    <style>
+                    @*<style>
 
 
 
 
-                        canvas {
-                            width: 100% !important;
-                            height: 500px !important;
-                        }
-                    </style>
+            canvas {
+                width: 100% !important;
+                height: 500px !important;
+            }
+        </style>*@
+                    @*<div class="container visualization" style='margin:20px auto; display:none;'
+        id='q1visualization'>*@
                     <div class="container visualization" style='margin:20px auto; display:none;'
                          id='q1visualization'>
-                        <canvas id="greenhouse"></canvas>
-                        <a href="#questionsection" onclick="next()" class='next w3-right' style="font-size: 16px;">
+                        @*<canvas id="greenhouse"></canvas>*@
+                        <a href="#questionsection" onclick="next()" class='next w3-right' style="font-size: 20px;">
                             Next Question &raquo;
                         </a>
                     </div>
@@ -225,7 +229,7 @@
                     <div class="container visualization" style='margin:20px auto; display:none;'
                          id='q2visualization'>
                         <!-- no visualize -->
-                        <a href="#questionsection" onclick="next()" class='next w3-right' style="font-size: 16px;">
+                        <a href="#questionsection" onclick="next()" class='next w3-right' style="font-size: 20px;">
                             Next Question
                             &raquo;
                         </a>
@@ -277,7 +281,7 @@
                     <div class="container visualization" style='margin:20px auto; display:none;'
                          id='q3visualization'>
                         <!-- no visualize -->
-                        <a href="#questionsection" onclick="next()" class='next w3-right' style="font-size: 16px;">
+                        <a href="#questionsection" onclick="next()" class='next w3-right' style="font-size: 20px;">
                             Next Question
                             &raquo;
                         </a>
@@ -342,7 +346,7 @@
                                 </div>
                             </div>
                         </div>
-                        <a href="/Home/Education" class='next w3-right' style="font-size: 16px;">Back to Learning Page</a>
+                        <a href="/Home/Education" class='next w3-right' style="font-size: 20px;">Back to Learning Page</a>
                     </div>
                 </div>
             </div>
