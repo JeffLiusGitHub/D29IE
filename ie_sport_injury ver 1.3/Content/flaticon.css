@@ -1,36 +1,102 @@
-	/*
+/*
   	Flaticon icon font: Flaticon
-  	Creation date: 04/07/2018 13:02
+  	Creation date: 27/04/2020 03:48
   	*/
 
 @font-face {
-  font-family: "Flaticon";
-  src: url("../fonts/Flaticon.eot");
-  src: url("../fonts/Flaticon.eot?#iefix") format("embedded-opentype"),
-       url("../fonts/Flaticon.woff") format("woff"),
-       url("../fonts/Flaticon.ttf") format("truetype"),
-       url("..fonts/Flaticon.svg#Flaticon") format("svg");
-  font-weight: normal;
-  font-style: normal;
+    font-family: "Flaticon";
+    src: url("../fonts/Flaticon.eot");
+    src: url("../fonts/Flaticon.eot?#iefix") format("embedded-opentype"), url("../fonts/Flaticon.woff2") format("woff2"), url("../fonts/Flaticon.woff") format("woff"), url("../fonts/Flaticon.ttf") format("truetype"), url("../fonts/Flaticon.svg#Flaticon") format("svg");
+    font-weight: normal;
+    font-style: normal;
 }
 
 @media screen and (-webkit-min-device-pixel-ratio:0) {
-  @font-face {
-    font-family: "Flaticon";
-    src: url("../fonts/Flaticon.svg#Flaticon") format("svg");
-  }
+    @font-face {
+        font-family: "Flaticon";
+        src: url("../fonts/Flaticon.svg#Flaticon") format("svg");
+    }
 }
 
 [class^="flaticon-"]:before, [class*=" flaticon-"]:before,
-[class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
-	font-family: Flaticon;
-	font-style: normal;
-	margin-left: 0px;
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {
+    font-family: Flaticon;
+    font-style: normal;
+    margin-left: 0px;
 }
 
-.flaticon-idea-1:before { content: "\f100"; }
-.flaticon-idea:before { content: "\f101"; }
-.flaticon-discuss-issue:before { content: "\f102"; }
-.flaticon-process:before { content: "\f103"; }
-.flaticon-development:before { content: "\f104"; }
-.flaticon-seo:before { content: "\f105"; }
+.flaticon-score:before {
+    content: "\f100";
+}
+
+.flaticon-travel:before {
+    content: "\f101";
+}
+
+.flaticon-travel-1:before {
+    content: "\f102";
+}
+
+.flaticon-navigator:before {
+    content: "\f103";
+}
+
+.flaticon-exercise:before {
+    content: "\f104";
+}
+
+.flaticon-yoga:before {
+    content: "\f105";
+}
+
+.flaticon-excercise:before {
+    content: "\f106";
+}
+
+.flaticon-extended:before {
+    content: "\f107";
+}
+
+.flaticon-seat:before {
+    content: "\f108";
+}
+
+.flaticon-open-book:before {
+    content: "\f109";
+}
+
+.flaticon-book:before {
+    content: "\f10a";
+}
+
+.flaticon-innovation:before {
+    content: "\f10b";
+}
+
+.flaticon-knowledge:before {
+    content: "\f10c";
+}
+
+.flaticon-exam:before {
+    content: "\f10d";
+}
+
+.flaticon-test:before {
+    content: "\f10e";
+}
+
+.flaticon-exam-1:before {
+    content: "\f10f";
+}
+
+.flaticon-books:before {
+    content: "\f110";
+}
+
+.flaticon-gps:before {
+    content: "\f111";
+}
+
+.flaticon-gps-1:before {
+    content: "\f112";
+}
