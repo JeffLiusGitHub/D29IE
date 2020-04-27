@@ -22,5 +22,21 @@ namespace ie_sport_injury_ver_1._3.Controllers
         {
             return View();
         }
+
+        public ActionResult RidingLanesAndPaths()
+        {
+            return View();
+        }
+
+        public ActionResult BikeComponents()
+        {
+            return View();
+        }
+
+        public ActionResult WearingHelmet()
+        {
+            return View();
+        }
+
     }
 }
