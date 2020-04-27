@@ -199,6 +199,7 @@
     <Compile Include="Controllers\EducationController.cs" />
     <Compile Include="Controllers\WarmUpController.cs" />
     <Compile Include="Controllers\MapController.cs" />
+    <Compile Include="Controllers\AnalysisController.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Data\map.mdf" />
@@ -221,9 +222,6 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
     <Content Include="Views\Map\crash_choropleth.html">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Views\Map\Default1.aspx">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Web.config" />
@@ -430,6 +428,21 @@
     <Content Include="Views\Map\Index.cshtml" />
     <Content Include="Views\QuizIndex\Index.cshtml" />
     <Content Include="Views\Quiz2\Index.cshtml" />
+    <Content Include="Content\images\article_photo\photo_07.png" />
+    <Content Include="Content\images\article_photo\photo_08.png" />
+    <Content Include="Content\images\article_photo\photo_09.png" />
+    <Content Include="Content\images\article_photo\photo_10.png" />
+    <Content Include="Content\images\article_photo\photo_11.png" />
+    <Content Include="Content\images\article_photo\photo_12.png" />
+    <None Include="fonts\Flaticon.woff2" />
+    <Content Include="Views\Education\RidingInTraffic.cshtml" />
+    <Content Include="Views\Analysis\Index.cshtml" />
+    <Content Include="Views\Education\WearingHelmet.cshtml" />
+    <Content Include="Views\Education\RidingLanesAndPaths.cshtml" />
+    <Content Include="Views\Education\BikeComponents.cshtml" />
+    <Content Include="Content\images\article_photo\photo_13.png" />
+    <Content Include="Content\images\article_photo\photo_14.png" />
+    <Content Include="fonts\license\license.html" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
@@ -438,6 +451,9 @@
     <Content Include="Scripts\jquery-3.4.1.min.map" />
   </ItemGroup>
   <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Views\Analysis\" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
