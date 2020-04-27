@@ -47,10 +47,6 @@
     height: 170px;
 }
 
-#content .row {
-    margin-bottom: 2em;
-}
-
 #content .tip {
     background: lightyellow;
     border-radius: 10px;
@@ -62,6 +58,11 @@
         padding: 1.2em 0;
         text-align: right;
         vertical-align: top;
+    }
+
+    #content .tip .tip-icon i {
+        font-size: 36px;
+        line-height: 1em;
     }
 
     #content .tip .tip-content {
