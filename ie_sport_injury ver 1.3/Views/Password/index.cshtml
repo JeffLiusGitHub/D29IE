@@ -4,19 +4,24 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
     ViewBag.BodyStyle = "body-no-banner";
 }
-<br />
-<br />
-<br />
 
-<br />
-<h1>
-    Click Home to browse the fancy webite!                           ↑</h1>
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
+
+<section id="home" class="main-banner parallaxie" style="background: url('/Content/images/bg.png')">
+<div class="heading">
+    <h1>Say bye to injuries</h1>
+    <h3 class="cd-headline clip is-full-width">
+        <span>Click Home to browse </span>
+        <span class="cd-words-wrapper">
+            <b class="is-visible">fancy</b>
+            <b>website</b>
+        </span>
+        <div class="btn-ber">
+            <a class="get_btn hvr-bounce-to-top" href="@Url.Action("Index", "Home")">Go to Home</a>
+            <!--<a class="learn_btn hvr-bounce-to-top" href="#">Cycling Map</a>-->
+        </div>
+    </h3>
+</div>
+    </section>
 
 
 

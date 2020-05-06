@@ -183,8 +183,10 @@
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\Maps1Controller.cs" />
     <Compile Include="Controllers\MapsController.cs" />
+    <Compile Include="Controllers\PasswordController.cs" />
     <Compile Include="Controllers\Quiz2Controller.cs" />
     <Compile Include="Controllers\QuizIndexController.cs" />
+    <Compile Include="Controllers\streetViewController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -457,6 +459,7 @@
     <Content Include="Content\images\article_photo\photo_15.png" />
     <Content Include="Content\images\article_photo\photo_16.png" />
     <Content Include="Content\images\article_photo\photo_16.jpg" />
+    <Content Include="Views\streetView\index.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
@@ -465,9 +468,7 @@
     <Content Include="Scripts\jquery-3.4.1.min.map" />
   </ItemGroup>
   <ItemGroup />
-  <ItemGroup>
-    <Folder Include="Views\Analysis\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
