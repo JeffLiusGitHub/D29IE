@@ -12,9 +12,10 @@
     <style>
         /* Always set the map height explicitly to define the size of the div
         * element that contains the map. */
-        #map {
+        #map1 {
             height:100%;
-           
+           /*float: left;*/
+           /*width:70%;*/
         }
         /* Optional: Makes the sample page fill the window. */
         html, body {
@@ -23,8 +24,7 @@
             padding: 0px;
         }
         #map2 {
-            height:100%;
-           
+            height: 100%;
         }
     </style>
 </head>
@@ -36,15 +36,15 @@
 
 
 
-    <div id="map"></div>
+    <div id="map1"></div>
 
 
-    <script>
-        function initPano() {
+    @*<script>
+        function initPano1() {
             // Note: constructed panorama objects have visible: true
             // set by default.
-            var panorama = new google.maps.StreetViewPanorama(
-                document.getElementById('map'), {
+            var panorama1 = new google.maps.StreetViewPanorama(
+                document.getElementById('map1'), {
                 position: { lat: -37.817404, lng: 144.945911 },
                 pov: {
                     heading: 184,
@@ -60,9 +60,9 @@
         }
     </script>
     <script async defer
-            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCtB9R0bx4P_pCguEjgjwo5SL0rnnXCtyw&callback=initPano">
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCtB9R0bx4P_pCguEjgjwo5SL0rnnXCtyw&callback=initPano1">
         //AIzaSyCtB9R0bx4P_pCguEjgjwo5SL0rnnXCtyw
-    </script>
+    </script>*@
     <br>
     <div class="row">
         <div class="col-md-8">
@@ -76,10 +76,26 @@
     <div id="map2"></div>
 
     <script>
-        function initPano() {
+
+        function initPano2() {
             // Note: constructed panorama objects have visible: true
             // set by default.
-            var panorama = new google.maps.StreetViewPanorama(
+
+             var panorama1 = new google.maps.StreetViewPanorama(
+                document.getElementById('map1'), {
+                position: { lat: -37.817404, lng: 144.945911 },
+                pov: {
+                    heading: 184,
+                    pitch: 10
+                },
+                addressControlOptions: {
+                    position: google.maps.ControlPosition.BOTTOM_CENTER
+                },
+                linksControl: true,
+                panControl: true,
+                enableCloseButton: true
+            });
+            var panorama2 = new google.maps.StreetViewPanorama(
                 document.getElementById('map2'), {
                 position: { lat: -37.8239796, lng: 144.9605012 },
                 pov: {
@@ -96,7 +112,7 @@
         }
     </script>
     <script async defer
-            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCtB9R0bx4P_pCguEjgjwo5SL0rnnXCtyw&callback=initPano">
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCtB9R0bx4P_pCguEjgjwo5SL0rnnXCtyw&callback=initPano2">
                 //AIzaSyCtB9R0bx4P_pCguEjgjwo5SL0rnnXCtyw
     </script>
 </body>
