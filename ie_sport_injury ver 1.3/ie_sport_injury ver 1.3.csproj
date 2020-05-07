@@ -235,6 +235,12 @@
     <Content Include="Views\Map\crash_choropleth.html">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Views\streetView\BicyclesPedestrianOnly.png" />
+    <Content Include="Views\streetView\Bikepath.png" />
+    <Content Include="Views\streetView\end.png" />
+    <Content Include="Views\streetView\lane.png" />
+    <Content Include="Views\streetView\only.png" />
+    <Content Include="Views\streetView\watchfor.png" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

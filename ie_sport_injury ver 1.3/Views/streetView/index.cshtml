@@ -13,18 +13,22 @@
         /* Always set the map height explicitly to define the size of the div
         * element that contains the map. */
         #map1 {
-            height:100%;
+            height:80%;
            /*float: left;*/
            /*width:70%;*/
         }
         /* Optional: Makes the sample page fill the window. */
         html, body {
             height: 100%;
-            margin:0;
-            padding: 0px;
+            margin:0px;
+            padding: 30px;
         }
         #map2 {
-            height: 100%;
+            height: 80%;
+        }
+
+         #map3 {
+            height: 80%;
         }
     </style>
 </head>
@@ -34,46 +38,143 @@
             <div id="map"></div>
         </div>*@
 
+    </br>
+    </br>
+    </br>
+    </br>
+    <div class="row">
+        <div class="col-1">
 
+        </div>
+        <div class="col-10">
+            <h1>Road Sign street view</h1>
+            <h3>This is balababalaba.</h3>
+        </div>
+        <div class="col-1">
 
+        </div>
+
+    </div>
     <div id="map1"></div>
 
 
     @*<script>
-        function initPano1() {
-            // Note: constructed panorama objects have visible: true
-            // set by default.
-            var panorama1 = new google.maps.StreetViewPanorama(
-                document.getElementById('map1'), {
-                position: { lat: -37.817404, lng: 144.945911 },
-                pov: {
-                    heading: 184,
-                    pitch: 10
-                },
-                addressControlOptions: {
-                    position: google.maps.ControlPosition.BOTTOM_CENTER
-                },
-                linksControl: true,
-                panControl: true,
-                enableCloseButton: true
-            });
-        }
-    </script>
-    <script async defer
-            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCtB9R0bx4P_pCguEjgjwo5SL0rnnXCtyw&callback=initPano1">
-        //AIzaSyCtB9R0bx4P_pCguEjgjwo5SL0rnnXCtyw
-    </script>*@
+            function initPano1() {
+                // Note: constructed panorama objects have visible: true
+                // set by default.
+                var panorama1 = new google.maps.StreetViewPanorama(
+                    document.getElementById('map1'), {
+                    position: { lat: -37.817404, lng: 144.945911 },
+                    pov: {
+                        heading: 184,
+                        pitch: 10
+                    },
+                    addressControlOptions: {
+                        position: google.maps.ControlPosition.BOTTOM_CENTER
+                    },
+                    linksControl: true,
+                    panControl: true,
+                    enableCloseButton: true
+                });
+            }
+        </script>
+        <script async defer
+                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCtB9R0bx4P_pCguEjgjwo5SL0rnnXCtyw&callback=initPano1">
+            //AIzaSyCtB9R0bx4P_pCguEjgjwo5SL0rnnXCtyw
+        </script>*@
     <br>
     <div class="row">
-        <div class="col-md-8">
-            <p> This sign is used at road narrowing and other squeeze points </p>
+        <div class="col-md-1">
+            <p></p>
+            <p>  </p>
         </div>
-        <div class=" col-md-4">
-            <img src="https://www.globalspill.com.au/wp-content/uploads/2018/02/RS-R81A.jpg" />
+        <div class="col-md-8">
+            <p></p>
+            <p> This sign is used at road narrowing and other squeeze points. In this situation, you should balabalabala </p>
+        </div>
+        <div class=" col-md-2">
+            <img src="~/Views/streetView/watchfor.png" alt="Watchfor" class="img-fluid img-rounded">
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-1">
+            <p></p>
+            <p>  </p>
+        </div>
+        <div class=" col-md-2">
+            <img src="~/Views/streetView/only.png" alt="Watchfor" class="img-fluid img-rounded">
+        </div>
+
+        <div class="col-md-8">
+            <p></p>
+            <p> This sign is used at road narrowing and other squeeze points. In this situation, you should balabalabala </p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-1">
+            <p></p>
+            <p>  </p>
+        </div>
+        <div class="col-md-8">
+            <p></p>
+            <p> This sign is used at road narrowing and other squeeze points. In this situation, you should balabalabala </p>
+        </div>
+        <div class=" col-md-2">
+            <img src="~/Views/streetView/BicyclesPedestrianOnly.png" alt="Watchfor" class="img-fluid img-rounded">
         </div>
     </div>
 
     <div id="map2"></div>
+
+
+    <div class="row">
+        <div class="col-md-1">
+            <p></p>
+            <p>  </p>
+        </div>
+        <div class="col-md-8">
+            <p></p>
+            <p> This sign is used at road narrowing and other squeeze points. In this situation, you should balabalabala </p>
+        </div>
+        <div class=" col-md-2">
+            <img src="~/Views/streetView/lane.png" alt="Watchfor" class="img-fluid img-rounded">
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="col-md-1">
+            <p></p>
+            <p>  </p>
+        </div>
+        <div class=" col-md-2">
+            <img src="~/Views/streetView/end.png" alt="Watchfor" class="img-fluid img-rounded">
+        </div>
+        <div class="col-md-8">
+            <p></p>
+            <p> This sign is used at road narrowing and other squeeze points. In this situation, you should balabalabala </p>
+        </div>
+
+    </div>
+
+
+    <div id="map3"></div>
+
+    <div class="row">
+        <div class="col-md-1">
+            <p></p>
+            <p></p>
+        </div>
+        <div class="col-md-8">
+            <p></p>
+            <p> This sign is used at road narrowing and other squeeze points. In this situation, you should balabalabala </p>
+        </div>
+        <div class=" col-md-2">
+            <img src="~/Views/streetView/Bikepath.png" alt="Watchfor" class="img-fluid img-rounded">
+        </div>
+    </div>
 
     <script>
 
@@ -81,7 +182,7 @@
             // Note: constructed panorama objects have visible: true
             // set by default.
 
-             var panorama1 = new google.maps.StreetViewPanorama(
+            var panorama1 = new google.maps.StreetViewPanorama(
                 document.getElementById('map1'), {
                 position: { lat: -37.817404, lng: 144.945911 },
                 pov: {
@@ -109,11 +210,27 @@
                 panControl: true,
                 enableCloseButton: true
             });
+
+
+            var panorama3 = new google.maps.StreetViewPanorama(
+                document.getElementById('map3'), {
+                position: { lat: -37.8209015, lng: 144.9623046 },
+                pov: {
+                    heading: 70.83,
+                    pitch: 0
+                },
+                addressControlOptions: {
+                    position: google.maps.ControlPosition.BOTTOM_CENTER
+                },
+                linksControl: true,
+                panControl: true,
+                enableCloseButton: true
+            });
         }
     </script>
     <script async defer
             src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCtB9R0bx4P_pCguEjgjwo5SL0rnnXCtyw&callback=initPano2">
-                //AIzaSyCtB9R0bx4P_pCguEjgjwo5SL0rnnXCtyw
+                                                    //AIzaSyCtB9R0bx4P_pCguEjgjwo5SL0rnnXCtyw
     </script>
 </body>
 </html>
