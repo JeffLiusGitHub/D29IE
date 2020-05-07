@@ -1,0 +1,103 @@
+﻿
+@{
+    ViewBag.Title = "index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.BodyStyle = "body-no-banner";
+}
+<br />
+<br />
+<br />
+<h1>This section will give you insight about <span style="color:forestgreen" ;font-weight:bold">common cycling injury</span> issues and their cause.</h1>
+
+
+
+@*<div class="row">
+        <div class=" col-10">
+            <img src="~/Views/injuryHover/back.jpg" />
+        </div>
+    </div>*@
+
+
+
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <style>
+        .img {
+            background-image: url("https://ieimage.s3-ap-southeast-2.amazonaws.com/back.jpg");
+            height: 500px;
+            width: 1000px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: absolute;
+        }
+
+        .info-icon {
+            position: relative;
+            top: 25%;
+            left: 87%;
+        }
+
+        .info-icon2 {
+            position: relative;
+            top: 5%;
+            left: 97%;
+        }
+
+        .fa-icon {
+            font-size: 24px;
+            color: red;
+        }
+
+        .info-window {
+            opacity: 0;
+            transition: 0.3s;
+            font-size: 30px;
+          
+            background-color: #eee;
+            border-radius:10px;
+            padding:10px;
+        }
+
+        .fa-icon:hover {
+            font-size: 30px;
+        }
+
+            .fa-icon:hover + .info-window {
+                opacity: 0.6;
+
+            }
+    </style>
+
+@*<body>*@
+@*<h1>Sample img with icon hover</h1>*@
+<section>
+    <div class="img">
+        <div class="info-icon">
+            <i class="fa fa-dot-circle-o fa-icon"></i>
+            <span class="info-window">head injury</span>
+        </div>
+        <div class="info-icon2">
+            <i class="fa fa-dot-circle-o fa-icon"></i>
+            <span class="info-window">head injury</span>
+        </div>
+    </div>
+
+</section>
+@*</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+
+</br>
+</br>
+</br>
+</br></br>
+</br>*@
+
+
+@*</body>*@
+
