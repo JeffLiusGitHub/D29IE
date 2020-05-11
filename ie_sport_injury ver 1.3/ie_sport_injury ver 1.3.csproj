@@ -180,14 +180,14 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\injuryHoverController.cs" />
+    <Compile Include="Controllers\InjuryHoverController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\Maps1Controller.cs" />
     <Compile Include="Controllers\MapsController.cs" />
     <Compile Include="Controllers\PasswordController.cs" />
     <Compile Include="Controllers\Quiz2Controller.cs" />
     <Compile Include="Controllers\QuizIndexController.cs" />
-    <Compile Include="Controllers\streetViewController.cs" />
+    <Compile Include="Controllers\StreetViewController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -234,18 +234,18 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
-    <Content Include="Views\injuryHover\back.jpg" />
-    <Content Include="Views\injuryHover\front.jpg" />
-    <Content Include="Views\injuryHover\side.jpg" />
+    <Content Include="Views\InjuryHover\back.jpg" />
+    <Content Include="Views\InjuryHover\front.jpg" />
+    <Content Include="Views\InjuryHover\side.jpg" />
     <Content Include="Views\Map\crash_choropleth.html">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Views\streetView\BicyclesPedestrianOnly.png" />
-    <Content Include="Views\streetView\Bikepath.png" />
-    <Content Include="Views\streetView\end.png" />
-    <Content Include="Views\streetView\lane.png" />
-    <Content Include="Views\streetView\only.png" />
-    <Content Include="Views\streetView\watchfor.png" />
+    <Content Include="Views\StreetView\BicyclesPedestrianOnly.png" />
+    <Content Include="Views\StreetView\Bikepath.png" />
+    <Content Include="Views\StreetView\end.png" />
+    <Content Include="Views\StreetView\lane.png" />
+    <Content Include="Views\StreetView\only.png" />
+    <Content Include="Views\StreetView\watchfor.png" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -470,8 +470,8 @@
     <Content Include="Content\images\article_photo\photo_15.png" />
     <Content Include="Content\images\article_photo\photo_16.png" />
     <Content Include="Content\images\article_photo\photo_16.jpg" />
-    <Content Include="Views\streetView\index.cshtml" />
-    <Content Include="Views\injuryHover\index.cshtml" />
+    <Content Include="Views\StreetView\Index.cshtml" />
+    <Content Include="Views\InjuryHover\Index.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

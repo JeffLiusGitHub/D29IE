@@ -7,8 +7,16 @@
 <br />
 <br />
 <br />
-<h1>This section will give you insight about <span style="color:forestgreen" ;font-weight:bold">common cycling injury</span> issues and their cause.</h1>
+<br />
+<br />
 
+
+<h1 style="font-weight:bold">This section will give you insight about <span style="color:forestgreen" ;font-weight:bold">common cycling injury</span> issues and their cause.</h1>
+<h1 style="font-weight:bold"><span style="color:forestgreen" ;font-weight:bold">Hover</span> your mouse to the body to see the relative injury.</h1>
+<h1 style="font-weight:bold">The <span style="color:forestgreen" ;font-weight:bold">description</span> are on the <span style="color:forestgreen" ;font-weight:bold">side</span>.</h1>
+<br />
+
+<hr />
 
 
 @*<div class="row">
@@ -20,83 +28,428 @@
 
 
 
-    <link rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-    <style>
-        .img {
-            background-image: url("https://ieimage.s3-ap-southeast-2.amazonaws.com/back.jpg");
-            height: 500px;
-            width: 1000px;
-            background-repeat: no-repeat;
-            background-size: cover;
-            position: absolute;
+<link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+<style>
+    .img_side {
+        background-image: url("https://ieimage.s3-ap-southeast-2.amazonaws.com/sideCircle.png");
+        height: 700px;
+        width: 700px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        /*position: absolute;*/
+        background-attachment: local;
+        background-position: center;
+    }
+
+    .img_back {
+        background-image: url("https://ieimage.s3-ap-southeast-2.amazonaws.com/backCircle.png");
+        height: 700px;
+        width: 700px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        /*position: absolute;*/
+        background-attachment: local;
+        background-position: center;
+    }
+
+    .img_front {
+        background-image: url("https://ieimage.s3-ap-southeast-2.amazonaws.com/frontCircle.png");
+        height: 700px;
+        width: 700px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        /*position: absolute;*/
+        background-attachment: local;
+        background-position: center;
+    }
+
+    .info_icon_saddle {
+        position: relative;
+        top: 30%;
+        left: 60%;
+    }
+
+    .info_icon_backofLeg {
+        position: relative;
+        top: 36%;
+        left: 55%;
+    }
+
+    .info_icon_calfPain {
+        position: relative;
+        top: 46%;
+        left: 40%;
+    }
+
+    .info_icon_posteriorKneePain {
+        position: relative;
+        top: 48%;
+        left: 53%;
+    }
+
+    .info_icon_achillesPain {
+        position: relative;
+        top: 62%;
+        left: 53%;
+    }
+
+    .info_icon_footPain {
+        position: relative;
+        top: 47%;
+        left: 52%;
+    }
+
+    .info-icon_neckPain {
+        position: relative;
+        top: -10%;
+        left: 44%;
+    }
+
+    .info-icon_sholderPain {
+        position: relative;
+        top: 10%;
+        left: 40%;
+    }
+
+    .info-icon_backPain {
+        position: relative;
+        top: 5%;
+        left: 45%;
+    }
+
+    .info-icon_handPressure {
+        position: relative;
+        top: 36%;
+        left: 35%;
+    }
+
+
+    .info-icon_anteriorKneePain {
+        position: relative;
+        top: 26%;
+        left: 56%;
+    }
+
+    .info-icon2 {
+        position: relative;
+        top: 5%;
+        left: 97%;
+    }
+
+    .fa-icon {
+        font-size: 24px;
+        /*color: greenyellow;*/
+        color: #52c596;
+    }
+
+    .info-window {
+        opacity: 0;
+        transition: 0.7s;
+        font-size: 30px;
+        background-color: #FFFFFF;
+        border-radius: 10px;
+        padding: 10px;
+    }
+
+    .fa-icon:hover {
+        font-size: 30px;
+    }
+
+        .fa-icon:hover + .info-window {
+            opacity: 0.9;
         }
 
-        .info-icon {
-            position: relative;
-            top: 25%;
-            left: 87%;
-        }
+    #wrap {
+        word-break: keep-all;
+        width: 200px;
+    }
 
-        .info-icon2 {
-            position: relative;
-            top: 5%;
-            left: 97%;
-        }
-
-        .fa-icon {
-            font-size: 24px;
-            color: red;
-        }
-
-        .info-window {
-            opacity: 0;
-            transition: 0.3s;
-            font-size: 30px;
-          
-            background-color: #eee;
-            border-radius:10px;
-            padding:10px;
-        }
-
-        .fa-icon:hover {
-            font-size: 30px;
-        }
-
-            .fa-icon:hover + .info-window {
-                opacity: 0.6;
-
-            }
-    </style>
+    html, body {
+        /*height: 100%;*/
+        margin: 0px;
+        padding: 20px;
+    }
+</style>
 
 @*<body>*@
-@*<h1>Sample img with icon hover</h1>*@
-<section>
-    <div class="img">
-        <div class="info-icon">
-            <i class="fa fa-dot-circle-o fa-icon"></i>
-            <span class="info-window">head injury</span>
-        </div>
-        <div class="info-icon2">
-            <i class="fa fa-dot-circle-o fa-icon"></i>
-            <span class="info-window">head injury</span>
-        </div>
-    </div>
 
-</section>
+
+@*side*@
+<body style=" background-color:#f2f3f5;">
+    <section>
+        <div class="row">
+            @*<div class=" col-1"></div>*@
+            <div class="col-3">
+                <div id="wrap">
+                    <strong>
+                        <br />
+                        <br />
+                        <span style="color:#52c596 ;font-weight:bold; font-size :150%">Neck Pain</span>
+                        @*<br />Neck Pain*@
+                        <br />• Incorrect ‘reach’
+                        <br />- length & drop bars/saddle
+                        <br />• Poor muscle control
+                        <br />• Saddle position
+                        <br />• Flexibility of pelvis/hamstrings
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <span style="color:#52c596 ;font-weight:bold; font-size :150%">Saddle Sores</span>
+                        @*<br />         Saddle Sores*@
+                        <br />        • Asymmetry: ie leg length/pelvis
+                        <br />        • Saddle height/position
+                        <br />       • Saddle type
+                        <br />       • Skin care
+                    </strong>
+
+
+
+
+                    @*Saddle Sores
+                        Back of Leg Pain
+                         Foot Pain
+                         Neck Pain*@
+
+
+
+
+                </div>
+            </div>
+            <div class=" col-6">
+                <div class="img_side">
+
+
+
+                    <div class="info_icon_saddle">
+                        <i class="fa fa-dot-circle-o fa-icon"></i>
+                        <span class="info-window">Saddle Sores</span>
+                    </div>
+
+                    <div class="info_icon_backofLeg">
+                        <i class="fa fa-dot-circle-o fa-icon"></i>
+                        <span class="info-window">Back of Leg Pain</span>
+                    </div>
+
+                    <div class="info_icon_footPain">
+                        <i class="fa fa-dot-circle-o fa-icon"></i>
+                        <span class="info-window">Foot Pain</span>
+                    </div>
+
+                    <div class="info-icon_neckPain">
+                        <i class="fa fa-dot-circle-o fa-icon"></i>
+                        <span class="info-window">Neck Pain</span>
+                    </div>
+                    @*<div class="info_icon_backofLeg">
+                            <i class="fa fa-dot-circle-o fa-icon"></i>
+                            <span class="info_window">Back of Leg Pain</span>
+                        </div>*@
+                </div>
+            </div>
+            <div class=" col-3">
+                <strong>
+                    <br />
+                    <br />
+                    <span style="color:#52c596 ;font-weight:bold; font-size :150%">Back of Leg Pain</span>
+                    @*<br />Back of Leg Pain*@
+                    <br />• Tight hamstrings
+                    <br />• Lower back referred pain
+                    <br />• SIJ referred pain
+                    <br /> • Saddle height/fore/aft
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <span style="color:#52c596 ;font-weight:bold; font-size :150%">Foot Pain</span>
+                    @*<br />Foot Pain*@
+                    <br />• Proximal control (leg/pelvis)
+                    <br />• Poor shoe choice
+                    <br />• Rear foot pronation
+                </strong>
+            </div>
+        </div>
+
+        </br>
+        </br>
+    </section>
+
+    @*back*@
+    <section>
+        <div class="row">
+            <div class="col-3">
+                <strong>
+                    <br />
+                    <br />
+                    <span style="color:#52c596 ;font-weight:bold; font-size :150%">Back Pain</span>
+                    @*Back Pain*@
+                    <br />• Range of hamstrings
+                    <br />• Flexibility of pelvis
+                    <br />• Saddle position
+                    <br />• Saddle type
+                    <br />• Core control
+                    <br />• Technique
+                    <br />• Dissociation ability pelvis vs legs
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+
+                    <span style="color:#52c596 ;font-weight:bold; font-size :150%">Calf Pain</span>
+                    @*<br />Calf Pain*@
+                    <br /> • Saddle too high/back
+                    <br /> • Overload/training errors
+                    <br /> • Poor Gluts
+                </strong>
+            </div>
+            <div class=" col-6">
+                <div class="img_back">
+                    <div class="info_icon_calfPain">
+                        <i class="fa fa-dot-circle-o fa-icon"></i>
+                        <span class="info-window">Calf Pain</span>
+                    </div>
+
+                    <div class="info_icon_posteriorKneePain">
+                        <i class="fa fa-dot-circle-o fa-icon"></i>
+                        <span class="info-window">Posterior Knee Pain</span>
+                    </div>
+
+                    <div class="info_icon_achillesPain">
+                        <i class="fa fa-dot-circle-o fa-icon"></i>
+                        <span class="info-window">Achilles Pain</span>
+                    </div>
+
+                    <div class="info-icon_backPain">
+                        <i class="fa fa-dot-circle-o fa-icon"></i>
+                        <span class="info-window">Back Pain</span>
+                    </div>
+
+                </div>
+            </div>
+            <div class=" col-3">
+                <strong>
+                    <br />
+                    <br />
+                    <span style="color:#52c596 ;font-weight:bold; font-size :150%">Posterior Knee Pain</span>
+                    @*<br />Knee Pain (Posterior)*@
+                    <br />• Saddle too high/back
+                    <br />• Tight Hamstrings
+                    <br />• Poor gluts
+                    <br />• Toey technique
+                    <br />• Trying to ‘pull up’
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <span style="color:#52c596 ;font-weight:bold; font-size :150%">Achilles Pain</span>
+                    @*<br />Achilles Pain*@
+                    <br />• Saddle too high/back
+                    <br />• Overload/training errors
+                    <br />• Poor Gluts
+
+                </strong>
+            </div>
+        </div>
+
+        </br>
+        </br>
+    </section>
+
+
+    @*front*@
+    <section>
+        <div class="row">
+            <div class="col-3">
+                <strong>
+                    <br />
+                    <br />
+                    <span style="color:#52c596 ;font-weight:bold; font-size :150%">Shoulder Pain</span>
+
+                    @*<br /> Shoulder Pain*@
+                    <br /> • Incorrect bar width
+                    <br /> • Poor muscle control
+                    <br />  • Poor core stabilisers
+                    <br />  (using shoulders to hold)
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <span style="color:#52c596 ;font-weight:bold; font-size :150%">Hand Pressure</span>
+                    @*<br/>Hand Pressure*@
+                    <br />• Hypermobile hand/fingers/wrists
+                    <br /> • Equipment choice gears/brake/bars/tape
+                    <br /> • Drop bars/saddle
+
+                </strong>
+            </div>
+            <div class=" col-6">
+                <div class="img_front">
+
+
+                    <div class="info-icon_sholderPain">
+                        <i class="fa fa-dot-circle-o fa-icon"></i>
+                        <span class="info-window">Sholder Pain</span>
+                    </div>
+
+
+
+                    <div class="info-icon_handPressure">
+                        <i class="fa fa-dot-circle-o fa-icon"></i>
+                        <span class="info-window">Hand Pressure</span>
+                    </div>
+
+                    <div class="info-icon_anteriorKneePain">
+                        <i class="fa fa-dot-circle-o fa-icon"></i>
+                        <span class="info-window">Anterior Knee Pain</span>
+                    </div>
+                </div>
+            </div>
+            <div class=" col-3">
+                <strong>
+                    <br />
+                    <br />
+                    <span style="color:#52c596 ;font-weight:bold; font-size :150%"> Anterior Knee Pain</span>
+                    @*<br />Knee Pain (Anterior)*@
+                    <br />• Saddle too low/forward
+                    <br /> • Poor use of gluts
+                    <br />• Training errors/overload
+                    <br /> • Quads/hamstrings tightness
+                </strong>
+            </div>
+        </div>
+
+        </br>
+        </br>
+    </section>
+</body>
 @*</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
 
-</br>
-</br>
-</br>
-</br></br>
-</br>*@
+    </br>
+    </br>
+    </br>
+    </br></br>
+    </br>*@
 
 
 @*</body>*@
