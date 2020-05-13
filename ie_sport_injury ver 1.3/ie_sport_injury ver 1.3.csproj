@@ -184,6 +184,7 @@
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\Maps1Controller.cs" />
     <Compile Include="Controllers\MapsController.cs" />
+    <Compile Include="Controllers\NavigationMapController.cs" />
     <Compile Include="Controllers\PasswordController.cs" />
     <Compile Include="Controllers\Quiz2Controller.cs" />
     <Compile Include="Controllers\QuizIndexController.cs" />
@@ -472,6 +473,7 @@
     <Content Include="Content\images\article_photo\photo_16.jpg" />
     <Content Include="Views\StreetView\Index.cshtml" />
     <Content Include="Views\InjuryHover\Index.cshtml" />
+    <Content Include="Views\NavigationMap\Index.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
