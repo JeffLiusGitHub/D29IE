@@ -13,7 +13,7 @@
 
         <div class="gallery-list row">
             <div class="col-md-4 col-sm-6 gallery-grid gal_a gal_b">
-                <a href="/Home/Quiz">
+                <a href="@Url.Action("RoadRuleQuiz", "QuizIndex")">
                     <div class="gallery-single fix">
                         <div class="post-box">
                             <div class="post-thumb">
@@ -45,21 +45,21 @@
                     </a>
                 </div>*@
 
-            <div class="col-md-4 col-sm-6 gallery-grid gal_a gal_c">
-                <a href="/Home/Contact">
-                    <div class="gallery-single fix">
-                        <div class="post-box">
-                            <div class="post-thumb">
-                                <img src="https://ieimage.s3-ap-southeast-2.amazonaws.com/BikeEquip2.png" class="img-fluid" alt="post-img" />
-                            </div>
-                            <div class="post-info">
-                                <h4>Bicycle equipment quiz</h4>
-                                <p>Before you ride, the law requires you to have certain equipment to help keep you safe.</p>
-                            </div>
+        <div class="col-md-4 col-sm-6 gallery-grid gal_a gal_c">
+            <a href="@Url.Action("BicycleEquipmentQuiz", "QuizIndex")">
+                <div class="gallery-single fix">
+                    <div class="post-box">
+                        <div class="post-thumb">
+                            <img src="https://ieimage.s3-ap-southeast-2.amazonaws.com/BikeEquip2.png" class="img-fluid" alt="post-img" />
+                        </div>
+                        <div class="post-info">
+                            <h4>Bicycle Equipment Quiz</h4>
+                            <p>Before you ride, the law requires you to have certain equipment to help keep you safe.</p>
                         </div>
                     </div>
-                </a>
-            </div>
+                </div>
+            </a>
+        </div>
         </div>
 
         <div class="row mt-5 pt-5">
