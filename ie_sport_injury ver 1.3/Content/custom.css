@@ -70,3 +70,98 @@
         width: 80%;
         padding: 1.2em 2% .2em;
     }
+
+#article .sign-cards {
+    border-radius: 16px;
+    background: white;
+    padding: 1em;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 1em;
+}
+
+    #article .sign-cards h3 {
+        height: 45px;
+        text-align: center;
+    }
+
+    #article .sign-cards p {
+        height: 120px;
+        text-align: left;
+    }
+
+/* Quiz */
+#questions .choices .row > .choice-box .choice {
+    background: lightgray;
+    width: 100%;
+    padding: 1.5em 1em;
+    color: #3a3a3a;
+    transition: all .3s ease-in-out;
+    border-radius: 10px;
+}
+
+    #questions .choices .row > .choice-box .choice:hover {
+        transform: scale(1.1, 1.2);
+    }
+
+    #questions .choices .row > .choice-box .choice b {
+        margin-right: .5em;
+    }
+
+    #questions .choices .row > .choice-box .choice input {
+        opacity: 0;
+    }
+
+#questions .choices.done .row > .choice-box .choice.ans_true {
+    /*background: #DAFE9F;*/
+    background: green;
+    color: white;
+    opacity: 0.7;
+}
+
+#questions .choices.done .row > .choice-box .choice.ans_false {
+    /*background: #FD9ECD;*/
+    background: red;
+    color: white;
+    opacity: 0.7;
+}
+
+/*
+#questions .choices .row > .choice-box:nth-child(1) .choice {
+    background: #FFE5A0;
+}
+
+#questions .choices .row > .choice-box:nth-child(2) .choice {
+    background: #DAFE9F;
+}
+
+#questions .choices .row > .choice-box:nth-child(3) .choice {
+    background: #FD9ECD;
+}
+
+#questions .choices .row > .choice-box:nth-child(4) .choice {
+    background: #AAB2FB;
+}
+*/
+
+#questions .choices.done .row > .choice-box .choice.ans_select,
+#questions .choices.done .row > .choice-box .choice.ans_select:hover {
+    transform: scale(1.1, 1.2);
+    opacity: 1;
+}
+
+#questions .choices.done .row > .choice-box .choice:hover {
+    transform: none;
+}
+
+#questions .ftco-section > .container {
+    margin-bottom: 2em;
+}
+
+#trivia .progress-bar {
+    background: #17a2b8;
+}
+
+#trivia .progress,
+#trivia .progress .progress-bar {
+    height: 20px;
+}
