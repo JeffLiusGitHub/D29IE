@@ -184,7 +184,6 @@
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\Maps1Controller.cs" />
     <Compile Include="Controllers\MapsController.cs" />
-    <Compile Include="Controllers\NavigationMapController.cs" />
     <Compile Include="Controllers\PasswordController.cs" />
     <Compile Include="Controllers\Quiz2Controller.cs" />
     <Compile Include="Controllers\QuizIndexController.cs" />
@@ -469,11 +468,39 @@
     <Content Include="fonts\license\license.html" />
     <Content Include="Views\Password\index.cshtml" />
     <Content Include="Content\images\article_photo\photo_15.png" />
-    <Content Include="Content\images\article_photo\photo_16.png" />
     <Content Include="Content\images\article_photo\photo_16.jpg" />
     <Content Include="Views\StreetView\Index.cshtml" />
     <Content Include="Views\InjuryHover\Index.cshtml" />
-    <Content Include="Views\NavigationMap\Index.cshtml" />
+    <Content Include="Views\Education\TrafficSigns.cshtml" />
+    <Content Include="Content\images\article_photo\photo_17.png" />
+    <Content Include="Content\images\article_photo\photo_ts_01_02.png" />
+    <Content Include="Content\images\article_photo\photo_ts_01_03.png" />
+    <Content Include="Content\images\article_photo\photo_ts_01_04.png" />
+    <Content Include="Content\images\article_photo\photo_ts_01_05.png" />
+    <Content Include="Content\images\article_photo\photo_ts_01_06.png" />
+    <Content Include="Content\images\article_photo\photo_ts_01_07.png" />
+    <Content Include="Content\images\article_photo\photo_ts_01_08.png" />
+    <Content Include="Content\images\article_photo\photo_ts_01_09.png" />
+    <Content Include="Content\images\article_photo\photo_ts_02_01.png" />
+    <Content Include="Content\images\article_photo\photo_ts_02_02.png" />
+    <Content Include="Content\images\article_photo\photo_ts_02_03.png" />
+    <Content Include="Content\images\article_photo\photo_ts_02_04.png" />
+    <Content Include="Content\images\article_photo\photo_ts_02_05.png" />
+    <Content Include="Content\images\article_photo\photo_ts_02_06.png" />
+    <Content Include="Content\images\article_photo\photo_ts_02_07.png" />
+    <Content Include="Content\images\article_photo\photo_ts_02_08.png" />
+    <Content Include="Content\images\article_photo\photo_ts_02_09.png" />
+    <Content Include="Content\images\article_photo\photo_ts_03_01.png" />
+    <Content Include="Content\images\article_photo\photo_ts_03_02.png" />
+    <Content Include="Content\images\article_photo\photo_ts_03_03.png" />
+    <Content Include="Content\images\article_photo\photo_ts01.png" />
+    <Content Include="Views\QuizIndex\BicycleEquipmentQuiz.cshtml" />
+    <Content Include="Views\QuizIndex\RoadRuleQuiz.cshtml" />
+    <Content Include="Content\images\trivia\q00.jpg" />
+    <Content Include="Content\images\trivia\q01.jpg" />
+    <Content Include="Content\images\trivia\q02.jpg" />
+    <Content Include="Content\images\trivia\q03.jpg" />
+    <Content Include="Content\images\trivia\q04.jpg" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
@@ -483,6 +510,9 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Content\images\trivia\" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
