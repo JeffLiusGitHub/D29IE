@@ -27,73 +27,72 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-
     @*<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <style>*@
-        @*/*body {
+        <style>*@
+    @*/*body {
             font-family: Arial, Helvetica, sans-serif;
         }*/*@
 
-        @*.my_navbar {
-            overflow: hidden;
-            background-color: #333;
-        }
-
-            .my_navbar a {
-                float: left;
-                font-size: 16px;
-                color: white;
-                text-align: center;
-                padding: 14px 16px;
-                text-decoration: none;
+    @*.my_navbar {
+                overflow: hidden;
+                background-color: #333;
             }
 
-        .my_dropdown {
-            float: left;
-            overflow: hidden;
-        }
-
-            .my_dropdown .my_dropbtn {
-                font-size: 16px;
-                border: none;
-                outline: none;
-                color: white;
-                padding: 14px 16px;
-                background-color: inherit;
-                font-family: inherit;
-                margin: 0;
-            }
-
-            .my_navbar a:hover, .my_dropdown:hover .my_dropbtn {
-                background-color: red;
-            }
-
-        .my_dropdown-content {
-            display: none;
-            position: absolute;
-            background-color: #f9f9f9;
-            min-width: 160px;
-            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-            z-index: 1;
-        }
-
-            .my_dropdown-content a {
-                float: none;
-                color: black;
-                padding: 12px 16px;
-                text-decoration: none;
-                display: block;
-                text-align: left;
-            }
-
-                .my_dropdown-content a:hover {
-                    background-color: #ddd;
+                .my_navbar a {
+                    float: left;
+                    font-size: 16px;
+                    color: white;
+                    text-align: center;
+                    padding: 14px 16px;
+                    text-decoration: none;
                 }
 
-        .my_dropdown:hover .my_dropdown-content {
-            display: block;
-        }
-    </style>*@
+            .my_dropdown {
+                float: left;
+                overflow: hidden;
+            }
+
+                .my_dropdown .my_dropbtn {
+                    font-size: 16px;
+                    border: none;
+                    outline: none;
+                    color: white;
+                    padding: 14px 16px;
+                    background-color: inherit;
+                    font-family: inherit;
+                    margin: 0;
+                }
+
+                .my_navbar a:hover, .my_dropdown:hover .my_dropbtn {
+                    background-color: red;
+                }
+
+            .my_dropdown-content {
+                display: none;
+                position: absolute;
+                background-color: #f9f9f9;
+                min-width: 160px;
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                z-index: 1;
+            }
+
+                .my_dropdown-content a {
+                    float: none;
+                    color: black;
+                    padding: 12px 16px;
+                    text-decoration: none;
+                    display: block;
+                    text-align: left;
+                }
+
+                    .my_dropdown-content a:hover {
+                        background-color: #ddd;
+                    }
+
+            .my_dropdown:hover .my_dropdown-content {
+                display: block;
+            }
+        </style>*@
 
 </head>
 
@@ -120,81 +119,90 @@
                 <i class="fa fa-bars"></i>
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav text-uppercase ml-auto">
+                <ul class="navbar-nav text ml-auto">
+                    @*<ul class="navbar-nav text-uppercase ml-auto">*@
+                    @*<ul class="nav nav-tabs">*@
                     <li class="nav-item">
                         @Html.ActionLink("Home", "Index", "Home", null, new { @class = IsSelected("Home") })
                     </li>
                     @*<li class="nav-item">
-            @Html.ActionLink("Education", "Index", "Education", null, new { @class = IsSelected("Education") })
-        </li>*@
+                            @Html.ActionLink("Education", "Index", "Education", null, new { @class = IsSelected("Education") })
+                        </li>*@
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        @*<button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">*@
+                        <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Education
                         </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="/streetView/index">Road Sign view</a>
+                        <div class="dropdown-menu dropdown-menu-lg-right">
+                            <a class="dropdown-item" href="/streetView/index">Road Signs View</a>
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="/Education">Education Article</a>
+                            <a class="dropdown-item" href="/Education">Knowledge Sections</a>
 
 
                         </div>
                     </li>
+
+
+                    @*<li class="nav-item">
+                            @Html.ActionLink("Crash Analysis", "Index", "Analysis", null, new { @class = IsSelected("Analysis") })
+                        </li>*@
+                    @*<li class="nav-item">
+                            @Html.ActionLink("Crash Map", "Index", "Map", null, new { @class = IsSelected("Map") })
+                        </li>*@
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#" id="navbarDropdown" role="menuitem" data-toggle="dropdown" aria-haspopup="false" aria-expanded="false">
+                            Crash Analysis
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-lg-right">
+                            @*<div class="btn-group dropleft">*@
+                            <a class="dropdown-item" href="/Map">Crash Map</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="/Analysis">Crash: When & Where</a>
+
+
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        @Html.ActionLink("Common Injuries", "Index", "InjuryHover", null, new { @class = IsSelected("InjuryHover") })
+                    </li>
+
+
 
                     <li class="nav-item">
                         @Html.ActionLink("Trivia", "Index", "QuizIndex", null, new { @class = IsSelected("QuizIndex") })
-                    </li>
-                    @*<li class="nav-item">
-            @Html.ActionLink("Crash Analysis", "Index", "Analysis", null, new { @class = IsSelected("Analysis") })
-        </li>*@
-                    @*<li class="nav-item">
-            @Html.ActionLink("Crash Map", "Index", "Map", null, new { @class = IsSelected("Map") })
-        </li>*@
-
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Data Visualization
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="/Map">Crash Map</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="/Analysis">Crash Analysis</a>
-
-
-                        </div>
-                    </li>
-
-                    <li class="nav-item">
-                        @Html.ActionLink("Common Injury", "Index", "InjuryHover", null, new { @class = IsSelected("InjuryHover") })
                     </li>
 
                     <li class="nav-item">
                         @Html.ActionLink("Navigation Map", "Index", "NavigationMap", null, new { @class = IsSelected("InjuryHoverMap") })
                     </li>
                 </ul>
+                @*</ul>*@
             </div>
         </div>
     </nav>
 
     @RenderBody()
-<section>
-    <div class="copyrights">
-        <div class="container">
-            <div class="footer-distributed">
-                <a href="#"><img class="logo" src="~/Content/images/logo.png" alt="" /></a>
-                <div class="footer-center">
-                    <p class="footer-links">
-                        @Html.ActionLink("Home", "Index", "Home")
-                        @Html.ActionLink("Education", "Index", "Education")
-                        @Html.ActionLink("Trivia", "Index", "QuizIndex")
-                        @Html.ActionLink("Crash Analysis", "Index", "Analysis")
-                        @Html.ActionLink("Crash Map", "Index", "Map")
-                    </p>
-                    <p class="footer-company-name">All Rights Reserved. &copy; 2020 <a href="#">Sportsaholics</a></p>
+    <section>
+        <div class="copyrights">
+            <div class="container">
+                <div class="footer-distributed">
+                    <a href="#"><img class="logo" src="~/Content/images/logo.png" alt="" /></a>
+                    <div class="footer-center">
+                        <p class="footer-links">
+                            @Html.ActionLink("Home", "Index", "Home")
+                            @Html.ActionLink("Education", "Index", "Education")
+                            @Html.ActionLink("Trivia", "Index", "QuizIndex")
+                            @Html.ActionLink("Crash Analysis", "Index", "Analysis")
+                            @Html.ActionLink("Crash Map", "Index", "Map")
+                        </p>
+                        <p class="footer-company-name">All Rights Reserved. &copy; 2020 <a href="#">Sportsaholics</a></p>
+                    </div>
                 </div>
-            </div>
-        </div><!-- end container -->
-    </div><!-- end copyrights -->
-</section>
+            </div><!-- end container -->
+        </div><!-- end copyrights -->
+    </section>
     <a href="#" id="scroll-to-top" class="dmtop global-radius"><i class="fa fa-angle-up"></i></a>
 
     @Scripts.Render("~/bundles/all")
