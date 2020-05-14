@@ -502,6 +502,11 @@
     <Content Include="Content\images\trivia\q03.jpg" />
     <Content Include="Content\images\trivia\q04.jpg" />
     <Content Include="Content\images\bg2.jpg" />
+    <Content Include="Content\images\trivia\q-bg.jpg" />
+    <Content Include="Content\images\trivia\q-bicycle-00.jpg" />
+    <Content Include="Content\images\trivia\q-bicycle-01.jpg" />
+    <Content Include="Content\images\trivia\q-bicycle-03.jpg" />
+    <Content Include="Content\images\trivia\q-bicycle-04.jpg" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

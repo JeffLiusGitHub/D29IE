@@ -3,7 +3,7 @@
     ViewBag.BodyStyle = "body-no-banner";
 }
 
-<div id="trivia" class="section lb">
+<div id="trivia" class="section lb bicycle-equip">
     <div class="container">
         <div class="section-title text-center">
             <h3>Quiz</h3>
@@ -71,22 +71,28 @@
                         <h3 class="mb-3" id='q0checkN' style='display:none;font-size:18px;'>
                             You were almost there, but the right answer is A.
                         </h3>
-                        <p id='q0explain' style='display:none; text-align: justify;font-size:16px;'>
-
-                            Reason: <br>Road bikes have thinner, faster tyres and drop handlebars while mountain bikes have front suspension for riding rough, sketchy terrain, and a wide range of gears
-
-                        </p>
+                        <div id="q0explain" style="display:none;" class="row">
+                                <div class="col-md-12">
+                                    <p style='text-align: justify;font-size:16px;'>
+                                        Reason: <br>Road bikes have thinner, faster tyres and drop handlebars while mountain bikes have front suspension for riding rough,
+                                        sketchy terrain, and a wide range of gears
+                                    </p>
+                                </div>
+                                <div class="col-md-12 text-center">
+                                    <img src="~/Content/images/trivia/q-bicycle-00.jpg" class="img-fluid" alt="post-img" />
+                                </div>
+                        </div>
                     </div>
-                    <!-- visualization -->
-                    <div class="container visualization text-right" style='margin:20px auto; display:none;'
-                         id='q0visualization'>
-                        <!-- no visualization in this question -->
-                        <a href="#questionsection" onclick="next()" class='next w3-right btn btn-info' style="font-size: 20px;">
-                            Next Question
-                            &raquo;
-                        </a>
+                        <!-- visualization -->
+                        <div class="container visualization text-right" style='margin:20px auto; display:none;'
+                             id='q0visualization'>
+                            <!-- no visualization in this question -->
+                            <a href="#questionsection" onclick="next()" class='next w3-right btn btn-info' style="font-size: 20px;">
+                                Next Question
+                                &raquo;
+                            </a>
+                        </div>
                     </div>
-                </div>
 
                 <!-- question 1 bicycle type -->
                 <div id="q1" class='ftco-section bg-light' style='display:none;'>
@@ -137,10 +143,16 @@
                         <h3 class="mb-3" id='q1checkN' style='display:none; text-align: justify;font-size:18px'>
                             Sorry, you are wrong.
                         </h3>
-                        <p id='q1explain' style='display:none; text-align: justify;font-size:16px'>
-                            Reason: <br>Most modern mountain bikes have front suspension for riding rough, sketchy terrain, and a wide range of gears which makes them great for off-road adventures.
-
-                        </p>
+                        <div id="q1explain" style="display:none;" class="row">
+                            <div class="col-md-7">
+                                <p style='text-align: justify;font-size:16px'>
+                                    Reason: <br>Most modern mountain bikes have front suspension for riding rough, sketchy terrain, and a wide range of gears which makes them great for off-road adventures.
+                                </p>
+                            </div>
+                            <div class="col-md-5">
+                                <img src="~/Content/images/trivia/q-bicycle-01.jpg" class="img-fluid" alt="post-img" />
+                            </div>
+                        </div>
                     </div>
                     <!-- visualization -->
                     <div class="container visualization text-right" style='margin:20px auto; display:none;'
@@ -200,20 +212,29 @@
                         <h3 class="mb-3" id='q2checkN' style='display:none; text-align: justify;font-size:18px;'>
                             Sorry, you are wrong.
                         </h3>
-                        <p id='q2explain' style='display:none; text-align: justify;font-size:16px;'>
-                            Reason: <br>If you see any damage - (cracks, pieces missing, compression of the foam, frayed straps) - then the helmet should be replaced. Manufacturers also advise that if your helmet has sustained an impact (eg. been in a crash), it should be replaced
-                        </p>
+                        <div id="q2explain" style="display:none;" class="row">
+                            <div class="col-md-6">
+                                <p style='text-align: justify;font-size:16px;'>
+                                    Reason: <br>If you see any damage - (cracks, pieces missing, compression of the foam, frayed straps) - then the helmet should be replaced. Manufacturers also advise that if your helmet has sustained an impact (eg. been in a crash), it should be replaced
+                                </p>
+                            </div>
+                            <div class="col-md-6 text-center">
+                                <div class="embed-youtube">
+                                    <iframe width="750" height="563" src="https://www.youtube.com/embed/jO4ahwa6hf0" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                        <!-- visualization -->
+                        <div class="container visualization text-right" style='margin:20px auto; display:none;'
+                             id='q2visualization'>
+                            <!-- no visualize -->
+                            <a href="#questionsection" onclick="next()" class='next w3-right btn btn-info' style="font-size: 20px;">
+                                Next Question
+                                &raquo;
+                            </a>
+                        </div>
                     </div>
-                    <!-- visualization -->
-                    <div class="container visualization text-right" style='margin:20px auto; display:none;'
-                         id='q2visualization'>
-                        <!-- no visualize -->
-                        <a href="#questionsection" onclick="next()" class='next w3-right btn btn-info' style="font-size: 20px;">
-                            Next Question
-                            &raquo;
-                        </a>
-                    </div>
-                </div>
 
                 <!-- question 3 halmet reuse -->
                 <div id="q3" class='ftco-section bg-light' style='display:none;'>
@@ -248,21 +269,29 @@
                     <div class="container">
                         <h3 class="mb-3" id='q3checkC' style='display:none;font-size:18px;'>Yes, you are correct!</h3>
                         <h3 class="mb-3" id='q3checkN' style='display:none;font-size:18px;'>Sorry, you are wrong.</h3>
-                        <p id='q3explain' style='display:none; text-align: justify;font-size:16px;'>
-                            Reason: <br>If you see any damage - (cracks, pieces missing, compression of the foam, frayed straps) - then the helmet should be replaced. Manufacturers also advise that if your helmet has sustained an impact (eg. been in a crash), it should be replaced.
-
-                        </p>
+                        <div id="q3explain" style="display:none;" class="row">
+                            <div class="col-md-12">
+                                <p style='text-align: justify;font-size:16px;'>
+                                    Reason: <br>If you see any damage - (cracks, pieces missing, compression of the foam, frayed straps) -
+                                    then the helmet should be replaced. Manufacturers also advise that if your helmet has sustained an impact (eg. been in a crash),
+                                    it should be replaced.
+                                </p>
+                            </div>
+                            <div class="col-md-12 text-center">
+                                <img src="~/Content/images/trivia/q-bicycle-03.jpg" class="img-fluid" alt="post-img" />
+                            </div>
+                        </div>
                     </div>
-                    <!-- visualization -->
-                    <div class="container visualization text-right" style='margin:20px auto; display:none;'
-                         id='q3visualization'>
-                        <!-- no visualize -->
-                        <a href="#questionsection" onclick="next()" class='next w3-right btn btn-info' style="font-size: 20px;">
-                            Next Question
-                            &raquo;
-                        </a>
+                        <!-- visualization -->
+                        <div class="container visualization text-right" style='margin:20px auto; display:none;'
+                             id='q3visualization'>
+                            <!-- no visualize -->
+                            <a href="#questionsection" onclick="next()" class='next w3-right btn btn-info' style="font-size: 20px;">
+                                Next Question
+                                &raquo;
+                            </a>
+                        </div>
                     </div>
-                </div>
 
                 <!-- question 4 helmet display-->
                 <div id="q4" class='ftco-section bg-light' style='display:none;'>
@@ -297,26 +326,32 @@
                     <div class="container">
                         <h3 class="mb-3" id='q4checkC' style='display:none;font-size:18px;'>You are correct!</h3>
                         <h3 class="mb-3" id='q4checkN' style='display:none;font-size:18px;'>Your answer is wrong!</h3>
-                        <p id='q4explain' style='display:none; text-align: justify;font-size:16px;'>
-                            Reason: <br>When choosing a bike helmet, make sure:
-                            it fits firmly and comfortably on your head and cannot be tilted in any direction
-                            the straps can be adjusted so there is no slack when fastened
-                            it has a sticker showing it is safety approved and meets the Australian/New Zealand Standard AS/NZS 2063
-                            it is marked with the symbol of a body accredited by the Joint Accreditation System of Australia and New Zealand (JAS-ANZ), certifying compliance with AS/NZS2063 (for helmets manufactured or imported from 1 July 2012).
+                        <div id="q4explain" style="display:none;" class="row">
+                            <div class="col-md-7">
+                                <p style='text-align: justify;font-size:16px;'>
+                                    Reason: <br>When choosing a bike helmet, make sure:
+                                    it fits firmly and comfortably on your head and cannot be tilted in any direction
+                                    the straps can be adjusted so there is no slack when fastened
+                                    it has a sticker showing it is safety approved and meets the Australian/New Zealand Standard AS/NZS 2063
+                                    it is marked with the symbol of a body accredited by the Joint Accreditation System of Australia and New Zealand (JAS-ANZ), certifying compliance with AS/NZS2063 (for helmets manufactured or imported from 1 July 2012).
+                                </p>
+                            </div>
+                            <div class="col-md-5">
+                                <img src="~/Content/images/trivia/q-bicycle-04.jpg" class="img-fluid" alt="post-img" />
+                            </div>
+                        </div>
+                        </div>
+                        <!-- visualization -->
+                        <div class="container visualization text-right" style='margin:20px auto; display:none;'
+                             id='q4visualization'>
+                            <!-- no visualize -->
+                            <a href="#questionsection" onclick="next()" class='next w3-right btn btn-info' style="font-size: 20px;">
+                                Next Question
+                                &raquo;
+                            </a>
+                        </div>
 
-                        </p>
                     </div>
-                    <!-- visualization -->
-                    <div class="container visualization text-right" style='margin:20px auto; display:none;'
-                         id='q4visualization'>
-                        <!-- no visualize -->
-                        <a href="#questionsection" onclick="next()" class='next w3-right btn btn-info' style="font-size: 20px;">
-                            Next Question
-                            &raquo;
-                        </a>
-                    </div>
-
-                </div>
 
 
                 <!-- visualization -->
