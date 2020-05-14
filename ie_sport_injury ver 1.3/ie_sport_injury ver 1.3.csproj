@@ -501,6 +501,7 @@
     <Content Include="Content\images\trivia\q02.jpg" />
     <Content Include="Content\images\trivia\q03.jpg" />
     <Content Include="Content\images\trivia\q04.jpg" />
+    <Content Include="Content\images\bg2.jpg" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

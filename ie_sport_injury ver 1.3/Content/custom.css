@@ -42,6 +42,10 @@
     height: 230px;
 }
 
+.btn-hover-new {
+    border: 2px solid #fff;
+}
+
 /* Education */
 .gallery-grid {
     height: 510px;
