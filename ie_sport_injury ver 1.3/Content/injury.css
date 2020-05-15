@@ -1,0 +1,183 @@
+.img_side {
+    background-image: url("https://ieimage.s3-ap-southeast-2.amazonaws.com/sideCircle.png");
+    height: 600px;
+    width: 600px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    /*position: absolute;*/
+    background-attachment: local;
+    background-position: center;
+}
+
+.img_back {
+    background-image: url("https://ieimage.s3-ap-southeast-2.amazonaws.com/backCircle.png");
+    height: 600px;
+    width: 600px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    /*position: absolute;*/
+    background-attachment: local;
+    background-position: center;
+}
+
+.img_front {
+    background-image: url("https://ieimage.s3-ap-southeast-2.amazonaws.com/frontCircle.png");
+    height: 600px;
+    width: 600px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    /*position: absolute;*/
+    background-attachment: local;
+    background-position: center;
+}
+
+.info_icon_saddle {
+    position: relative;
+    top: 30%;
+    left: 60%;
+}
+
+.info_icon_backofLeg {
+    position: relative;
+    top: 36%;
+    left: 55%;
+}
+
+.info_icon_calfPain {
+    position: relative;
+    top: 46%;
+    left: 40%;
+}
+
+.info_icon_posteriorKneePain {
+    position: relative;
+    top: 48%;
+    left: 53%;
+}
+
+.info_icon_achillesPain {
+    position: relative;
+    top: 62%;
+    left: 53%;
+}
+
+.info_icon_footPain {
+    position: relative;
+    top: 43%;
+    left: 52%;
+}
+
+.info-icon_neckPain {
+    position: relative;
+    top: -15%;
+    left: 44%;
+}
+
+.info-icon_sholderPain {
+    position: relative;
+    top: 10%;
+    left: 40%;
+}
+
+.info-icon_backPain {
+    position: relative;
+    top: 5%;
+    left: 45%;
+}
+
+.info-icon_handPressure {
+    position: relative;
+    top: 36%;
+    left: 35%;
+}
+
+
+.info-icon_anteriorKneePain {
+    position: relative;
+    top: 26%;
+    left: 56%;
+}
+
+.info-icon2 {
+    position: relative;
+    top: 5%;
+    left: 97%;
+}
+
+.fa-icon {
+    font-size: 99px;
+    /*color: greenyellow;*/
+    color: #ff6a00;
+    -webkit-animation: breathing 0.3s infinite;
+    animation: breathing 0.3s infinite;
+}
+
+@-webkit-keyframes breathing {
+    0% {
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9);
+    }
+
+    25% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+
+    60% {
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9);
+    }
+
+    100% {
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9);
+    }
+}
+
+@keyframes breathing {
+    0% {
+        -webkit-transform: scale(0.9);
+        -ms-transform: scale(0.9);
+        transform: scale(0.9);
+    }
+
+    25% {
+        -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+        transform: scale(1);
+    }
+
+    60% {
+        -webkit-transform: scale(0.9);
+        -ms-transform: scale(0.9);
+        transform: scale(0.9);
+    }
+
+    100% {
+        -webkit-transform: scale(0.9);
+        -ms-transform: scale(0.9);
+        transform: scale(0.9);
+    }
+}
+
+.info-window {
+    opacity: 0;
+    transition: 0.7s;
+    font-size: 30px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.fa-icon:hover {
+    font-size: 30px;
+}
+
+    .fa-icon:hover + .info-window {
+        opacity: 0.8;
+    }
+
+#wrap {
+    word-break: keep-all;
+    width: 200px;
+}
