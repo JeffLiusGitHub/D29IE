@@ -23,5 +23,10 @@ namespace ie_sport_injury_ver_1._3.Controllers
         {
             return View();
         }
+
+        public ActionResult TrafficSignQuiz()
+        {
+            return View();
+        }
     }
 }

@@ -513,6 +513,28 @@
     <Content Include="Content\images\trivia\q-bicycle-03.jpg" />
     <Content Include="Content\images\trivia\q-bicycle-04.jpg" />
     <Content Include="Views\NavigationMap\Index.cshtml" />
+    <Content Include="Views\QuizIndex\TrafficSignQuiz.cshtml" />
+    <Content Include="Content\images\trivia\photo_ts_01_02.png" />
+    <Content Include="Content\images\trivia\photo_ts_01_03.png" />
+    <Content Include="Content\images\trivia\photo_ts_01_04.png" />
+    <Content Include="Content\images\trivia\photo_ts_01_05.png" />
+    <Content Include="Content\images\trivia\photo_ts_01_06.png" />
+    <Content Include="Content\images\trivia\photo_ts_01_07.png" />
+    <Content Include="Content\images\trivia\photo_ts_01_08.png" />
+    <Content Include="Content\images\trivia\photo_ts_01_09.png" />
+    <Content Include="Content\images\trivia\photo_ts_02_01.png" />
+    <Content Include="Content\images\trivia\photo_ts_02_02.png" />
+    <Content Include="Content\images\trivia\photo_ts_02_03.png" />
+    <Content Include="Content\images\trivia\photo_ts_02_04.png" />
+    <Content Include="Content\images\trivia\photo_ts_02_05.png" />
+    <Content Include="Content\images\trivia\photo_ts_02_06.png" />
+    <Content Include="Content\images\trivia\photo_ts_02_07.png" />
+    <Content Include="Content\images\trivia\photo_ts_02_08.png" />
+    <Content Include="Content\images\trivia\photo_ts_02_09.png" />
+    <Content Include="Content\images\trivia\photo_ts_03_01.png" />
+    <Content Include="Content\images\trivia\photo_ts_03_02.png" />
+    <Content Include="Content\images\trivia\photo_ts_03_03.png" />
+    <Content Include="Content\images\trivia\photo_ts01.png" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

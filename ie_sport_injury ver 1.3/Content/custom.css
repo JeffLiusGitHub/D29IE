@@ -1,6 +1,11 @@
 
 :root {
+    /*
     --background-color-main: #52c596;
+    */
+    --background-color-main: #08AEEA;
+    --background-image-main: linear-gradient(315deg, #08AEEA 0%, #2AF598 100%);
+    --box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .body-no-banner .navbar-dark {
@@ -27,6 +32,7 @@
 .filter-button-group button.active,
 #mainNav.navbar-shrink .navbar-nav .nav-link::after {
     background: var(--background-color-main);
+    background-image: var(--background-image-main);
 }
 
 #mainNav.navbar-shrink {
@@ -40,6 +46,7 @@
 /* homepage */
 .services-inner-box {
     height: 230px;
+    box-shadow: var(--box-shadow);
 }
 
 .btn-hover-new {
@@ -99,7 +106,7 @@
 }
 
 /* Quiz */
-#questions .choices .row > .choice-box .choice {
+#trivia .choices .row > .choice-box .choice {
     background: lightgray;
     width: 100%;
     height: 6em;
@@ -110,26 +117,26 @@
     margin-bottom: 1.2em;
 }
 
-#questions .choices .row > .choice-box .choice:hover {
+#trivia .choices .row > .choice-box .choice:hover {
     transform: scale(1.1, 1.2);
 }
 
-#questions .choices .row > .choice-box .choice b {
+#trivia .choices .row > .choice-box .choice b {
     margin-right: .5em;
 }
 
-#questions .choices .row > .choice-box .choice input {
+#trivia .choices .row > .choice-box .choice input {
     opacity: 0;
 }
 
-#questions .choices.done .row > .choice-box .choice.ans_true {
+#trivia .choices.done .row > .choice-box .choice.ans_true {
     /*background: #DAFE9F;*/
     background: green;
     color: white;
     opacity: 0.7;
 }
 
-#questions .choices.done .row > .choice-box .choice.ans_false {
+#trivia .choices.done .row > .choice-box .choice.ans_false {
     /*background: #FD9ECD;*/
     background: red;
     color: white;
@@ -154,22 +161,25 @@
 }
 */
 
-#questions .choices.done .row > .choice-box .choice.ans_select,
-#questions .choices.done .row > .choice-box .choice.ans_select:hover {
+#trivia .choices.done .row > .choice-box .choice.ans_select,
+#trivia .choices.done .row > .choice-box .choice.ans_select:hover {
     transform: scale(1.1, 1.2);
     opacity: 1;
 }
 
-#questions .choices.done .row > .choice-box .choice:hover {
+#trivia .choices.done .row > .choice-box .choice:hover {
     transform: none;
 }
 
-#questions .ftco-section > .container {
+#trivia .ftco-section > .container {
     margin-bottom: 2em;
 }
 
 #trivia .progress-bar {
-    background: #17a2b8;
+    /*background: #17a2b8;*/
+    background-color: var(--background-color-main);
+    background-image: var(--background-image-main);
+    background-size: auto;
 }
 
 #trivia .progress,
@@ -207,6 +217,9 @@
     color: white;
 }
 
+#trivia .choices.auto-height .row > .choice-box .choice {
+    height: auto;
+}
 
 /* video responsive */
 #trivia .embed-youtube {
@@ -219,13 +232,13 @@
     overflow: hidden;
 }
 
-    #trivia .embed-youtube iframe,
-    #trivia .embed-youtube object,
-    #trivia .embed-youtube embed {
-        border: 0;
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-    }
+#trivia .embed-youtube iframe,
+#trivia .embed-youtube object,
+#trivia .embed-youtube embed {
+    border: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
