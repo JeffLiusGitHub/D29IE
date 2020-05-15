@@ -220,6 +220,7 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Content\images\article_photo\photo_23.jpg" />
+    <Content Include="Content\injury.css" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Scripts\bootstrap.js" />
@@ -242,6 +243,12 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Views\StreetView\BicyclesPedestrianOnly.png" />
+    <Content Include="Views\StreetView\Bicycle_Path_Sign.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Views\StreetView\Bicycle_Path_Sign___Crossing.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Views\StreetView\Bikepath.png" />
     <Content Include="Views\StreetView\end.png" />
     <Content Include="Views\StreetView\lane.png" />

@@ -48,7 +48,9 @@ namespace ie_sport_injury_ver_1._3
                       "~/Content/font-awesome.css",
                       "~/Content/style.css",
                       "~/Content/responsive.css",
-                      "~/Content/custom.css"
+                      "~/Content/custom.css",
+                       "~/Content/injury.css"
+
                       );
             //styleBundle.Transforms.Add(new StyleTransformer());
 

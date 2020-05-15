@@ -31,6 +31,10 @@
         #map3 {
             height: 70%;
         }
+
+        #map4 {
+            height: 70%;
+        }
     </style>
 </head>
 <body>
@@ -55,9 +59,9 @@
             </div>
 
 
-            <h1 style="font-weight:bold">This page provides a <span style="color:forestgreen" ;font-weight:bold"> virtual experience </span>of spotting<span style="color:forestgreen" ;font-weight:bold"> road signs</span> on real life streets. Check out the road signs in Victoria.</h1>
+            <h1 style="font-weight: bold">This page provides a <span style="color:forestgreen" ;font-weight:bold"> virtual experience </span>of spotting<span style="color:forestgreen" ;font-weight:bold"> road signs</span> on real life streets. Check out the road signs in Victoria.</h1>
             @*<h1 style="font-weight:bold">Check our where road signs are in the   <span style="color:forestgreen" ;font-weight:bold">real</span> world.</h1>*@
-<br />
+            <br />
         </div>
         <div class="col-1">
 
@@ -200,8 +204,42 @@
 
     </div>
     <br />
-    <hr />
 
+
+    <div id="map4"></div>
+    <br />
+    <div class="row">
+        <div class="col-md-1">
+            <h2></h2>
+            <h2></h2>
+        </div>
+        <div class=" col-md-2">
+            <img src="~/Views/streetView/Bicycle_Path_Sign.png" alt="Watchfor" class="img-fluid img-rounded">
+        </div>
+        <div class="col-md-8">
+            <h2></h2>
+            <h1 style="font-weight:bold">Bicycle Path Signs - Bike Symbol</h1>
+            <h2> This sign indicates that bikers and pedestrians know they have to share the path. </h2>
+        </div>
+    </div>
+    <hr />
+    <div class="row">
+        <div class="col-md-1">
+            <h2></h2>
+            <h2></h2>
+        </div>
+        <div class=" col-md-2">
+            <img src="~/Views/streetView/Bicycle_Path_Sign___Crossing.png" alt="Watchfor" class="img-fluid img-rounded">
+        </div>
+        <div class="col-md-8">
+            <h2></h2>
+            <h1 style="font-weight:bold">Bicycle Path Signs - Crossing Arrows</h1>
+            <h2> This sign indicates this road is bi-directional </h2>
+
+        </div>
+    </div>
+
+    <hr />
 
     <div class="row mt-5 pt-5">
         <div class="col-md-12">
@@ -256,6 +294,22 @@
                 pov: {
                     heading: 70.83,
                     pitch: 0
+                },
+                addressControlOptions: {
+                    position: google.maps.ControlPosition.BOTTOM_CENTER
+                },
+                linksControl: true,
+                panControl: true,
+                enableCloseButton: true
+            });
+
+
+            var panorama4 = new google.maps.StreetViewPanorama(
+                document.getElementById('map4'), {
+                position: { lat: -37.8069314, lng: 144.9048493 },
+                pov: {
+                    heading: -65,
+                    pitch: -3
                 },
                 addressControlOptions: {
                     position: google.maps.ControlPosition.BOTTOM_CENTER
