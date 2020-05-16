@@ -134,9 +134,13 @@
                             Education
                         </a>
                         <div class="dropdown-menu dropdown-menu-lg-right">
+<<<<<<< Updated upstream
                             <a class="dropdown-item" href="/streetView/Index">Road Signs View</a>
+=======
+                            <a class="dropdown-item" href="@Url.Action("Index", "StreetView")">Road Signs View</a>
+>>>>>>> Stashed changes
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="/Education">Knowledge Section</a>
+                            <a class="dropdown-item" href="@Url.Action("Index", "Education")">Knowledge Section</a>
 
 
                         </div>
@@ -155,7 +159,6 @@
                             Crash Analysis
                         </a>
                         <div class="dropdown-menu dropdown-menu-lg-right">
-                            @*<div class="btn-group dropleft">*@
                             <a class="dropdown-item" href="/Map">Crash Map</a>
                             <div class="dropdown-divider"></div>
                             <a class="dropdown-item" href="/Analysis">Crash: When & Where</a>
@@ -193,9 +196,11 @@
                         <p class="footer-links">
                             @Html.ActionLink("Home", "Index", "Home")
                             @Html.ActionLink("Education", "Index", "Education")
-                            @Html.ActionLink("Trivia", "Index", "QuizIndex")
                             @Html.ActionLink("Crash Analysis", "Index", "Analysis")
                             @Html.ActionLink("Crash Map", "Index", "Map")
+                            @Html.ActionLink("Common Injuries", "Index", "InjuryHover")
+                            @Html.ActionLink("Trivia", "Index", "QuizIndex")
+                            @Html.ActionLink("Navigation Map", "Index", "NavigationMap")
                         </p>
                         <p class="footer-company-name">All Rights Reserved. &copy; 2020 <a href="#">Sportsaholics</a></p>
                     </div>
