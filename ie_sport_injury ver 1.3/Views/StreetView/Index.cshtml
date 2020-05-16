@@ -1,0 +1,300 @@
+﻿
+@{
+    ViewBag.Title = "index";
+    //Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.BodyStyle = "body-no-banner";
+}
+
+<style>
+
+    /* Always set the map height explicitly to define the size of the div
+        * element that contains the map. */
+    #map1 {
+        height: 50vh;
+        /*float: left;*/
+        /*width:70%;*/
+    }
+    /* Optional: Makes the sample page fill the window. */
+    html, body {
+        /*
+        height: 100%;
+        margin: 0px;
+        padding: 40px;
+        */
+    }
+
+    #map2 {
+        height: 50vh;
+    }
+
+    #map3 {
+        height: 50vh;
+    }
+
+    #map4 {
+        height: 50vh;
+    }
+</style>
+
+
+@*<div class="col-md-6">
+        <div id="map"></div>
+    </div>*@
+
+<div id="article" class="section">
+
+    <div class="container mt-5 pt-5">
+
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-10">
+                <div class="section-title text-center">
+                    <h3 style="font-weight:bold">Road Sign street view</h3>
+                    @*<p>The Crash Analysis presents the most risky time intervals of a day across the top 10 worst affected cities in Victoria. It also provides the road geometory for crash locations as well as the safest and the most usafe days of the week to ride a bicycle.</p>*@
+                    <h1 style="font-weight: bold">This page provides a <span style="color:forestgreen" ;font-weight:bold"> virtual experience </span>of spotting<span style="color:forestgreen" ;font-weight:bold"> road signs</span> on real life streets. Check out the road signs in Victoria.</h1>
+                </div>
+            </div>
+            <div class="col-md-1"></div>
+        </div><!--row end-->
+
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-10">
+                <div id="map1"></div>
+            </div>
+        </div>
+
+        @*<script>
+            function initPano1() {
+                // Note: constructed panorama objects have visible: true
+                // set by default.
+                var panorama1 = new google.maps.StreetViewPanorama(
+                    document.getElementById('map1'), {
+                    position: { lat: -37.817404, lng: 144.945911 },
+                    pov: {
+                        heading: 184,
+                        pitch: 10
+                    },
+                    addressControlOptions: {
+                        position: google.maps.ControlPosition.BOTTOM_CENTER
+                    },
+                    linksControl: true,
+                    panControl: true,
+                    enableCloseButton: true
+                });
+            }
+        </script>
+        <script async defer
+                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCtB9R0bx4P_pCguEjgjwo5SL0rnnXCtyw&callback=initPano1">
+            //AIzaSyCtB9R0bx4P_pCguEjgjwo5SL0rnnXCtyw
+        </script>*@
+
+        <div class="row mt-5 ">
+            <div class="col-md-1"></div>
+            <div class=" col-md-2">
+                <img src="~/Views/streetView/watchfor.png" alt="Watchfor" class="img-fluid img-rounded">
+            </div>
+            <div class="col-md-8">
+                <h1 style="font-weight:bold">Watched For Bicycle</h1>
+                <h2> This sign is used at road narrowing and other squeeze points. In this situation,if you are a pedestrian, you should be careful the coming bike.</h2>
+            </div>
+        </div>
+
+        <hr />
+
+        <div class="row mt-5">
+            <div class="col-md-1"></div>
+            <div class=" col-md-2">
+                <img src="~/Views/streetView/only.png" alt="Watchfor" class="img-fluid img-rounded">
+            </div>
+
+            <div class="col-md-8">
+                <h1 style="font-weight:bold">Bike Path</h1>
+                <h2> This sign indicates that it only cater for commuter and pedstrians are not allow. </h2>
+            </div>
+        </div>
+        <hr />
+        <div class="row mt-5">
+            <div class="col-md-1"></div>
+            <div class=" col-md-2">
+                <img src="~/Views/streetView/BicyclesPedestrianOnly.png" alt="Watchfor" class="img-fluid img-rounded">
+            </div>
+
+            <div class="col-md-8">
+                <h1 style="font-weight:bold">Bike Only on the left, pedestrian only on the right </h1>
+                <h2> This sign indicates that one side is for bike riders, skateboards, roller blades, electric bicycles and soccters.</h2>
+                <h2>The other side is for pedestrians. In this situation, you cannot switch lane or you will in danger.</h2>
+            </div>
+
+        </div>
+
+        <div class="row mt-5">
+            <div class="col-md-1"></div>
+            <div class="col-md-10">
+                <div id="map2"></div>
+            </div>
+        </div>
+
+        <div class="row mt-5">
+            <div class="col-md-1"></div>
+            <div class=" col-md-2">
+                <img src="~/Views/streetView/lane.png" alt="Watchfor" class="img-fluid img-rounded">
+            </div>
+            <div class="col-md-8">
+                <h1 style="font-weight:bold">Bike Lane</h1>
+                <h2> You can choose whether or not to ride in a bicycle lane where one is provided.</h2>
+                <h2>You must not ride in a bicycle lane on the wrong side of the road.</h2>
+            </div>
+
+        </div>
+
+        <hr />
+        <div class="row mt-5">
+            <div class="col-md-1"></div>
+            <div class=" col-md-2">
+                <img src="~/Views/streetView/end2.png" alt="Watchfor" class="img-fluid img-rounded">
+            </div>
+            <div class="col-md-8">
+                <h1 style="font-weight:bold">Bicycle Path Sign - End</h1>
+                <h2> This sign indicates that the end of regulatory are.  </h2>
+            </div>
+
+        </div>
+
+        <div class="row mt-5">
+            <div class="col-md-1"></div>
+            <div class="col-md-10">
+                <div id="map3"></div>
+            </div>
+        </div>
+
+        <div class="row mt-5">
+            <div class="col-md-1"></div>
+            <div class=" col-md-2">
+                <img src="~/Views/streetView/Bikepath.png" alt="Watchfor" class="img-fluid img-rounded">
+            </div>
+            <div class="col-md-8">
+                <h1 style="font-weight:bold">Bicycle Path Signs - Man Bike Symbols</h1>
+                <h2> This sign is indicates that pedestrians and bicycle can share the same way. </h2>
+                <h2>Bike and scooter riders give way to pedstrians</h2>
+            </div>
+
+        </div>
+
+        <div class="row mt-5">
+            <div class="col-md-1"></div>
+            <div class="col-md-10">
+                <div id="map4"></div>
+            </div>
+        </div>
+
+        <div class="row mt-5">
+            <div class="col-md-1"></div>
+            <div class=" col-md-2">
+                <img src="~/Views/streetView/Bicycle_Path_Sign.png" alt="Watchfor" class="img-fluid img-rounded">
+            </div>
+            <div class="col-md-8">
+                <h1 style="font-weight:bold">Bicycle Path Signs - Bike Symbol</h1>
+                <h2> This sign indicates that bikers and pedestrians know they have to share the path. </h2>
+            </div>
+        </div>
+
+        <hr />
+
+        <div class="row mt-5">
+            <div class="col-md-1">
+            </div>
+            <div class="col-md-2">
+                <img src="~/Views/streetView/crossing.png" alt="Watchfor" class="img-fluid img-rounded">
+            </div>
+            <div class="col-md-8">
+                <h1 style="font-weight:bold">Bicycle Path Signs - Crossing Arrows</h1>
+                <h2> This sign indicates this road is bi-directional </h2>
+
+            </div>
+        </div>
+
+        <hr />
+
+        <div class="row mt-5 pt-5">
+            <div class="col-md-12">
+                <div class="text-center">
+                    <a class="sim-btn hvr-bounce-to-top" href="@Url.Action("Index", "Education")">
+                        <i class="fa fa-long-arrow-left pr-2"></i>
+                        <span>Back</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div><!--container end-->
+
+</div><!--article end-->
+
+<script>function initPano() {
+        // Note: constructed panorama objects have visible: true
+        // set by default.
+
+        var panorama1 = new google.maps.StreetViewPanorama(
+            document.getElementById('map1'), {
+            position: { lat: -37.817404, lng: 144.945911 },
+            pov: {
+                heading: 184,
+                pitch: 10
+            },
+            addressControlOptions: {
+                position: google.maps.ControlPosition.BOTTOM_CENTER
+            },
+            linksControl: true,
+            panControl: true,
+            enableCloseButton: true
+        });
+        var panorama2 = new google.maps.StreetViewPanorama(
+            document.getElementById('map2'), {
+            position: { lat: -37.8239796, lng: 144.9605012 },
+            pov: {
+                heading: 334,
+                pitch: -7
+            },
+            addressControlOptions: {
+                position: google.maps.ControlPosition.BOTTOM_CENTER
+            },
+            linksControl: true,
+            panControl: true,
+            enableCloseButton: true
+        });
+
+
+        var panorama3 = new google.maps.StreetViewPanorama(
+            document.getElementById('map3'), {
+            position: { lat: -37.8209015, lng: 144.9623046 },
+            pov: {
+                heading: 70.83,
+                pitch: 0
+            },
+            addressControlOptions: {
+                position: google.maps.ControlPosition.BOTTOM_CENTER
+            },
+            linksControl: true,
+            panControl: true,
+            enableCloseButton: true
+        });
+
+
+        var panorama4 = new google.maps.StreetViewPanorama(
+            document.getElementById('map4'), {
+            position: { lat: -37.8069314, lng: 144.9048493 },
+            pov: {
+                heading: -65,
+                pitch: -3
+            },
+            addressControlOptions: {
+                position: google.maps.ControlPosition.BOTTOM_CENTER
+            },
+            linksControl: true,
+            panControl: true,
+            enableCloseButton: true
+        });
+    }</script>
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC-T7Dzz6uiEYc_9jOEx0YaoShzx7XJZjs&callback=initPano"></script>
