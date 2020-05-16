@@ -8,7 +8,7 @@ namespace ie_sport_injury_ver_1._3.Controllers
 {
     public class InjuryHoverController : Controller
     {
-        // GET: injuryHover
+        // GET: InjuryHover
         public ActionResult Index()
         {
             return View();

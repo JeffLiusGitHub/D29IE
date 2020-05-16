@@ -239,9 +239,24 @@
     <Content Include="Views\InjuryHover\back.jpg" />
     <Content Include="Views\InjuryHover\front.jpg" />
     <Content Include="Views\InjuryHover\side.jpg" />
+    <Content Include="Views\nononono\back.jpg" />
+    <Content Include="Views\nononono\front.jpg" />
+    <Content Include="Views\nononono\side.jpg" />
     <Content Include="Views\Map\crash_choropleth.html">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Views\2222\BicyclesPedestrianOnly.png" />
+    <Content Include="Views\2222\Bicycle_Path_Sign.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Views\2222\Bicycle_Path_Sign___Crossing.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Views\2222\Bikepath.png" />
+    <Content Include="Views\2222\end.png" />
+    <Content Include="Views\2222\lane.png" />
+    <Content Include="Views\2222\only.png" />
+    <Content Include="Views\2222\watchfor.png" />
     <Content Include="Views\StreetView\BicyclesPedestrianOnly.png" />
     <Content Include="Views\StreetView\Bicycle_Path_Sign.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -481,8 +496,8 @@
     <Content Include="Views\Password\index.cshtml" />
     <Content Include="Content\images\article_photo\photo_15.png" />
     <Content Include="Content\images\article_photo\photo_16.jpg" />
-    <Content Include="Views\StreetView\Index.cshtml" />
-    <Content Include="Views\InjuryHover\Index.cshtml" />
+    <Content Include="Views\2222\Index.cshtml" />
+    <Content Include="Views\nononono\Index.cshtml" />
     <Content Include="Views\Education\TrafficSigns.cshtml" />
     <Content Include="Content\images\article_photo\photo_17.png" />
     <Content Include="Content\images\article_photo\photo_ts_01_02.png" />
@@ -542,6 +557,8 @@
     <Content Include="Content\images\trivia\photo_ts_03_02.png" />
     <Content Include="Content\images\trivia\photo_ts_03_03.png" />
     <Content Include="Content\images\trivia\photo_ts01.png" />
+    <Content Include="Views\InjuryHover\index.cshtml" />
+    <Content Include="Views\StreetView\Index.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

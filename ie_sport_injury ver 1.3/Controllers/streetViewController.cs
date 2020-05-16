@@ -8,7 +8,7 @@ namespace ie_sport_injury_ver_1._3.Controllers
 {
     public class StreetViewController : Controller
     {
-        // GET: streetView
+        // GET: StreetView
         public ActionResult Index()
         {
             return View();
