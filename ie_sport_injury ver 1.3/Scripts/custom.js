@@ -157,4 +157,23 @@
         });
     });
 
+    // SPORTSAHOLICS
+    // INJURY
+    console.log('injury ' + $('#injury .img_hover .fa-icon').length);
+    $('#injury .img_hover .fa-icon').hover(function () {
+        var _id = $(this).data('ref');
+        $('#' + _id).addClass('active');
+    }, function () {
+        var _id = $(this).data('ref');
+        $('#' + _id).removeClass('active');
+    });
+
+    $('#injury .injury-section-desc').hover(function () {
+        var _id = $(this).data('ref');
+        $('#' + _id).addClass('hover');
+    }, function () {
+        var _id = $(this).data('ref');
+        $('#' + _id).removeClass('hover');
+    });
+
 })(jQuery);
