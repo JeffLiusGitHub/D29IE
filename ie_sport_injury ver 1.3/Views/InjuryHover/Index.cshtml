@@ -1,0 +1,226 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    ViewBag.BodyStyle = "body-no-banner";
+}
+
+<link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+
+<div id="injury" class="section">
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-10">
+                <div class="section-title text-center">
+                    <h3 style="font-weight:bold">Common Injuries</h3>
+                    <h1 style="font-weight:bold">
+                        <span style="color:forestgreen" ;font-weight:bold">Hover</span> your mouse on <span style="color:forestgreen" ;font-weight:bold">pain-points</span>
+                        shown in the images to know more about the causes of injuries.
+                    </h1>
+                    <hr />
+                </div><!-- end title -->
+            </div>
+            <div class="col-md-1"></div>
+        </div><!--row end-->
+
+        <div class="row">
+            <div class="col-3">
+                <div id="sec-01-01" class="injury-section-desc" data-ref="point-01-01">
+                    <h2 class="title">Neck Pain</h2>
+                    <ul>
+                        <li>Incorrect ‘reach’ length</li>
+                        <li>Poor muscle control</li>
+                        <li>Saddle position</li>
+                        <li>Flexibility of pelvis/hamstrings</li>
+                    </ul>
+                </div>
+
+                <div id="sec-01-02" class="injury-section-desc mt-5" data-ref="point-01-02">
+                    <h2 class="title">Saddle Sores</h2>
+                    <ul>
+                        <li>Asymmetry:leg & pelvis</li>
+                        <li>Saddle height/position</li>
+                        <li>Saddle type</li>
+                        <li>Skin care</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="img_side img_hover">
+                    <div class="info_icon_saddle">
+                        <i class="fa fa-dot-circle-o fa-icon" data-ref="sec-01-02" id="point-01-02"></i>
+                        <span class="info-window">Saddle Sores</span>
+                    </div>
+
+                    <div class="info_icon_backofLeg">
+                        <i class="fa fa-dot-circle-o fa-icon" data-ref="sec-01-03" id="point-01-03"></i>
+                        <span class="info-window">Back of Leg Pain</span>
+                    </div>
+
+                    <div class="info_icon_footPain">
+                        <i class="fa fa-dot-circle-o fa-icon" data-ref="sec-01-04" id="point-01-04"></i>
+                        <span class="info-window">Foot Pain</span>
+                    </div>
+
+                    <div class="info-icon_neckPain">
+                        <i class="fa fa-dot-circle-o fa-icon" data-ref="sec-01-01" id="point-01-01"></i>
+                        <span class="info-window">Neck Pain</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-1"></div>
+            <div class="col-md-2">
+                <div id="sec-01-03" class="injury-section-desc" data-ref="point-01-03">
+                    <h2 class="title">Back Leg Pain</h2>
+                    <ul>
+                        <li>Tight hamstrings</li>
+                        <li>Lower back pain</li>
+                        <li>SIJ referred pain</li>
+                        <li>Saddle height/fore/aft</li>
+                    </ul>
+                </div>
+
+                <div id="sec-01-04" class="injury-section-desc mt-5" data-ref="point-01-04">
+                    <h2 class="title">Foot pain</h2>
+                    <ul>
+                        <li>Proximal control</li>
+                        <li>Poor shoe choice</li>
+                        <li>Rear foot pronation</li>
+                    </ul>
+                </div>
+            </div>
+        </div><!--row end-->
+
+        <div class="row mt-5">
+            <!--Back Pain-->
+            <div class="col-md-3">
+                <div id="sec-02-01" class="injury-section-desc" data-ref="point-02-01">
+                    <h2 class="title">Back Pain</h2>
+                    <ul>
+                        <li>Range of hamstrings</li>
+                        <li>Flexibility of pelvis</li>
+                        <li>Saddle position</li>
+                        <li>Saddle type</li>
+                        <li>Core control</li>
+                        <li>Technique</li>
+                        <li>Dissociation ability pelvis vs legs</li>
+                    </ul>
+                </div>
+                <div id="sec-02-02" class="injury-section-desc mt-5" data-ref="point-02-02">
+                    <h2 class="title">Calf Pain</h2>
+                    <ul>
+                        <li>Saddle too high/back</li>
+                        <li>Overload/training errors</li>
+                        <li>Poor gluts</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="img_back img_hover">
+                    <div class="info_icon_calfPain">
+                        <i class="fa fa-dot-circle-o fa-icon" data-ref="sec-02-02" id="point-02-02"></i>
+                        <span class="info-window">Calf Pain</span>
+                    </div>
+
+                    <div class="info_icon_posteriorKneePain">
+                        <i class="fa fa-dot-circle-o fa-icon" data-ref="sec-02-03" id="point-02-03"></i>
+                        <span class="info-window">Posterior Knee Pain</span>
+                    </div>
+
+                    <div class="info_icon_achillesPain">
+                        <i class="fa fa-dot-circle-o fa-icon" data-ref="sec-02-04" id="point-02-04"></i>
+                        <span class="info-window">Achilles Pain</span>
+                    </div>
+
+                    <div class="info-icon_backPain">
+                        <i class="fa fa-dot-circle-o fa-icon" data-ref="sec-02-01" id="point-02-01"></i>
+                        <span class="info-window">Back Pain</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-1"></div>
+            <div class="col-md-2">
+                <div id="sec-02-03" class="injury-section-desc" data-ref="point-02-03">
+                    <h2 class="title">Posterior Knee Pain</h2>
+                    <ul>
+                        <li>Saddle too high/back</li>
+                        <li>Tight Hamstrings</li>
+                        <li>Poor gluts</li>
+                        <li>Toey technique</li>
+                        <li>Trying to ‘pull up’</li>
+                    </ul>
+                </div>
+
+                <div id="sec-02-04" class="injury-section-desc mt-5" data-ref="point-02-04">
+                    <h2 class="title">Achilles Pain</h2>
+                    <ul>
+                        <li>Saddle too high/back</li>
+                        <li>Overload/training errors</li>
+                        <li>Poor gluts</li>
+                    </ul>
+                </div>
+            </div>
+        </div><!--row end-->
+
+        <div class="row mt-5">
+            <!-- front pain-->
+            <div class="col-md-3">
+                <div id="sec-03-01" class="injury-section-desc" data-ref="point-03-01">
+                    <h2 class="title">Shoulder Pain</h2>
+                    <ul>
+                        <li>Incorrect bar width</li>
+                        <li>Poor muscle control</li>
+                        <li>Saddle position</li>
+                        <li>
+                            Poor core stabilisers
+                            (using shoulders to hold)
+                        </li>
+                    </ul>
+                </div>
+                <div id="sec-03-02" class="injury-section-desc mt-5" data-ref="point-03-02">
+                    <h2 class="title">Hand Pressure</h2>
+                    <ul>
+                        <li>Hypermobile hand/fingers/wrists</li>
+                        <li>Equipment choice gears/brake/bars/tape</li>
+                        <li>Drop bars/saddle</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="img_front img_hover">
+                    <div class="info-icon_sholderPain">
+                        <i class="fa fa-dot-circle-o fa-icon" data-ref="sec-03-01" id="point-03-01"></i>
+                        <span class="info-window">Shoulder Pain</span>
+                    </div>
+
+                    <div class="info-icon_handPressure">
+                        <i class="fa fa-dot-circle-o fa-icon" data-ref="sec-03-02" id="point-03-02"></i>
+                        <span class="info-window">Hand Pressure</span>
+                    </div>
+
+                    <div class="info-icon_anteriorKneePain">
+                        <i class="fa fa-dot-circle-o fa-icon" data-ref="sec-03-03" id="point-03-03"></i>
+                        <span class="info-window">Anterior Knee Pain</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-1"></div>
+            <div class="col-md-2">
+                <div id="sec-03-03" class="injury-section-desc" data-ref="point-03-03">
+                    <h2 class="title">Anterior Knee Pain</h2>
+                    <ul>
+                        <li>Saddle too low/forward</li>
+                        <li>Poor use of gluts</li>
+                        <li>Training errors/overload</li>
+                        <li>Hamstrings tightness</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div><!--row end-->
+
+    </div>
+</div>
+
