@@ -542,6 +542,7 @@
     <Content Include="Content\images\trivia\photo_ts01.png" />
     <Content Include="Views\StreetView\Index.cshtml" />
     <Content Include="Views\StreetView\crossing.png" />
+    <Content Include="Views\InjuryHover\Index.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
