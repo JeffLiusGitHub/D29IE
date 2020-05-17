@@ -159,7 +159,6 @@
 
     // SPORTSAHOLICS
     // INJURY
-    console.log('injury ' + $('#injury .img_hover .fa-icon').length);
     $('#injury .img_hover .fa-icon').hover(function () {
         var _id = $(this).data('ref');
         $('#' + _id).addClass('active');

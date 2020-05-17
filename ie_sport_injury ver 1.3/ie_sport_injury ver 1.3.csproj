@@ -543,6 +543,7 @@
     <Content Include="Views\StreetView\Index.cshtml" />
     <Content Include="Views\StreetView\crossing.png" />
     <Content Include="Views\InjuryHover\Index.cshtml" />
+    <Content Include="Views\StreetView\end2.png" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
