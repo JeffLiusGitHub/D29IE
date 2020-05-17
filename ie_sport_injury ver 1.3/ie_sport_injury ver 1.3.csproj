@@ -239,9 +239,6 @@
     <Content Include="Views\InjuryHover\back.jpg" />
     <Content Include="Views\InjuryHover\front.jpg" />
     <Content Include="Views\InjuryHover\side.jpg" />
-    <Content Include="Views\nononono\back.jpg" />
-    <Content Include="Views\nononono\front.jpg" />
-    <Content Include="Views\nononono\side.jpg" />
     <Content Include="Views\Map\crash_choropleth.html">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
@@ -484,7 +481,6 @@
     <Content Include="Views\Password\index.cshtml" />
     <Content Include="Content\images\article_photo\photo_15.png" />
     <Content Include="Content\images\article_photo\photo_16.jpg" />
-    <Content Include="Views\nononono\Index.cshtml" />
     <Content Include="Views\Education\TrafficSigns.cshtml" />
     <Content Include="Content\images\article_photo\photo_17.png" />
     <Content Include="Content\images\article_photo\photo_ts_01_02.png" />
