@@ -251,6 +251,7 @@
     </Content>
     <Content Include="Views\StreetView\Bikepath.png" />
     <Content Include="Views\StreetView\end.png" />
+    <Content Include="Views\StreetView\end2.png" />
     <Content Include="Views\StreetView\lane.png" />
     <Content Include="Views\StreetView\only.png" />
     <Content Include="Views\StreetView\watchfor.png" />
