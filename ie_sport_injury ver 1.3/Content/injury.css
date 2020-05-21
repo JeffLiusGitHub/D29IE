@@ -168,11 +168,14 @@
 #injury .info-window {
     opacity: 0;
     transition: 0.7s;
-    font-size: 30px;
+    font-size: 1.3em;
     background-color: #FFFFFF;
     border-radius: 10px;
-    padding: 10px;
+    padding: 10px 8px;
     position: relative;
+    display: inline-block;
+    min-height: 53px;
+    vertical-align: middle;
 }
 
 #injury .fa-icon:hover,
@@ -223,4 +226,3 @@
     border-radius: 20px;
     background: rgba(255,255,255, 0.6);
 }
-

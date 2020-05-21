@@ -175,4 +175,14 @@
         $('#' + _id).removeClass('hover');
     });
 
+
+    var $injuryItems = $('#injury .gallery-item');
+    $('#injury .gallery-menu button').click(function () {
+        var filter = $(this).data('filter');
+        $injuryItems
+            .removeClass('invisible')
+            .not(filter)
+            .addClass('invisible');
+    });
+
 })(jQuery);

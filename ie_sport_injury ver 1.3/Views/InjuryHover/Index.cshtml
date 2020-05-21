@@ -8,7 +8,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 
 
-<div id="injury" class="section">
+<div id="injury" class="section lb">
     <div class="container mt-5">
         <div class="row">
             <div class="col-md-1"></div>
@@ -25,9 +25,20 @@
             <div class="col-md-1"></div>
         </div><!--row end-->
 
+        <div class="gallery-menu row mb-5">
+            <div class="col-md-12">
+                <div class="button-group filter-button-group text-center">
+                    <button class="active" data-filter="*">All</button>
+                    <button data-filter=".gal_a">Upperbody Pain</button>
+                    <button data-filter=".gal_b">Lowerbody Pain</button>
+                    <button data-filter=".gal_c">Foot Pain</button>
+                </div>
+            </div>
+        </div>
+
         <div class="row">
             <div class="col-3">
-                <div id="sec-01-01" class="injury-section-desc" data-ref="point-01-01">
+                <div id="sec-01-01" class="injury-section-desc gallery-item gal_a" data-ref="point-01-01">
                     <h2 class="title">Neck Pain</h2>
                     <ul>
                         <li>Incorrect ‘reach’ length</li>
@@ -37,7 +48,7 @@
                     </ul>
                 </div>
 
-                <div id="sec-01-02" class="injury-section-desc mt-5" data-ref="point-01-02">
+                <div id="sec-01-02" class="injury-section-desc mt-5 gallery-item gal_b" data-ref="point-01-02">
                     <h2 class="title">Saddle Sores</h2>
                     <ul>
                         <li>Asymmetry:leg & pelvis</li>
@@ -49,22 +60,22 @@
             </div>
             <div class="col-md-6">
                 <div class="img_side img_hover">
-                    <div class="info_icon_saddle">
+                    <div class="info_icon_saddle gallery-item gal_b">
                         <i class="fa fa-dot-circle-o fa-icon" data-ref="sec-01-02" id="point-01-02"></i>
                         <span class="info-window">Saddle Sores</span>
                     </div>
 
-                    <div class="info_icon_backofLeg">
+                    <div class="info_icon_backofLeg gallery-item gal_b">
                         <i class="fa fa-dot-circle-o fa-icon" data-ref="sec-01-03" id="point-01-03"></i>
                         <span class="info-window">Back of Leg Pain</span>
                     </div>
 
-                    <div class="info_icon_footPain">
+                    <div class="info_icon_footPain gallery-item gal_c">
                         <i class="fa fa-dot-circle-o fa-icon" data-ref="sec-01-04" id="point-01-04"></i>
                         <span class="info-window">Foot Pain</span>
                     </div>
 
-                    <div class="info-icon_neckPain">
+                    <div class="info-icon_neckPain gallery-item gal_a">
                         <i class="fa fa-dot-circle-o fa-icon" data-ref="sec-01-01" id="point-01-01"></i>
                         <span class="info-window">Neck Pain</span>
                     </div>
@@ -72,7 +83,7 @@
             </div>
             <div class="col-md-1"></div>
             <div class="col-md-2">
-                <div id="sec-01-03" class="injury-section-desc" data-ref="point-01-03">
+                <div id="sec-01-03" class="injury-section-desc gallery-item gal_b" data-ref="point-01-03">
                     <h2 class="title">Back Leg Pain</h2>
                     <ul>
                         <li>Tight hamstrings</li>
@@ -82,7 +93,7 @@
                     </ul>
                 </div>
 
-                <div id="sec-01-04" class="injury-section-desc mt-5" data-ref="point-01-04">
+                <div id="sec-01-04" class="injury-section-desc mt-5 gallery-item gal_c" data-ref="point-01-04">
                     <h2 class="title">Foot pain</h2>
                     <ul>
                         <li>Proximal control</li>
@@ -96,7 +107,7 @@
         <div class="row mt-5">
             <!--Back Pain-->
             <div class="col-md-3">
-                <div id="sec-02-01" class="injury-section-desc" data-ref="point-02-01">
+                <div id="sec-02-01" class="injury-section-desc gallery-item gal_b" data-ref="point-02-01">
                     <h2 class="title">Back Pain</h2>
                     <ul>
                         <li>Range of hamstrings</li>
@@ -108,7 +119,7 @@
                         <li>Dissociation ability pelvis vs legs</li>
                     </ul>
                 </div>
-                <div id="sec-02-02" class="injury-section-desc mt-5" data-ref="point-02-02">
+                <div id="sec-02-02" class="injury-section-desc mt-5 gallery-item gal_b" data-ref="point-02-02">
                     <h2 class="title">Calf Pain</h2>
                     <ul>
                         <li>Saddle too high/back</li>
@@ -119,22 +130,22 @@
             </div>
             <div class="col-md-6">
                 <div class="img_back img_hover">
-                    <div class="info_icon_calfPain">
+                    <div class="info_icon_calfPain gallery-item gal_b">
                         <i class="fa fa-dot-circle-o fa-icon" data-ref="sec-02-02" id="point-02-02"></i>
                         <span class="info-window">Calf Pain</span>
                     </div>
 
-                    <div class="info_icon_posteriorKneePain">
+                    <div class="info_icon_posteriorKneePain gallery-item gal_b">
                         <i class="fa fa-dot-circle-o fa-icon" data-ref="sec-02-03" id="point-02-03"></i>
                         <span class="info-window">Posterior Knee Pain</span>
                     </div>
 
-                    <div class="info_icon_achillesPain">
+                    <div class="info_icon_achillesPain gallery-item gal_c">
                         <i class="fa fa-dot-circle-o fa-icon" data-ref="sec-02-04" id="point-02-04"></i>
                         <span class="info-window">Achilles Pain</span>
                     </div>
 
-                    <div class="info-icon_backPain">
+                    <div class="info-icon_backPain gallery-item gal_b">
                         <i class="fa fa-dot-circle-o fa-icon" data-ref="sec-02-01" id="point-02-01"></i>
                         <span class="info-window">Back Pain</span>
                     </div>
@@ -142,7 +153,7 @@
             </div>
             <div class="col-md-1"></div>
             <div class="col-md-2">
-                <div id="sec-02-03" class="injury-section-desc" data-ref="point-02-03">
+                <div id="sec-02-03" class="injury-section-desc gallery-item gal_b" data-ref="point-02-03">
                     <h2 class="title">Posterior Knee Pain</h2>
                     <ul>
                         <li>Saddle too high/back</li>
@@ -153,7 +164,7 @@
                     </ul>
                 </div>
 
-                <div id="sec-02-04" class="injury-section-desc mt-5" data-ref="point-02-04">
+                <div id="sec-02-04" class="injury-section-desc mt-5 gallery-item gal_c" data-ref="point-02-04">
                     <h2 class="title">Achilles Pain</h2>
                     <ul>
                         <li>Saddle too high/back</li>
@@ -167,7 +178,7 @@
         <div class="row mt-5">
             <!-- front pain-->
             <div class="col-md-3">
-                <div id="sec-03-01" class="injury-section-desc" data-ref="point-03-01">
+                <div id="sec-03-01" class="injury-section-desc gallery-item gal_a" data-ref="point-03-01">
                     <h2 class="title">Shoulder Pain</h2>
                     <ul>
                         <li>Incorrect bar width</li>
@@ -179,7 +190,7 @@
                         </li>
                     </ul>
                 </div>
-                <div id="sec-03-02" class="injury-section-desc mt-5" data-ref="point-03-02">
+                <div id="sec-03-02" class="injury-section-desc mt-5 gallery-item gal_a" data-ref="point-03-02">
                     <h2 class="title">Hand Pressure</h2>
                     <ul>
                         <li>Hypermobile hand/fingers/wrists</li>
@@ -190,17 +201,17 @@
             </div>
             <div class="col-md-6">
                 <div class="img_front img_hover">
-                    <div class="info-icon_sholderPain">
+                    <div class="info-icon_sholderPain gallery-item gal_a">
                         <i class="fa fa-dot-circle-o fa-icon" data-ref="sec-03-01" id="point-03-01"></i>
                         <span class="info-window">Shoulder Pain</span>
                     </div>
 
-                    <div class="info-icon_handPressure">
+                    <div class="info-icon_handPressure gallery-item gal_a">
                         <i class="fa fa-dot-circle-o fa-icon" data-ref="sec-03-02" id="point-03-02"></i>
                         <span class="info-window">Hand Pressure</span>
                     </div>
 
-                    <div class="info-icon_anteriorKneePain">
+                    <div class="info-icon_anteriorKneePain gallery-item gal_b">
                         <i class="fa fa-dot-circle-o fa-icon" data-ref="sec-03-03" id="point-03-03"></i>
                         <span class="info-window">Anterior Knee Pain</span>
                     </div>
@@ -208,7 +219,7 @@
             </div>
             <div class="col-1"></div>
             <div class="col-md-2">
-                <div id="sec-03-03" class="injury-section-desc" data-ref="point-03-03">
+                <div id="sec-03-03" class="injury-section-desc gallery-item gal_b" data-ref="point-03-03">
                     <h2 class="title">Anterior Knee Pain</h2>
                     <ul>
                         <li>Saddle too low/forward</li>

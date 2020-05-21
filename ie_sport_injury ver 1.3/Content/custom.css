@@ -42,6 +42,15 @@
     color: #fff;
 }
 
+/* back button */
+a.sim-btn.hvr-bounce-to-top:hover {
+    background: var(--background-color-main);
+}
+
+a.sim-btn.hvr-bounce-to-top::before {
+    display: none;
+}
+
 /* homepage */
 .services-inner-box {
     height: 230px;
