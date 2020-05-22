@@ -185,4 +185,30 @@
             .addClass('invisible');
     });
 
+    $('#injury .injury-section-desc .btn').click(function () {
+        var $btn = $(this);
+        var $section = $btn.parents('.injury-section-desc');
+
+        $section.find('.btn').removeClass('active');
+        $btn.addClass('active');
+
+        $section.find('.injury-panel').removeClass('d-none')
+            .not('.' + $btn.data('ref'))
+            .addClass('d-none');
+    });
+
+    $('#injury .injury-section-desc').each(function (i) {
+        var $panal = $(this).find('.injury-panel');
+        var _height = 0;
+        $panal.each(function () {
+            console.log(i + ' ' + $(this).outerHeight())
+            var h = $(this).outerHeight();
+            _height = (h > _height) ? h : _height;
+        });
+
+        $panal.height(_height)
+            .not('.injury-panel-cause')
+            .addClass('d-none');
+    });
+
 })(jQuery);
