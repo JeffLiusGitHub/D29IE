@@ -18,7 +18,7 @@
 /* menu */
 #mainNav.navbar-shrink .navbar-brand img.logo,
 .logo {
-    max-width: 80px;
+    max-width: 150px;
 }
 
 .navbar-dark .navbar-nav .nav-link.active {
