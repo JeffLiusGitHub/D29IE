@@ -177,12 +177,24 @@
 
 
     var $injuryItems = $('#injury .gallery-item');
+    var $infoSection = $('#injury .info-section');
     $('#injury .gallery-menu button').click(function () {
         var filter = $(this).data('filter');
         $injuryItems
             .removeClass('invisible')
             .not(filter)
             .addClass('invisible');
+
+        $infoSection.each(function (i) {
+            //console.log('==info section==');
+            //console.log($(this).has('.gallery-item:not(.invisible)').length);
+            var $s = $(this);
+            if ($s.find('.gallery-item:not(.invisible)').length) {
+                $s.removeClass('d-none');
+            } else {
+                $s.addClass('d-none');
+            }
+        });
     });
 
     $('#injury .injury-section-desc .btn').click(function () {
@@ -201,7 +213,6 @@
         var $panal = $(this).find('.injury-panel');
         var _height = 0;
         $panal.each(function () {
-            console.log(i + ' ' + $(this).outerHeight())
             var h = $(this).outerHeight();
             _height = (h > _height) ? h : _height;
         });
