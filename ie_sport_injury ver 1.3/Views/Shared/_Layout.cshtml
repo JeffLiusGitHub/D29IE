@@ -1,6 +1,7 @@
 ﻿@{
     string controllerAction = ViewContext.RouteData.Values["Controller"].ToString();
-    Func<string, string> IsSelected = x => x == controllerAction ? "nav-link js-scroll-trigger active" : "nav-link js-scroll-trigger";
+    Func<string, string> getMenuClass = x => x == controllerAction ? "nav-link js-scroll-trigger active" : "nav-link js-scroll-trigger";
+    Func<string, Boolean> IsSelected = x => x == controllerAction; 
 }
 <!DOCTYPE html>
 <html>
@@ -125,44 +126,52 @@
                     @*<ul class="navbar-nav text-uppercase ml-auto">*@
                     @*<ul class="nav nav-tabs">*@
                     <li class="nav-item">
-                        @Html.ActionLink("Home", "Index", "Home", null, new { @class = IsSelected("Home") })
+                        @Html.ActionLink("Home", "Index", "Home", null, new { @class = getMenuClass("Home") })
                     </li>
                     @*<li class="nav-item">
-                         @Html.ActionLink("Education", "Index", "Education", null, new { @class = IsSelected("Education") })
+                         @Html.ActionLink("Education", "Index", "Education", null, new { @class = getMenuClass("Education") })
                     </li>*@
                     <li class="nav-item dropdown">
                         @*<button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">*@
-                        <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a class="nav-link @((IsSelected("StreetView") || IsSelected("Education")) ? "active" : "")" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Education
                         </a>
                         <div class="dropdown-menu dropdown-menu-lg-right">
-                            <a class="dropdown-item" href="@Url.Action("Index", "StreetView")">Road Signs View</a>
+                            <a class="dropdown-item" href="@Url.Action("Index", "StreetView")">
+                                <span>Road Signs View</span>
+                            </a>
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="@Url.Action("Index", "Education")">Knowledge Section</a>
+                            <a class="dropdown-item" href="@Url.Action("Index", "Education")">
+                                <span>Knowledge Section</span>
+                            </a>
                         </div>
                     </li>
 
                     <li class="nav-item dropdown">
-                        <a class="nav-link" href="#" id="navbarDropdown" role="menuitem" data-toggle="dropdown" aria-haspopup="false" aria-expanded="false">
+                        <a class="nav-link @((IsSelected("Map") || IsSelected("Analysis")) ? "active" : "")" href="#" id="navbarDropdown" role="menuitem" data-toggle="dropdown" aria-haspopup="false" aria-expanded="false">
                             Crash Analysis
                         </a>
                         <div class="dropdown-menu dropdown-menu-lg-right">
-                            <a class="dropdown-item" href="@Url.Action("Index", "Map")">Crash Map</a>
+                            <a class="dropdown-item" href="@Url.Action("Index", "Map")">
+                                <span>Crash Map</span>
+                            </a>
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="@Url.Action("Index", "Analysis")">Crash: When & Where</a>
+                            <a class="dropdown-item" href="@Url.Action("Index", "Analysis")">
+                                <span>Crash: When & Where</span>
+                            </a>
                         </div>
                     </li>
 
                     <li class="nav-item">
-                        @Html.ActionLink("Common Injuries", "Index", "InjuryHover", null, new { @class = IsSelected("InjuryHover") })
+                        @Html.ActionLink("Common Injuries", "Index", "InjuryHover", null, new { @class = getMenuClass("InjuryHover") })
                     </li>
 
                     <li class="nav-item">
-                        @Html.ActionLink("Trivia", "Index", "QuizIndex", null, new { @class = IsSelected("QuizIndex") })
+                        @Html.ActionLink("Trivia", "Index", "QuizIndex", null, new { @class = getMenuClass("QuizIndex") })
                     </li>
 
                     <li class="nav-item">
-                        @Html.ActionLink("Navigation Map", "Index", "NavigationMap", null, new { @class = IsSelected("NavigationMap") })
+                        @Html.ActionLink("Navigation Map", "Index", "NavigationMap", null, new { @class = getMenuClass("NavigationMap") })
                     </li>
                 </ul>
             </div>
